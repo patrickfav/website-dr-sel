@@ -16,7 +16,7 @@ location:
 
 {{ site.contact.name }}\\
 {{ site.contact.address.line1 }}\\
-{{ site.contact.address.line2 }}\\
+_{{ site.contact.address.line1a }}_\\
 {{ site.contact.address.line3 }}
 
 Telefon:   {{ site.contact.tel }}\\

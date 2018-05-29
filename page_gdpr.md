@@ -11,7 +11,6 @@ order: 98
 
 {{ site.contact.name }}\\
 {{ site.contact.address.line1 }}\\
-{{ site.contact.address.line2 }}\\
 {{ site.contact.address.line3 }}
 
 

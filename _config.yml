@@ -7,10 +7,16 @@ email: ordination.selwicka@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.selwicka-wienerroither.com" # the base hostname & protocol for your site
 
+plugins:
+  - jekyll-maps
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 contact:
   name: Dr. Beate Selwicka-Wienerroither
   address:
     line1: Krottenbachstrasse 110/11
+    line1a: Eingang Silvaraweg 2
     line2: Eingang Silvaraweg 2
     line3: 1190 Wien
   tel: +43 1 320 1543
@@ -34,11 +40,6 @@ hours:
 markdown: kramdown
 sass:
   style: compressed
-
-plugins:
-  - jekyll-maps
-  - jekyll-seo-tag
-  - jekyll-sitemap
 
 maps:
   google:

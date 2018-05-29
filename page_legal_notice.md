@@ -11,7 +11,6 @@ order: 99
 _{{ site.description }}_
 
 {{ site.contact.address.line1 }}\\
-{{ site.contact.address.line2 }}\\
 {{ site.contact.address.line3 }}
 
 Telefon:	{{ site.contact.tel }}\\

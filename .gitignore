@@ -5,3 +5,4 @@ vendor
 .idea
 *.gem
 .bundle
+_compress_images_cache.yml
