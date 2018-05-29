@@ -2,7 +2,7 @@
 layout: page
 title: Impressum
 description:
-permalink: /impressum/
+permalink: /impressum
 ---
 
 **{{ site.contact.name }}**
