@@ -17,7 +17,6 @@ contact:
   address:
     line1: Krottenbachstrasse 110/11
     line1a: Eingang Silvaraweg 2
-    line2: Eingang Silvaraweg 2
     line3: 1190 Wien
   tel: +43 1 320 1543
   fax: +43 1 328 13 80
@@ -46,7 +45,7 @@ maps:
     api_key: AIzaSyAKuz9MseFGG_XrNMVQD8YI5pRmMypDFf8
 
 # Exclude files when building the site
-exclude: [backup, vendor]
+exclude: [backup, vendor, Gemfile, README.md]
 
 social:
   linkedin-square: https://www.linkedin.com/in/beate-selwicka-wienerroither-b5083281/
