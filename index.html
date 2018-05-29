@@ -1,7 +1,5 @@
 ---
 layout: landing
-
-title: Dr. Beate Selwicka-Wienerroither
 description: Praktische Ärztin
 location:
   - title: Dr. Selwicka-Wienerroither
@@ -12,7 +10,7 @@ location:
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
-							<h2>{{ page.title }}</h2>
+							<h2>{{ site.title }}</h2>
 							<p>{{ page.description | markdownify }}</p>
 						</div>
 						<a href="#one" class="more scrolly">Kontakt</a>
@@ -23,13 +21,13 @@ location:
 						<div class="inner">
 							<header class="major">
 								<h2>Ordination</h2>
-								<p>Krottenbachstrasse 110/11<br />
-								Eingang Silvaraweg 2<br />
-                                1190 Wien
+								<p>{{ site.contact.address.line1 }}<br />
+									{{ site.contact.address.line2 }}<br />
+									{{ site.contact.address.line3 }}
                                 </p>
 
-                                <p>Tel <a href="tel:+4313201543">+43 (1) 320 1543</a><br />
-                                    Fax <a href="tel:+4313281380">+43 (1) 328 13 80</a>
+                                <p>Tel <a href="tel:{{ site.contact.tel }}">{{ site.contact.tel }}</a><br />
+                                    Fax <a href="tel:{{ site.contact.fax }}">{{ site.contact.fax }}</a>
                                 </p>
 
                                 <h4>Ordinationszeiten</h4>

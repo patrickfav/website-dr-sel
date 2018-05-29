@@ -10,7 +10,8 @@ install:
 
 script:
   - bundle exec jekyll build
-  - bundle exec htmlproofer ./_site
+
+# - bundle exec htmlproofer ./_site
 
 # branch whitelist, only for GitHub Pages
 branches:
