@@ -47,6 +47,12 @@ maps:
 # Exclude files when building the site
 exclude: [backup, vendor, Gemfile, README.md, .idea]
 
+compress_html:
+  clippings: [div, p, ul, td, h1, h2]
+  comments: ["<!-- ", " -->"]
+  endings: [p, li, td]
+  profile: false
+
 social:
   linkedin-square: https://www.linkedin.com/in/beate-selwicka-wienerroither-b5083281/
   #twitter: https://twitter.com/<username>
