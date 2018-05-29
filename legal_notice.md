@@ -1,13 +1,14 @@
 ---
 layout: page
 title: Impressum
-description:
+description: Offenlegung gemäß § 25 Mediengesetz
 permalink: /impressum
+order: 99
 ---
 
-**{{ site.contact.name }}**
+### {{ site.contact.name }}
 
-Arzt für Allgemeinmedizin
+_{{ site.description }}_
 
 {{ site.contact.address.line1 }}\\
 {{ site.contact.address.line2 }}\\

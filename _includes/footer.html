@@ -21,6 +21,7 @@
     {% endif %}
     {{ thisyear }}
     {% if site.owner %}{{ site.owner }}{% else %}{{ site.title }}{% endif %}</li>
-    <li><a href="{{ site.url }}/impressum" >Impressum</a></li>
+    <li><a href="{{ "/datenschutz" | prepend: site.baseurl | prepend: site.url }}" >Datenschutzerklärung</a></li>
+    <li><a href="{{ "/impressum" | prepend: site.baseurl | prepend: site.url }}" >Impressum</a></li>
   </ul>
 </footer>
