@@ -598,6 +598,26 @@ $baseurl: '{{ site.baseurl }}/images';
           	padding-left: 0;
 		}
 
+        &.align-right {
+          li {
+            text-align:right;
+
+            @include breakpoint(small) {
+              text-align: center;
+            }
+          }
+        }
+
+        &.align-left {
+          li {
+            text-align:left;
+
+            @include breakpoint(small) {
+              text-align: center;
+            }
+          }
+        }
+
 		&.icons {
 			cursor: default;
 			list-style: none;
