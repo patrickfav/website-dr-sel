@@ -43,13 +43,19 @@ You should be able to run jekyll now with
 
     bundle exec jekyll -v
 
-## Run
+## Develop
 
 With this command a development web-server will be started on [http://localhost:4000](http://localhost:4000)
 
     bundle exec jekyll serve --livereload
 
 For more info see the [quick-start section](https://jekyllrb.com/docs/quickstart/).
+
+## Build
+
+With the following command the website will be packaged and copied to `_site`
+
+    bundle exec jekyll build
 
 # License
 
