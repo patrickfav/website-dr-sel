@@ -80,6 +80,9 @@ $baseurl: '{{ site.baseurl }}/images';
 		&:hover {
 			border-bottom-color: transparent;
 		}
+		&.simple {
+			border-bottom: none;
+		}
 	}
 
 	strong, b {
@@ -266,6 +269,9 @@ $baseurl: '{{ site.baseurl }}/images';
 		@include breakpoint(medium) {
 			br {
 				display: none;
+				&.always {
+					display: inline;
+				}
 			}
 		}
 	}
@@ -1598,6 +1604,10 @@ $baseurl: '{{ site.baseurl }}/images';
 
 			br {
 				display: none;
+
+				.always {
+					display: inline;
+				}
 			}
 
 			.more {
