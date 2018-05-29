@@ -45,7 +45,7 @@ maps:
     api_key: AIzaSyAKuz9MseFGG_XrNMVQD8YI5pRmMypDFf8
 
 # Exclude files when building the site
-exclude: [backup, vendor, Gemfile, README.md]
+exclude: [backup, vendor, Gemfile, README.md, .idea]
 
 social:
   linkedin-square: https://www.linkedin.com/in/beate-selwicka-wienerroither-b5083281/
