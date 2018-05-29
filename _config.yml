@@ -58,8 +58,8 @@ contact:
 
 # Build settings
 markdown: kramdown
-#sass:
-#  style: compressed
+sass:
+  style: compressed
 
 plugins:
   - jekyll-maps
