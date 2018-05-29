@@ -1,8 +1,9 @@
 ---
 layout: landing
 description: Arzt für Allgemeinmedizin
+page_title: Dr. Beate Selwicka-Wienerroither
 location:
-  - title: Dr. Selwicka-Wienerroither
+  - title: Dr. med. Beate Selwicka-Wienerroither
     url: http://www.selwicka-wienerroither.com
     latitude: 48.243617
     longitude: 16.324444
@@ -10,7 +11,7 @@ location:
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
-							<h2>{{ site.title }}</h2>
+							<h2>{{ page.page_title }}</h2>
 							<p>{{ page.description | markdownify }}</p>
 						</div>
 						<a href="#one" class="more scrolly">Ordination</a>
@@ -21,12 +22,12 @@ location:
 						<div class="inner">
 							<header class="major">
 								<h2>Ordination</h2>
-								<p>{{ site.contact.address.line1 }} <a class="fa fa-map-o" aria-hidden="true" href="https://goo.gl/maps/AbdcbWtxQzo"></a><br />
-									<em>{{ site.contact.address.line2 }}</em><br />
+								<p>{{ site.contact.address.line1 }} <a class="fa fa-map-o" aria-hidden="true" href="https://goo.gl/maps/AbdcbWtxQzo"></a><br style="display:inline" />
+									<em>{{ site.contact.address.line2 }}</em><br style="display:inline" />
 									{{ site.contact.address.line3 }}
                                 </p>
 
-                                <p>Tel <a href="tel:{{ site.contact.tel }}">{{ site.contact.tel }}</a><br />
+                                <p>Tel <a href="tel:{{ site.contact.tel }}">{{ site.contact.tel }}</a><br style="display:inline"/>
                                     Fax <a href="tel:{{ site.contact.fax }}">{{ site.contact.fax }}</a>
                                 </p>
 
@@ -51,7 +52,7 @@ location:
 									</div>
 								</div>
 
-								<p><em>Um Anmeldung wird gebeten.</em></p>
+								<p><em>Bitte um telefonische Terminvereinbarung</em></p>
 							</header>
 							<!--<ul class="icons major">-->
 								<!--<li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>-->
@@ -61,7 +62,7 @@ location:
 
 							{% google_map zoom="16" width="100%" height="40vw" class="google-maps-style" %}
 
-							Erreichbar durch Öffentlichen Verkehr: 35A (Glanzing), 40A (Döblinger Frhf./F.-Dahn-Str.)
+							<span style="font-size:0.8em">Erreichbar durch Öffentlichen Verkehr: 35A (Glanzing), 40A (Döblinger Frhf./F.-Dahn-Str.)</span>
 						</div>
 					</section>
 
