@@ -1,6 +1,6 @@
 ---
 layout: landing
-description: Praktische Ärztin
+description: Arzt für Allgemeinmedizin
 location:
   - title: Dr. Selwicka-Wienerroither
     url: http://www.selwicka-wienerroither.com
@@ -30,14 +30,26 @@ location:
                                     Fax <a href="tel:{{ site.contact.fax }}">{{ site.contact.fax }}</a>
                                 </p>
 
-                                <h4>Ordinationszeiten</h4>
-                                <p>
-                                    Montag 13:00 bis 18:00<br />
-                                    Dienstag 08:00  bis  11:00<br />
-                                    Mittwoch 15:00  bis  19:00<br />
-                                    Donnerstag 08:00  bis 11:00<br />
-                                    Freitag 13:00  bis  16:00
-                                </p>
+
+
+								<h4>Ordinationszeiten</h4>
+
+								<div class="row">
+									<div class="6u 12u$(medium)">
+										<ul class="none">
+											<li style="text-align:right"><strong>Montag</strong> 13:00 bis 18:00</li>
+											<li style="text-align:right"><strong>Dienstag & Donnerstag</strong> 08:00 bis 11:00</li>
+										</ul>
+									</div>
+									<div class="6u$ 12u$(medium)">
+										<ul class="none">
+											<li style="text-align:left"><strong>Mittwoch</strong> 15:00  bis  19:00</li>
+											<li style="text-align:left"><strong>Freitag</strong> 13:00  bis  16:00</li>
+										</ul>
+									</div>
+								</div>
+
+								<p><em>Um Anmeldung wird gebeten.</em></p>
 							</header>
 							<!--<ul class="icons major">-->
 								<!--<li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>-->
@@ -45,11 +57,10 @@ location:
 								<!--<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>-->
 							<!--</ul>-->
 
-
+							{% google_map zoom="16" width="100%" height="40vw" class="google-maps-style" %}
 						</div>
 					</section>
 
-                    {% google_map zoom="16" width="100%" height="40vw" class="google-maps-style" %}
 
 				    <!-- Two -->
 					<section id="two" class="wrapper alt style2">
@@ -82,33 +93,33 @@ location:
 					</section>
 
 				<!-- Three -->
-					<section id="three" class="wrapper style3 special">
+					<section id="three" class="wrapper style5 special">
 						<div class="inner">
 							<header class="major">
 								<h2>Medizinische Schwerpunkte</h2>
 							</header>
 							<ul class="features">
-								<li class="icon fa-paper-plane-o">
+								<li class="icon fa-heartbeat">
 									<h3>Psychosoziale Medizin</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
-								<li class="icon fa-laptop">
+								<li class="icon fa-stethoscope">
 									<h3>Infusionstherapie</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
-								<li class="icon fa-code">
+								<li class="icon fa-user-md">
 									<h3>Infiltrationen</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
-								<li class="icon fa-headphones">
+								<li class="icon fa-medkit">
 									<h3>Diabetologie - Diabetes mellitus </h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
-								<li class="icon fa-heart-o">
+								<li class="icon fa-cutlery">
 									<h3>Ernährungsmedizin </h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
-								<li class="icon fa-flag-o">
+								<li class="icon fa-heart">
 									<h3>Psychosomatische Grundversorgung </h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
@@ -122,15 +133,15 @@ location:
 					</section>
 
 				<!-- CTA -->
-					<section id="cta" class="wrapper style4">
-						<div class="inner">
-							<header>
-								<h2>Arcue ut vel commodo</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
-							</header>
-							<ul class="actions vertical">
-								<li><a href="#" class="button fit special">Activate</a></li>
-								<li><a href="#" class="button fit">Learn More</a></li>
-							</ul>
-						</div>
-					</section>
+					<!--<section id="cta" class="wrapper style4">-->
+						<!--<div class="inner">-->
+							<!--<header>-->
+								<!--<h2>Arcue ut vel commodo</h2>-->
+								<!--<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>-->
+							<!--</header>-->
+							<!--<ul class="actions vertical">-->
+								<!--<li><a href="#" class="button fit special">Activate</a></li>-->
+								<!--<li><a href="#" class="button fit">Learn More</a></li>-->
+							<!--</ul>-->
+						<!--</div>-->
+					<!--</section>-->

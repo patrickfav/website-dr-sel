@@ -584,6 +584,11 @@ $baseurl: '{{ site.baseurl }}/images';
 			}
 		}
 
+		&.none {
+		    list-style: none;
+          	padding-left: 0;
+		}
+
 		&.icons {
 			cursor: default;
 			list-style: none;
@@ -910,7 +915,7 @@ $baseurl: '{{ site.baseurl }}/images';
 
 			&:before {
 				display: block;
-				color: _palette(accent2, bg);
+				color: _palette(accent1, bg);
 				position: absolute;
 				left: 1.75em;
 				top: 2.75em;
