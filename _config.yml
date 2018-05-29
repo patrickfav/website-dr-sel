@@ -69,3 +69,6 @@ plugins:
 maps:
   google:
     api_key: AIzaSyAKuz9MseFGG_XrNMVQD8YI5pRmMypDFf8
+
+# Exclude files when building the site
+exclude: [backup, vendor]
