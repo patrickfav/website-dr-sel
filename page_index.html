@@ -3,9 +3,9 @@ layout: landing
 permalink: /index.html
 page_title: Dr. Beate Selwicka-Wienerroither
 vacation:
- enabled: false
- title: Urlaubsvertretung 2018
- content: Die Praxis ist zwischen 18.3 und 27.4 geschloßen. In dieser Zeit wenden Sie sich bitte an Dr. XY, Gußhausstrasse 14
+  enabled: false
+  vacation_title: Urlaubsvertretung 2018
+  content: Die Praxis ist zwischen 18.3 und 27.4 geschloßen. In dieser Zeit wenden Sie sich bitte an Dr. XY, Gußhausstrasse 14
 ---
 <!-- Banner -->
 <section id="banner">
@@ -22,17 +22,17 @@ vacation:
         <header class="major">
             <h2>Ordination</h2>
 
-            <p><a class="simple" href='{{ "/kontakt#anfahrt" | prepend: site.baseurl | prepend: site.url }}'>{{
+            <p><a class="simple" href='{{ "/kontakt#anfahrt" | prepend: site.baseurl }}'>{{
                 site.contact.address.line1 }} <i class="fa fa-map-o" aria-hidden="true"></i><br class="always"/>
                 <em>{{ site.contact.address.line1a }}</em><br class="always"/>
                 {{ site.contact.address.line3 }}</a>
             </p>
 
-            <p>Tel <a href="tel:{{ site.contact.tel }}">{{ site.contact.tel }}</a><br class="always"/>
-                Fax {{ site.contact.fax }}
-            </p>
+            <p>Tel <a href="tel:{{ site.contact.tel }}">{{ site.contact.tel }}</a></p>
 
-            <p>Alle Kassen & Privat</p>
+            <!-- <p><a href='{{ "/kontakt" | prepend: site.baseurl }}'>Mehr Kontaktdaten</a></p> -->
+
+            <!--  <p>Alle Kassen & Privat</p> -->
 
 
             <h4>Ordinationszeiten</h4>
@@ -62,7 +62,7 @@ vacation:
 <section id="one_and_half" class="wrapper style3 special">
     <div class="inner">
         <header class="major">
-            <h3>{{ page.vacation.title }}</h3>
+            <h3>{{ page.vacation.vacation_title }}</h3>
             <p>{{ page.vacation.content }}</p>
         </header>
     </div>
@@ -74,9 +74,8 @@ vacation:
     <section class="spotlight">
         <div class="image"><img src="images/pic01.jpg" alt="Passendes Bild zum Text"/></div>
         <div class="content">
-            <h2>Vorsorgeuntersuchung</h2>
-            <p>Die Vorsorgeuntersuchung bietet die Möglichkeit, Risiken aufgrund Ihres persönlichen Lebensstils zu
-                erkennen, auch werden durch Früherkennung von Krankheiten die Heilungschancen wesentlich verbessert.</p>
+            <h2>Verträge mit allen Kassen</h2>
+            <p>Das medizinische Leistungsangebot wird im Rahmen der Leistungsvorgabe durch die jeweilige Krankenkasse angeboten.</p>
         </div>
     </section>
     <section class="spotlight">
@@ -113,15 +112,16 @@ vacation:
                 <p>Zum Erkennen und Behandeln von psychosomatischen
                     und psychosozialen Einflüssen bei der Entstehung und Bewältigung von Krankheiten.</p>
             </li>
+            <li class="icon fa-user-md">
+                <h3>Vorsorgeuntersuchung</h3>
+                <p>Risiken aufgrund Ihres persönlichen Lebensstils
+                    erkennen und durch Früherkennung die Heilungschancen wesentlich verbessert.</p>
+            </li>
+
             <li class="icon fa-stethoscope">
                 <h3>Infusionstherapie</h3>
                 <p>Bei der Infusionstherapie werden Patienten mit Infusionslösungen versorgt, die auf
                     die entsprechenden Krankheitsbilder abgestimmt sind. </p>
-            </li>
-            <li class="icon fa-user-md">
-                <h3>Infiltrationen</h3>
-                <p>Bei akuten Schmerzen bietet eine Infiltration des betroffenen Körperteils rasche und nachhaltige
-                    Hilfe.</p>
             </li>
             <li class="icon fa-medkit">
                 <h3>Diabetologie</h3>
@@ -143,7 +143,7 @@ vacation:
 
         <h4>Weitere Schwerpunkte</h4>
 
-        <p>Gesundheitsnetzwerks-Aufbau, Psychosomatische Grundversorgung, Check-up, EKG,
+        <p>Gesundheitsnetzwerks-Aufbau, Infiltrationen, Psychosomatische Grundversorgung, Check-up, EKG,
             Langzeit-Blutdruckmessung, Lungenfunktionsprüfung, Hautkrebs-Screening, Gesund abnehmen, Laborzuweisungen,
             Reiseberatung und -impfungen, Lehrpraxiszulassung</p>
     </div>

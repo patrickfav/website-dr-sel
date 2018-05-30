@@ -23,6 +23,9 @@ Telefon:   {{ site.contact.tel }}\\
 Fax:	{{ site.contact.fax }}\\
 E-Mail:	[{{ site.email }}](mailto:{{ site.email }})
 
+_Aufgrund der Gegebenheiten im Haus, ist die Ordination leider nicht
+barrierefrei zugänglich._
+
 ## Ordinationszeiten
 
 * **{{site.hours.day1.name}}** {{site.hours.day1.time}}
@@ -30,6 +33,7 @@ E-Mail:	[{{ site.email }}](mailto:{{ site.email }})
 * **{{site.hours.day3.name}}** {{site.hours.day3.time}}
 * **{{site.hours.day4.name}}** {{site.hours.day4.time}}
 
+Beachten Sie bitte den Annahmeschluss 30 Minuten vor Ende der Ordinationszeiten.
 
 ## Anfahrt
 
