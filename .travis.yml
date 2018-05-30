@@ -14,14 +14,7 @@ install:
 
 script:
   - JEKYLL_ENV=production bundle exec jekyll build
-
 # - bundle exec htmlproofer ./_site
-
-branches:
-  only:
-  - master
-  - develop
-  - tags
 
 sudo: false # route your build to the container-based infrastructure for a faster build
 
