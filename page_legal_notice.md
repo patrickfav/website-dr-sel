@@ -31,7 +31,7 @@ Arzt (verliehen in Österreich)
 Die Berufsordnung ist zu beziehen, beziehungsweise einzusehen bei der zuständigen Ärztekammer [www.aekwien.or.at](http://www.aekwien.at/)
 
 ##### Redaktionell verantwortlich
-Dr. Beate Selwicka-Wienerröither
+{{ site.contact.name }}
 
 ##### Konzept, ScreenDesign, Inhalte
-Patrick Favre-Bulle
+[Patrick Favre-Bulle](https://github.com/patrickfav)
