@@ -54,7 +54,8 @@ compress_html:
   profile: false
 
 social:
-  linkedin-square: https://www.linkedin.com/in/beate-selwicka-wienerroither-b5083281/
+  email: /kontakt
+  linkedin: https://www.linkedin.com/in/beate-selwicka-wienerroither-b5083281/
   #twitter: https://twitter.com/<username>
   #github: https://github.com/<username>
   #facebook-official: https://facebook.com/<username>

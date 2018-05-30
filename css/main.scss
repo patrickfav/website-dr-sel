@@ -468,6 +468,12 @@ $baseurl: '#{$site_baseurl}/images';
 	}
 
 /* Icon */
+    .icon-footer {
+        border-bottom: none;
+        > .label {
+        			display: none;
+        }
+    }
 
 	.icon {
 		@include icon;
