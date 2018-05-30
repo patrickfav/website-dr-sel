@@ -2,7 +2,7 @@
 layout: page
 title: Datenschutzerklärung
 description: Informationen gemäß art. 13 und 14 DSGVO
-permalink: /datenschutz
+permalink: /datenschutz/
 order: 98
 ---
 

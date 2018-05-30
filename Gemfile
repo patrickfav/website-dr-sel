@@ -38,3 +38,6 @@ gem 'jekyll-seo-tag'
 
 # see https://github.com/jekyll/jekyll-sitemap
 gem 'jekyll-sitemap'
+
+# https://github.com/hendrikschneider/jekyll-analytics
+gem 'jekyll-analytics'

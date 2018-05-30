@@ -2,7 +2,7 @@
 layout: page
 title: Impressum
 description: Offenlegung gemäß § 25 Mediengesetz
-permalink: /impressum
+permalink: /impressum/
 order: 99
 ---
 

@@ -11,6 +11,7 @@ plugins:
   - jekyll-maps
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-analytics
 
 contact:
   name: Dr. med. Beate Selwicka-Wienerroither
@@ -42,10 +43,15 @@ sass:
 
 maps:
   google:
-    api_key: AIzaSyAKuz9MseFGG_XrNMVQD8YI5pRmMypDFf8
+    api_key: AIzaSyB8T90B3L1At6r1NMNy3tkOSgQGkxn52sc
+
+jekyll_analytics:
+  GoogleAnalytics:          # Add, if you want to track with Google Analytics
+    id: UA-120166913-1      # Required - replace with your tracking id
+    anonymizeIp: true       # Optional - Default: false - set to true for anonymized tracking
 
 # Exclude files when building the site
-exclude: [backup, vendor, Gemfile, README.md, .idea]
+exclude: ["backup", "vendor", "Gemfile", "README.md", "firebase.json",".idea"]
 
 compress_html:
   clippings: [div, p, ul, td, h1, h2]

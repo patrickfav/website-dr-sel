@@ -2,7 +2,7 @@
 layout: page
 title: Kontakt
 description: So können Sie mich erreichen
-permalink: /kontakt
+permalink: /kontakt/
 order: 3
 
 location:
