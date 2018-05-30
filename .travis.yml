@@ -1,7 +1,7 @@
 sudo: false # route your build to the container-based infrastructure for a faster build
 language: ruby
 rvm:
-- 2.3.3
+- 2.4.1
 
 env:
   global:
@@ -23,8 +23,7 @@ deploy:
   token:
     secure: cHJkMVb1WO/SNzb6PvTZoB8ixNRArbLf5O0wB7ybQP1MiZ1i1SROsWK05kyubNIFbwT1aABrx3+pB/1xl2faAw1SXao9n+i2i2rqZvevVi8G/ohWrkKeh1S6Fi45OnEPjGkPGCIDfs14TJNwG43L7OFNlfJgMp6GntdLPgzmzU8IJq8mIWFK5QMd+cSSVDj8wJMmSvngV6ZDLCP4q7/HNuFSvzQh74F9hmFQLYZDaxnmkSovF9Qehyf+87o1BCirnLEJ8+zecGcaDbthzxtUhmcCQE1TV1y41/q8rXaLMyJDAB8TWevCNPRK0bTduOJzhFvfP+xDu5ZhrNPuuAR0HlzPAy+PS6Y+EQDy14yRvNkHrng0uRI6RAV/D43p+Dt4kffsy8SB3osrj4C/64GBpI9M0sH6X969bju8FRPPuOUr6sGydkvkkRuKGlSwFxXwF+77TuMGZFKxcFDztNHWp1991rYMO/qZLZGlk8DQHT8Gs2e+5Q9KeQrqJAlI9flJGPPGyqBLTc5sgc/vzr6CJHmGXnSB8WI0mwJVrdUyzdJjbN4KQm1A1u79PbWHfQ/ucEV+SmhJqm7uKintUFuZDtVZctcwLYAC3LXRum1KIJgLjgwxfW1xczPa6txY4KvVyn3v2E4V9I3We//RfTam+1ZjNZp8Y6gBlfvB9xW/rsM=
   on:
-    branche: master
-#   tags: true
+    tags: true
   skip_cleanup: true # otherwise Travis CI will delete all the files created during the build
 
 
