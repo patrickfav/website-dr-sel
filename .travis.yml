@@ -9,9 +9,6 @@ env:
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
-install:
- - gem install bundler
- - bundle install
 
 script:
   - JEKYLL_ENV=production bundle exec jekyll build
