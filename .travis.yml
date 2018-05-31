@@ -12,8 +12,7 @@ env:
 
 script:
   - JEKYLL_ENV=production bundle exec jekyll build -t
-# - bundle exec htmlproofer ./_site
-
+  - bundle exec htmlproofer ./_site --allow-missing-href --allow-hash-href --check-favicon --check-html --disable-external
 
 cache: bundler
 

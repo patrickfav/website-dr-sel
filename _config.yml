@@ -27,7 +27,7 @@ jekyll_analytics:
     anonymizeIp: true       # Optional - Default: false - set to true for anonymized tracking
 
 # Exclude files when building the site
-exclude: ["backup", "vendor", "Gemfile", "README.md", "firebase.json",".idea"]
+exclude: ["backup", "vendor", "Gemfile", "README.md", "firebase.json",".idea", "page_demo.html"]
 
 compress_html:
   clippings: [div, p, ul, td, h1, h2]
