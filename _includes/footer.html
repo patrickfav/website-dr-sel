@@ -31,4 +31,5 @@
     {% endif %}
   </p>
   <span style="display: none">jekyll build date: {{ site.time | date_to_rfc822 }}</span>
+  <span style="display: none">Tag: {{ site.ci.tag }} | Commit {{ site.ci.hash }}</span>
 </footer>
