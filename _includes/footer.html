@@ -21,7 +21,13 @@
     {% endif %}
     {{ thisyear }}
     {% if site.owner %}{{ site.owner }}{% else %}{{ site.title }}{% endif %}</li>
-    <li><a href="{{ "/datenschutz" | prepend: site.baseurl }}" >Datenschutzerklärung</a></li>
-    <li><a href="{{ "/impressum" | prepend: site.baseurl }}" >Impressum</a></li>
+    <li><a href='{{ "/datenschutz" | prepend: site.baseurl }}' >Datenschutzerklärung</a></li>
+    <li><a href='{{ "/impressum" | prepend: site.baseurl }}' >Impressum</a></li>
   </ul>
+
+  <p>
+    {% if jekyll.environment == "development" %}
+    <a href="https://github.com/patrickfav/website-dr-sel" style="font-size: 0.8em">This site is a development preview</a>
+    {% endif %}
+  </p>
 </footer>

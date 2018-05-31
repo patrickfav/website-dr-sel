@@ -4,11 +4,14 @@
 
 This is the source for the [Jekyll](https://jekyllrb.com) static website project for a very simple doctors landing page.
 
-A [preview build](https://app.netlify.com/sites/beta-selwicka-wienerroither/overview) can be found on [Netlify](https://beta-selwicka-wienerroither.netlify.com).
+A [preview build](https://beta-selwicka-wienerroither.netlify.com) can be found on [Netlify](https://app.netlify.com/sites/beta-selwicka-wienerroither/overview).
+The production site will be hosted on [Firbase Hosting](https://ordinations-website.firebaseapp.com).
 
-# Build
+## Build
 
-## Ruby
+[Jekyll](https://jekyllrb.com) is a Ruby CLI and used as engine for Github Pages.
+
+### Ruby
 
 Jekyll requires Ruby 2.2+ so you might be required to install it.
 
@@ -29,7 +32,7 @@ Then update the gems (Ruby package manager)
 
 For details on how to do this on the [Linux subsystem for Windows 10 see here](https://jekyllrb.com/docs/windows/).
 
-## Bundler and Jekyll
+### Bundler and Jekyll
 
 Install the `bundler`:
 
@@ -43,7 +46,7 @@ You should be able to run jekyll now with
 
     bundle exec jekyll -v
 
-## Develop
+### Develop
 
 With this command a development web-server will be started on [http://localhost:4000](http://localhost:4000)
 
@@ -51,11 +54,13 @@ With this command a development web-server will be started on [http://localhost:
 
 For more info see the [quick-start section](https://jekyllrb.com/docs/quickstart/).
 
-## Build
+### Build Site
 
 With the following command the website will be packaged and copied to `_site`
 
     bundle exec jekyll build
+
+## Continuous Deployment
 
 # License
 
