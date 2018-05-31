@@ -14,13 +14,13 @@ location:
 
 ## Ordination
 
-{{ site.contact.name }}\\
-{{ site.contact.address.line1 }}\\
-_{{ site.contact.address.line1a }}_\\
-{{ site.contact.address.line3 }}
+{{ site.data.global.contact.name }}\\
+{{ site.data.global.contact.address.line1 }}\\
+_{{ site.data.global.contact.address.line1a }}_\\
+{{ site.data.global.contact.address.line3 }}
 
-Telefon:   {{ site.contact.tel }}\\
-Fax:	{{ site.contact.fax }}\\
+Telefon:   {{ site.data.global.contact.tel }}\\
+Fax:	{{ site.data.global.contact.fax }}\\
 E-Mail:	[{{ site.email }}](mailto:{{ site.email }})
 
 _Aufgrund der Gegebenheiten im Haus, ist die Ordination leider nicht
@@ -28,10 +28,10 @@ barrierefrei zugänglich._
 
 ## Ordinationszeiten
 
-* **{{site.hours.day1.name}}** {{site.hours.day1.time}}
-* **{{site.hours.day2.name}}** {{site.hours.day2.time}}
-* **{{site.hours.day3.name}}** {{site.hours.day3.time}}
-* **{{site.hours.day4.name}}** {{site.hours.day4.time}}
+* **{{site.data.global.hours.day1.name}}** {{site.data.global.hours.day1.time}}
+* **{{site.data.global.hours.day2.name}}** {{site.data.global.hours.day2.time}}
+* **{{site.data.global.hours.day3.name}}** {{site.data.global.hours.day3.time}}
+* **{{site.data.global.hours.day4.name}}** {{site.data.global.hours.day4.time}}
 
 Beachten Sie bitte den Annahmeschluss 30 Minuten vor Ende der Ordinationszeiten.
 

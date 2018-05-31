@@ -1,0 +1,29 @@
+
+
+contact:
+  name: Dr. med. Beate Selwicka-Wienerroither
+  address:
+    line1: Krottenbachstrasse 110/11
+    line1a: Eingang Silvaraweg 2
+    line3: 1190 Wien
+  tel: +43 1 320 1543
+  fax: +43 1 328 13 80
+
+hours:
+  day1:
+   name: Montag
+   time: 13:00 bis 18:00
+  day2:
+   name: Di & Do
+   time: 08:00 bis 11:00
+  day3:
+   name: Mittwoch
+   time: 15:00 bis 19:00
+  day4:
+   name: Freitag
+   time: 13:00 bis 16:00
+
+vacation:
+  enabled: false
+  vacation_title: Urlaubsvertretung 2018
+  content: Die Praxis ist zwischen 18.3 und 27.4 geschloßen. In dieser Zeit wenden Sie sich bitte an Dr. XY, Gußhausstrasse 14

@@ -13,29 +13,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-analytics
 
-contact:
-  name: Dr. med. Beate Selwicka-Wienerroither
-  address:
-    line1: Krottenbachstrasse 110/11
-    line1a: Eingang Silvaraweg 2
-    line3: 1190 Wien
-  tel: +43 1 320 1543
-  fax: +43 1 328 13 80
-
-hours:
-  day1:
-   name: Montag
-   time: 13:00 bis 18:00
-  day2:
-   name: Di & Do
-   time: 08:00 bis 11:00
-  day3:
-   name: Mittwoch
-   time: 15:00 bis 19:00
-  day4:
-   name: Freitag
-   time: 13:00 bis 16:00
-
 # Build settings
 markdown: kramdown
 sass:

@@ -9,9 +9,9 @@ order: 98
 
 ### Kontakt
 
-{{ site.contact.name }}\\
-{{ site.contact.address.line1 }}\\
-{{ site.contact.address.line3 }}
+{{ site.data.global.contact.name }}\\
+{{ site.data.global.contact.address.line1 }}\\
+{{ site.data.global.contact.address.line3 }}
 
 
 ### Rechtsgrundlage für die Datenverarbeitung

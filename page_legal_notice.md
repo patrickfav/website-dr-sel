@@ -6,15 +6,15 @@ permalink: /impressum/
 order: 99
 ---
 
-### {{ site.contact.name }}
+### {{ site.data.global.contact.name }}
 
 _{{ site.description }}_
 
-{{ site.contact.address.line1 }}\\
-{{ site.contact.address.line3 }}
+{{ site.data.global.contact.address.line1 }}\\
+{{ site.data.global.contact.address.line3 }}
 
-Telefon:	{{ site.contact.tel }}\\
-Fax:	{{ site.contact.fax }}\\
+Telefon:	{{ site.data.global.contact.tel }}\\
+Fax:	{{ site.data.global.contact.fax }}\\
 E-Mail:	[{{ site.email }}](mailto:{{ site.email }})\\
 Website:	[{{ site.url }}]({{ site.url }})
 
@@ -31,7 +31,7 @@ Arzt (verliehen in Österreich)
 Die Berufsordnung ist zu beziehen, beziehungsweise einzusehen bei der zuständigen Ärztekammer [www.aekwien.or.at](http://www.aekwien.at/)
 
 ##### Redaktionell verantwortlich
-{{ site.contact.name }}
+{{ site.data.global.contact.name }}
 
 ##### Konzept, ScreenDesign, Inhalte
 [Patrick Favre-Bulle](https://github.com/patrickfav)

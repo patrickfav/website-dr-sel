@@ -2,10 +2,6 @@
 layout: landing
 permalink: /index.html
 page_title: Dr. Beate Selwicka-Wienerroither
-vacation:
-  enabled: false
-  vacation_title: Urlaubsvertretung 2018
-  content: Die Praxis ist zwischen 18.3 und 27.4 geschloßen. In dieser Zeit wenden Sie sich bitte an Dr. XY, Gußhausstrasse 14
 ---
 <!-- Banner -->
 <section id="banner">
@@ -23,13 +19,13 @@ vacation:
             <h2>Ordination </h2>
 
             <p>
-                <a class="simple" href='{{ "/kontakt#anfahrt" | prepend: site.baseurl }}'>{{ site.contact.address.line1 }}
+                <a class="simple" href='{{ "/kontakt#anfahrt" | prepend: site.baseurl }}'>{{ site.data.global.contact.address.line1 }}
                     <i class="fas fa-map" aria-hidden="true"></i><br class="always"/>
-                <em>{{ site.contact.address.line1a }}</em> <br class="always"/>
-                {{ site.contact.address.line3 }}</a>
+                <em>{{ site.data.global.contact.address.line1a }}</em> <br class="always"/>
+                {{ site.data.global.contact.address.line3 }}</a>
             </p>
 
-            <p>Tel <a href="tel:{{ site.contact.tel }}">{{ site.contact.tel }}</a></p>
+            <p>Tel <a href="tel:{{ site.data.global.contact.tel }}">{{ site.data.global.contact.tel }}</a></p>
 
             <!-- <p><a href='{{ "/kontakt" | prepend: site.baseurl }}'>Mehr Kontaktdaten</a></p> -->
 
@@ -41,14 +37,14 @@ vacation:
             <div class="row">
                 <div class="6u 12u$(small)">
                     <ul class="none align-right">
-                        <li><strong>{{site.hours.day1.name}}</strong> {{site.hours.day1.time}}</li>
-                        <li><strong>{{site.hours.day2.name}}</strong> {{site.hours.day2.time}}</li>
+                        <li><strong>{{site.data.global.hours.day1.name}}</strong> {{site.data.global.hours.day1.time}}</li>
+                        <li><strong>{{site.data.global.hours.day2.name}}</strong> {{site.data.global.hours.day2.time}}</li>
                     </ul>
                 </div>
                 <div class="6u$ 12u$(small)">
                     <ul class="none align-left">
-                        <li><strong>{{site.hours.day3.name}}</strong> {{site.hours.day3.time}}</li>
-                        <li><strong>{{site.hours.day4.name}}</strong> {{site.hours.day4.time}}</li>
+                        <li><strong>{{site.data.global.hours.day3.name}}</strong> {{site.data.global.hours.day3.time}}</li>
+                        <li><strong>{{site.data.global.hours.day4.name}}</strong> {{site.data.global.hours.day4.time}}</li>
                     </ul>
                 </div>
             </div>
@@ -59,12 +55,12 @@ vacation:
 
 </section>
 
-{% if page.vacation.enabled %}
+{% if site.data.global.vacation.enabled %}
 <section id="one_and_half" class="wrapper style3 special">
     <div class="inner">
         <header class="major">
-            <h3>{{ page.vacation.vacation_title }}</h3>
-            <p>{{ page.vacation.content }}</p>
+            <h3>{{ site.data.global.vacation.vacation_title }}</h3>
+            <p>{{ site.data.global.vacation.content }}</p>
         </header>
     </div>
 </section>
