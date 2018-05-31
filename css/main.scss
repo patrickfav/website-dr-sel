@@ -1453,7 +1453,7 @@ $baseurl: '#{$site_baseurl}/images';
 				line-height: inherit;
 
 				@include breakpoint(small) {
-					font-size: 0.8em;
+					font-size: 0.75em;
 				}
 			}
 		}
@@ -1750,7 +1750,7 @@ $baseurl: '#{$site_baseurl}/images';
 			}
 
 			h2 {
-				font-size: 1.75em;
+				font-size: 2.0em;
 				margin: 0 0 (_size(element-margin) * 0.25) 0;
 			}
 
