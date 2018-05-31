@@ -36,3 +36,7 @@ Die Berufsordnung ist zu beziehen, beziehungsweise einzusehen bei der zuständig
 
 ##### Konzept, ScreenDesign, Inhalte
 [Patrick Favre-Bulle](https://github.com/patrickfav)
+
+#### Website Version
+
+{{site.ci.tag}} ([{{ site.ci.hash}}](https://github.com/patrickfav/website-dr-sel))
