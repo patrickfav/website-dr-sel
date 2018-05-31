@@ -44,5 +44,5 @@ social:
   #twitter: https://twitter.com/<username>
 
 ci:
-  hash: ENV_TRAVIS_COMMIT
-  tag: ENV_TRAVIS_TAG
+  hash: ENV_GIT_COMMIT
+  tag: ENV_GIT_TAG
