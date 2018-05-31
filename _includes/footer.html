@@ -15,12 +15,12 @@
   </ul>
   <ul class="copyright">
     <li>&copy; {% assign thisyear = site.time | date: "%Y" %}
-    {% if site.first_published %}
-      {% capture diff %}{{ site.first_published | minus:thisyear }}{% endcapture %}
-      {% if diff contains '-' %}{{ site.first_published }},{% endif %}
+    {% if site.data.global.first_published %}
+      {% capture diff %}{{ site.data.global.first_published | minus:thisyear }}{% endcapture %}
+      {% if diff contains '-' %}{{ site.data.global.first_published }},{% endif %}
     {% endif %}
     {{ thisyear }}
-    {% if site.owner %}{{ site.owner }}{% else %}{{ site.title }}{% endif %}</li>
+    {% if site.data.global.owner %}{{ site.data.global.owner }}{% else %}{{ site.title }}{% endif %}</li>
     <li><a href='{{ "/datenschutz" | prepend: site.baseurl }}' >Datenschutzerklärung</a></li>
     <li><a href='{{ "/impressum" | prepend: site.baseurl }}' >Impressum</a></li>
   </ul>

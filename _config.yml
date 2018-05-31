@@ -1,8 +1,6 @@
 # Site settings
 title: Dr. Selwicka-Wienerroither
 description: Ärztin für Allgemeinmedizin
-owner: Ordination Selwicka-Wienerroither # or company name
-first_published: 2018 # if migrating another site, the year of your first publish
 email: ordination.selwicka-wienerroither@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.selwicka-wienerroither.com" # the base hostname & protocol for your site
