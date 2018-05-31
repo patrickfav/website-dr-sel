@@ -19,9 +19,9 @@ location:
 _{{ site.data.global.contact.address.line1a }}_\\
 {{ site.data.global.contact.address.line2 }}
 
-Telefon:   {{ site.data.global.contact.tel }}\\
-Fax:	{{ site.data.global.contact.fax }}\\
-E-Mail:	[{{ site.email }}](mailto:{{ site.email }})
+Tel:  {{ site.data.global.contact.tel | tel_link }}\\
+Fax:  {{ site.data.global.contact.fax | tel_link }}\\
+E-Mail:	{{ site.email | mailObfuscate }}
 
 _Aufgrund der Gegebenheiten im Haus, ist die Ordination leider nicht
 barrierefrei zugänglich._

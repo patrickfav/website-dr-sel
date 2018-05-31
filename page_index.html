@@ -31,12 +31,9 @@ page_title: Dr. Beate Selwicka-Wienerroither
                     {{ site.data.global.contact.address.line2 }}</a>
             </p>
 
-            <p>Tel <a href="tel:{{ site.data.global.contact.tel }}">{{ site.data.global.contact.tel }}</a></p>
-
-            <!-- <p><a href='{{ "/kontakt" | prepend: site.baseurl }}'>Mehr Kontaktdaten</a></p> -->
+            <p>Tel {{ site.data.global.contact.tel | tel_link }}</p>
 
             <!--  <p>Alle Kassen & Privat</p> -->
-
 
             <h4>Ordinationszeiten</h4>
 
