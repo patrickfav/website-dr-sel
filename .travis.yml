@@ -11,7 +11,7 @@ env:
 # the `install` step will run `bundle install` by default.
 
 script:
-  - JEKYLL_ENV=production bundle exec jekyll build
+  - JEKYLL_ENV=production bundle exec jekyll build -t
 # - bundle exec htmlproofer ./_site
 
 
