@@ -6,7 +6,12 @@ page_title: Dr. Beate Selwicka-Wienerroither
 <!-- Banner -->
 <section id="banner">
     <div class="inner">
-        <h2>{{ page.page_title }}</h2>
+        <h2>
+            {% if jekyll.environment == "development" %}
+            PREVIEW PAGE |
+            {% endif %}
+            {{ page.page_title }}
+        </h2>
         <p>{{ site.description | markdownify }}</p>
     </div>
     <a href="#one" class="more scrolly">Ordination</a>
@@ -19,10 +24,11 @@ page_title: Dr. Beate Selwicka-Wienerroither
             <h2>Ordination </h2>
 
             <p>
-                <a class="simple" href='{{ "/kontakt#anfahrt" | prepend: site.baseurl }}'>{{ site.data.global.contact.address.line1 }}
+                <a class="simple" href='{{ "/kontakt#anfahrt" | prepend: site.baseurl }}'>
+                    {{ site.data.global.contact.address.line1 }}
                     <i class="fas fa-map" aria-hidden="true"></i><br class="always"/>
-                <em>{{ site.data.global.contact.address.line1a }}</em> <br class="always"/>
-                {{ site.data.global.contact.address.line3 }}</a>
+                    <em>{{ site.data.global.contact.address.line1a }}</em> <br class="always"/>
+                    {{ site.data.global.contact.address.line2 }}</a>
             </p>
 
             <p>Tel <a href="tel:{{ site.data.global.contact.tel }}">{{ site.data.global.contact.tel }}</a></p>
@@ -37,14 +43,18 @@ page_title: Dr. Beate Selwicka-Wienerroither
             <div class="row">
                 <div class="6u 12u$(small)">
                     <ul class="none align-right">
-                        <li><strong>{{site.data.global.hours.day1.name}}</strong> {{site.data.global.hours.day1.time}}</li>
-                        <li><strong>{{site.data.global.hours.day2.name}}</strong> {{site.data.global.hours.day2.time}}</li>
+                        <li><strong>{{site.data.global.hours.day1.name}}</strong> {{site.data.global.hours.day1.time}}
+                        </li>
+                        <li><strong>{{site.data.global.hours.day2.name}}</strong> {{site.data.global.hours.day2.time}}
+                        </li>
                     </ul>
                 </div>
                 <div class="6u$ 12u$(small)">
                     <ul class="none align-left">
-                        <li><strong>{{site.data.global.hours.day3.name}}</strong> {{site.data.global.hours.day3.time}}</li>
-                        <li><strong>{{site.data.global.hours.day4.name}}</strong> {{site.data.global.hours.day4.time}}</li>
+                        <li><strong>{{site.data.global.hours.day3.name}}</strong> {{site.data.global.hours.day3.time}}
+                        </li>
+                        <li><strong>{{site.data.global.hours.day4.name}}</strong> {{site.data.global.hours.day4.time}}
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -72,7 +82,8 @@ page_title: Dr. Beate Selwicka-Wienerroither
         <div class="image"><img src="images/pic01.jpg" alt="Passendes Bild zum Text"/></div>
         <div class="content">
             <h2>Verträge mit allen Kassen</h2>
-            <p>Das medizinische Leistungsangebot wird im Rahmen der Leistungsvorgabe durch die jeweilige Krankenkasse angeboten.</p>
+            <p>Das medizinische Leistungsangebot wird im Rahmen der Leistungsvorgabe durch die jeweilige Krankenkasse
+                angeboten.</p>
         </div>
     </section>
     <section class="spotlight">
@@ -141,7 +152,8 @@ page_title: Dr. Beate Selwicka-Wienerroither
         <h4>Weitere Schwerpunkte</h4>
 
         <p>Gesundheitsnetzwerks-Aufbau, Infiltrationen, Psychosomatische Grundversorgung, Check-up, EKG,
-            Langzeit-Blutdruckmessung, Lungenfunktionsprüfung, Hautkrebs-Screening, Gesund abnehmen, Gesundheitsuntersuchung,
+            Langzeit-Blutdruckmessung, Lungenfunktionsprüfung, Hautkrebs-Screening, Gesund abnehmen,
+            Gesundheitsuntersuchung,
             Reiseberatung und -impfungen, Lehrpraxiszulassung</p>
     </div>
 </section>

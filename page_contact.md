@@ -17,7 +17,7 @@ location:
 {{ site.data.global.contact.name }}\\
 {{ site.data.global.contact.address.line1 }}\\
 _{{ site.data.global.contact.address.line1a }}_\\
-{{ site.data.global.contact.address.line3 }}
+{{ site.data.global.contact.address.line2 }}
 
 Telefon:   {{ site.data.global.contact.tel }}\\
 Fax:	{{ site.data.global.contact.fax }}\\

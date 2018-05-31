@@ -1,13 +1,13 @@
 
-
 contact:
   name: Dr. med. Beate Selwicka-Wienerroither
   address:
     line1: Krottenbachstrasse 110/11
     line1a: Eingang Silvaraweg 2
-    line3: 1190 Wien
+    line2: 1190 Wien
+    line3: Österreich
   tel: +43 1 320 1543
-  fax: +43 1 328 13 80
+  fax: +43 1 328 1380
 
 hours:
   day1:

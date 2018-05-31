@@ -8,7 +8,7 @@ order: 2
 
 <h4>{{site.data.global.contact.name}}</h4>
 
-<span class="image left"><img src="images/portrait1.jpg" alt="Portrait Ärtztin"/></span>
+<span class="image left"><img src='{{ "/images/portrait1.jpg" | prepend: site.baseurl }}' alt="Portrait Ärtztin"/></span>
 
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
     standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
@@ -54,7 +54,7 @@ order: 2
 
 <h4>Maria Wiedermann</h4>
 
-<span class="image right"><img src="images/portrait2.jpg" alt="Portrait Sprechstundenhilfe"/></span>
+<span class="image right"><img src='{{ "/images/portrait2.jpg" | prepend: site.baseurl }}' alt="Portrait Sprechstundenhilfe"/></span>
 
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
     standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make

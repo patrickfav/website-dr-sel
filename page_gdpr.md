@@ -11,7 +11,7 @@ order: 98
 
 {{ site.data.global.contact.name }}\\
 {{ site.data.global.contact.address.line1 }}\\
-{{ site.data.global.contact.address.line3 }}
+{{ site.data.global.contact.address.line2 }}
 
 
 ### Rechtsgrundlage für die Datenverarbeitung
