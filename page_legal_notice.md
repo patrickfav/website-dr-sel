@@ -14,9 +14,9 @@ _{{ site.description }}_
 {{ site.data.global.contact.address.line2 }}\\
 {{ site.data.global.contact.address.line3 }}
 
-Telefon:	{{ site.data.global.contact.tel }}\\
-Fax:	{{ site.data.global.contact.fax }}\\
-E-Mail:	[{{ site.email }}](mailto:{{ site.email }})\\
+Tel:	{{ site.data.global.contact.tel | tel_link}}\\
+Fax:	{{ site.data.global.contact.fax | tel_link }}\\
+E-Mail:	{{ site.email | mailObfuscate }}\\
 Website:	[{{ site.url }}]({{ site.url }})
 
 ##### Zuständige Ärztekammer
@@ -36,3 +36,5 @@ Die Berufsordnung ist zu beziehen, beziehungsweise einzusehen bei der zuständig
 
 ##### Konzept, ScreenDesign, Inhalte
 [Patrick Favre-Bulle](https://github.com/patrickfav)
+
+<small>Die Website wurde am _{{ site.time | date_to_rfc822 }}_ mit [Jekyll](https://jekyllrb.com) kompiliert.</small>
