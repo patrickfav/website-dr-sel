@@ -81,8 +81,9 @@ $baseurl: '#{$site_baseurl}/images';
 		&:hover {
 			border-bottom-color: transparent;
 		}
+
 		&.simple {
-			border-bottom: none;
+			border-bottom: transparent;
 			&:hover {
 				border-bottom: dotted 1px;
 			}
