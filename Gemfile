@@ -42,3 +42,6 @@ gem 'jekyll-smartify'
 
 # see https://github.com/rob-murray/jekyll-version-plugin
 gem 'jekyll_version_plugin'
+
+# see https://github.com/digitalsparky/jekyll-minifier
+gem 'jekyll-minifier'
