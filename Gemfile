@@ -34,5 +34,11 @@ gem 'jekyll-seo-tag'
 # see https://github.com/jekyll/jekyll-sitemap
 gem 'jekyll-sitemap'
 
-# https://github.com/hendrikschneider/jekyll-analytics
+# see https://github.com/hendrikschneider/jekyll-analytics
 gem 'jekyll-analytics'
+
+# see https://github.com/pathawks/jekyll-smartify
+gem 'jekyll-smartify'
+
+# see https://github.com/rob-murray/jekyll-version-plugin
+gem 'jekyll_version_plugin'

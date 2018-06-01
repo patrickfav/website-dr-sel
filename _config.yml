@@ -5,12 +5,15 @@ email: ordination.selwicka@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.selwicka-wienerroither.com" # the base hostname & protocol for your site
 timezone: Europe/Vienna
+lang: de_AT
 
 plugins:
   - jekyll-maps
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-analytics
+  - jekyll-smartify #curly quotes
+  - jekyll_version_plugin
 
 # Build settings
 markdown: kramdown
@@ -36,6 +39,9 @@ compress_html:
   profile: false
 
 social:
+  name: Beate Selwicka-Wienerroither
+  links:
+    - https://www.linkedin.com/in/beate-selwicka-wienerroither-b5083281/
   email: /kontakt/
   linkedin: https://www.linkedin.com/in/beate-selwicka-wienerroither-b5083281/
   google: https://www.google.at/maps/place/Dr.+Selwicka-Wienerroither/@48.2435459,16.3244421,15z/data=!4m2!3m1!1s0x0:0xa2b1b4659139977a?sa=X&ved=0ahUKEwi9mIPUva_bAhUEfMAKHV6ADHwQ_BIIeTAK

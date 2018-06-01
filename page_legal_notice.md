@@ -37,4 +37,5 @@ Die Berufsordnung ist zu beziehen, beziehungsweise einzusehen bei der zuständig
 ##### Konzept, ScreenDesign, Inhalte
 [Patrick Favre-Bulle](https://github.com/patrickfav)
 
-<small>Die Website wurde am _{{ site.time | date_to_rfc822 }}_ mit [Jekyll](https://jekyllrb.com) kompiliert.</small>
+<small>Die Website mit Version [{% project_version %}](https://github.com/patrickfav/website-dr-sel/releases/tag/{% project_version %}) 
+wurde am _{{ site.time | date_to_rfc822 }}_ mit [Jekyll](https://jekyllrb.com) kompiliert.</small>

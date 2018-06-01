@@ -30,5 +30,5 @@
     <a href="https://github.com/patrickfav/website-dr-sel" style="font-size: 0.8em">This site is a development preview</a>
     {% endif %}
   </p>
-  <span style="display: none">jekyll build date: {{ site.time | date_to_rfc822 }}</span>
+  <span style="display: none">{{ site.time | date_to_rfc822 }} | {% project_version %} | {% project_version commit %}</span>
 </footer>
