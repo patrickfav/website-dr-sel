@@ -3,7 +3,7 @@ require "uri"
 
 module ObfuscateMailAddress
   def mailObfuscate(input)
-    base64Mail = Base64.encode64(URI::encode(input))
+    base64Mail = Base64.strict_encode64(URI::encode(input))
 
     # See http://techblog.tilllate.com/2008/07/20/ten-methods-to-obfuscate-e-mail-addresses-compared/
     output = "<a href=\"#\" "
