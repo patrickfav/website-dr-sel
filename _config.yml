@@ -38,19 +38,21 @@ social:
   name: Beate Selwicka-Wienerroither
   links:
     - https://www.linkedin.com/in/beate-selwicka-wienerroither-b5083281/
+
+theme_social:
   email: /kontakt/
   linkedin: https://www.linkedin.com/in/beate-selwicka-wienerroither-b5083281/
   google: https://www.google.at/maps/place/Dr.+Selwicka-Wienerroither/@48.2435459,16.3244421,15z/data=!4m2!3m1!1s0x0:0xa2b1b4659139977a?sa=X&ved=0ahUKEwi9mIPUva_bAhUEfMAKHV6ADHwQ_BIIeTAK
   #twitter: https://twitter.com/<username>
 
 jekyll-minifier:
-  preserve_php: true                # Default: false
+  preserve_php: false                # Default: false
   remove_spaces_inside_tags: true   # Default: true
   remove_multi_spaces: true         # Default: true
   remove_comments: true             # Default: true
   remove_intertag_spaces: true      # Default: false
   remove_quotes: true              # Default: false
-  compress_css: true                # Default: true
+  compress_css: false                # Default: true
   compress_javascript: false         # Default: true
   simple_doctype: false             # Default: false
   remove_script_attributes: false   # Default: false
