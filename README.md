@@ -1,4 +1,4 @@
-# Jekyll Static Website Source
+# Jekyll Static Website Source for Doctor's Landing Page
 
 [![Build Status](https://travis-ci.org/patrickfav/website-dr-sel.svg?branch=master)](https://travis-ci.org/patrickfav/website-dr-sel)
 
@@ -37,6 +37,10 @@ For details on how to do this on the [Linux subsystem for Windows 10 see here](h
 Install the `bundler`:
 
     gem install bundler
+
+you may want to set the default gem path, so you don't need `sudo`
+
+    bundle config path vendor/bundle
     
 then, in the project root folder, install all the dependencies with
 
@@ -61,6 +65,12 @@ With the following command the website will be packaged and copied to `_site`
     bundle exec jekyll build
 
 ## Continuous Deployment
+
+Every commit to the `master` branch will be automatically build and deployed via [Netlify](https://app.netlify.com/sites/beta-selwicka-wienerroither/overview) 
+to this [site](https://beta-selwicka-wienerroither.netlify.com). Note: This will NOT be build with the production flag.
+
+Every git tag triggers a deploy to the [Firbase Hosting](https://ordinations-website.firebaseapp.com) through [Travis CI](https://travis-ci.org/patrickfav/website-dr-sel).
+
 
 # License
 
