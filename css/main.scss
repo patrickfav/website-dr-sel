@@ -5,9 +5,13 @@
 $site_baseurl: '{{ site.baseurl }}';
 $baseurl: '#{$site_baseurl}/images';
 
+//noinspection CssUnknownTarget
 @import 'libs/vars';
+//noinspection CssUnknownTarget
 @import 'libs/functions';
+//noinspection CssUnknownTarget
 @import 'libs/mixins';
+//noinspection CssUnknownTarget
 @import 'libs/fontawesome/fontawesome';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
 
@@ -16,7 +20,7 @@ $baseurl: '#{$site_baseurl}/images';
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
+    //noinspection CssUnknownTarget
 	@import 'libs/skel';
 
 	@include skel-breakpoints((
@@ -363,7 +367,7 @@ $baseurl: '#{$site_baseurl}/images';
 	}
 
 	input[type="checkbox"],
-	input[type="radio"], {
+	input[type="radio"] {
 		@include vendor('appearance', 'none');
 		display: block;
 		float: left;
@@ -1148,7 +1152,7 @@ $baseurl: '#{$site_baseurl}/images';
 			}
 
 			input[type="checkbox"],
-			input[type="radio"], {
+			input[type="radio"] {
 				& + label {
 					color: _palette($p, fg);
 
@@ -1515,6 +1519,10 @@ $baseurl: '#{$site_baseurl}/images';
 							&:hover {
 								opacity: 0.7;
 							}
+
+							@media print {
+								display: none;
+							}
 						}
 
 						@include breakpoint(small) {
@@ -1551,6 +1559,12 @@ $baseurl: '#{$site_baseurl}/images';
 		overflow: hidden;
 		position: relative;
 		text-align: center;
+
+		@media print {
+			height: 25em;
+			min-height: 25em;
+			background: _palette(bg) none;
+		}
 
 		h2 {
 			@include vendor('transform', 'scale(1)');
@@ -1627,6 +1641,10 @@ $baseurl: '#{$site_baseurl}/images';
 				margin: 0 0 0 -0.75em;
 				position: absolute;
 				width: 1.5em;
+			}
+
+			@media print {
+				display: none;
 			}
 		}
 
@@ -1752,6 +1770,11 @@ $baseurl: '#{$site_baseurl}/images';
 			&.alt {
 				@include padding(8em, 0);
 				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner2_blur.jpg")'));
+
+				@media print {
+					@include padding(2em, 0);
+					background: _palette(bg) none;
+				}
 			}
 
 			h2 {
@@ -1878,6 +1901,10 @@ $baseurl: '#{$site_baseurl}/images';
 			background-repeat: no-repeat;
 			background-size: cover;
 			padding-top: 0;
+
+			@media print {
+				background: _palette(bg) none;
+			}
 		}
 
 		#footer {
