@@ -6,6 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.selwicka-wienerroither.com" # the base hostname & protocol for your site
 timezone: Europe/Vienna
 lang: de_AT
+lang_only: de
 
 plugins:
   - jekyll-maps
