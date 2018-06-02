@@ -23,8 +23,8 @@ Fax:  {{ site.data.global.contact.fax | tel_link }}\\
 E-Mail:	{{ site.email | mailObfuscate }}
 
 <small>**Bitte um telefonische Terminvereinbarung.**\\
-_Aufgrund der Gegebenheiten im Haus, ist die Ordination leider nicht
-barrierefrei zugänglich._</small>
+Aufgrund der Gegebenheiten im Haus, ist die Ordination leider nicht
+barrierefrei zugänglich.</small>
 
 ### Ordinationszeiten
 
@@ -33,19 +33,31 @@ barrierefrei zugänglich._</small>
 * **{{site.data.global.hours.day3.name}}** {{site.data.global.hours.day3.time}}
 * **{{site.data.global.hours.day4.name}}** {{site.data.global.hours.day4.time}}
 
-Beachten Sie bitte den Annahmeschluss 30 Minuten vor Ende der Ordinationszeiten.
+<small>Beachten Sie bitte den Annahmeschluss 30 Minuten vor Ende der Ordinationszeiten.</small>
+
+
+{% if site.data.global.vacation.enabled %}
+#### {{ site.data.global.vacation.vacation_title }}
+
+{{ site.data.global.vacation.content }}
+{% endif %}
 
 ### Anfahrt
 
-_Erreichbar durch Öffentlichen Verkehr:_ 35A (Glanzing), 40A (Döblinger Frhf./F.-Dahn-Str.)\\
+Erreichbar durch Öffentlichen Verkehr:
+* 35A (Glanzing)
+* 40A (Döblinger Frhf./F.-Dahn-Str.)
 
 {% google_map zoom="16" width="100%" height="40vw" class="google-maps-style" %}
 <small>[Navigation über Google Maps](https://goo.gl/maps/AbdcbWtxQzo)</small>
 
 ## Hausbesuche
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
-dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen 
-book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
-desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Für ältere Menschen, deren Mobilität eingeschränkt ist, stellt der Arztbesuch oft eine große Herausforderung 
+dar, die nur mit Mühe zu bewältigen ist, deshalb führe ich auf Wunsch auch Hausbesuche durch.
+
+Besonders in der Betreuung von Menschen mit akuten und chronischen Erkrankungen ist dies ein wichtiger 
+Service, den ich Ihnen deshalb gerne anbiete.
+
+Hausbesuche werden von Montag bis Freitags tagsüber durchgeführt. Wenn möglich melden Sie den Hausbesuch
+ morgens zwischen 8 und 9 Uhr unter {{ site.data.global.contact.tel | tel_link }} an.

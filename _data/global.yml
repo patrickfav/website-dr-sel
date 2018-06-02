@@ -27,6 +27,7 @@ hours:
    time: 13:00 bis 16:00
 
 vacation:
-  enabled: false
+  enabled: true
   vacation_title: Urlaubsvertretung 2018
-  content: Die Praxis ist zwischen 18.3 und 27.4 geschloßen. In dieser Zeit wenden Sie sich bitte an Dr. XY, Gußhausstrasse 14
+  content: Die Praxis ist zwischen 18.3 und 27.4 geschloßen. In dieser Zeit wenden Sie sich bitte an meine Urlaubsvertretung
+    Dr. X Y in der Musterstrasse 23, 1190 Wien.
