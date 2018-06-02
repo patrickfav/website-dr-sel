@@ -34,6 +34,8 @@ jekyll_analytics:
     id: UA-120166913-1      # Required - replace with your tracking id
     anonymizeIp: true       # Optional - Default: false - set to true for anonymized tracking
 
+google_site_verification: ZT_IXc8gKvrNUoOkEXboZPweKbJzrFpzg5nCl4FMAiQ
+
 # Exclude files when building the site
 exclude: ["backup", "vendor", "Gemfile", "README.md", "firebase.json",".idea", "page_demo.html"]
 
