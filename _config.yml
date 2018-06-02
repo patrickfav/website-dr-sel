@@ -7,6 +7,7 @@ url: "https://www.selwicka-wienerroither.com" # the base hostname & protocol for
 timezone: Europe/Vienna
 lang: de_AT
 lang_only: de
+theme_color: "#18202a" #chrome for android will color the url bar with this
 
 plugins:
   - jekyll-maps
