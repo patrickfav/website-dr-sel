@@ -45,3 +45,6 @@ gem 'jekyll_version_plugin'
 
 # see https://github.com/digitalsparky/jekyll-minifier
 gem 'jekyll-minifier'
+
+# see https://github.com/sverrirs/jekyll-webp
+gem 'jekyll-webp'
