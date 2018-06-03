@@ -29,5 +29,5 @@ hours:
 vacation:
   enabled: true
   vacation_title: Urlaubsvertretung 2018
-  content: Die Praxis ist zwischen 18.3 und 27.4 geschloßen. In dieser Zeit wenden Sie sich bitte an meine Urlaubsvertretung
-    Dr. X Y in der Musterstrasse 23, 1190 Wien.
+  content: Die Praxis ist zwischen 18.3 und 27.4 geschlossen. In dieser Zeit wenden Sie sich bitte an meine Urlaubsvertretung
+    [Dr. X Y in der Musterstrasse 23, 1190 Wien](http://www.google.at).
