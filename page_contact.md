@@ -6,8 +6,8 @@ permalink: /kontakt/
 order: 3
 
 location:
-  - title: Dr. med. Beate Selwicka-Wienerroither
-    url: http://www.selwicka-wienerroither.com
+  - title: Ordination Selwicka-Wienerroither
+    url: https://goo.gl/maps/v76HGogqLPr
     latitude: 48.243617
     longitude: 16.324444
 ---
@@ -49,7 +49,7 @@ Erreichbar durch Öffentlichen Verkehr:
 * 40A (Döblinger Frhf./F.-Dahn-Str.)
 
 {% google_map zoom="16" width="100%" height="40vw" class="google-maps-style" %}
-<small>[Navigation über Google Maps](https://goo.gl/maps/AbdcbWtxQzo)</small>
+<small>[Navigation über Google Maps](https://goo.gl/32X5Le)</small>
 
 ## Hausbesuche
 
@@ -61,3 +61,8 @@ Service, den ich Ihnen deshalb gerne anbiete.
 
 Hausbesuche werden von Montag bis Freitags tagsüber durchgeführt. Wenn möglich melden Sie den Hausbesuch
  morgens zwischen 8 und 9 Uhr unter {{ site.data.global.contact.tel | tel_link }} an.
+
+## Weiterführende Links
+
+* [Eintrag auf praxisplan.at der Wiener Ärztekammer](http://www.praxisplan.at/5546917116/Selwicka-Wienerroither-Beate/1)
+* [Eintrag auf docfinder.at](https://www.docfinder.at/arzt/allgemeinmedizin/1190-wien/dr-beate-selwicka-wienerroither-13942_1)
