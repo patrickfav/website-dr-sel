@@ -96,6 +96,12 @@ a {
       border-bottom: solid 1px;
     }
   }
+
+  &.external {
+    background: url('images/external-link.svg') no-repeat 100% 50%;
+    background-size: 0.75em 0.75em;
+    padding-right: 1em;
+  }
 }
 
 strong, b {

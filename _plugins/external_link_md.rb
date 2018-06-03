@@ -1,6 +1,6 @@
 module ExternalLinkFilter
   def external_link (url, label)
-    "<a href=\"#{url}\" rel=\"noopener\">#{label}</a>"
+    "<a href=\"#{url}\" rel=\"noopener\" class=\"external\">#{label}</a>"
   end
 end
 
