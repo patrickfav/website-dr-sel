@@ -2,7 +2,7 @@ require "base64"
 require "uri"
 
 module ObfuscateMailAddress
-  def mailObfuscate(input)
+  def mail_obfuscate(input)
 
     if input.nil?
       return "Error: input is null"

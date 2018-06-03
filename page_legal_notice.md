@@ -16,26 +16,26 @@ _{{ site.description }}_
 
 Tel:	{{ site.data.global.contact.tel | tel_link}}\\
 Fax:	{{ site.data.global.contact.fax | tel_link }}\\
-E-Mail:	{{ site.email | mailObfuscate }}\\
+E-Mail:	{{ site.email | mail_obfuscate }}\\
 Website:	[{{ site.url }}]({{ site.url }})
 
 ##### Zuständige Ärztekammer
-Ärztekammer Wien [www.aekwien.or.at](http://www.aekwien.at/)
+Ärztekammer Wien {{ 'https://www.aekwien.or.at' | external_link: 'www.aekwien.or.at' }}
 
 ##### Zuständige Kassenärztliche Vereinigung
-Wien [www.gkkwien.at](https://www.wgkk.at)
+Wien {{ 'http://www.wgkk.at' | external_link: 'www.wgkk.at' }}
 
 ##### Berufsbezeichnung
 Arzt (verliehen in Österreich)
 
 ##### Berufsrechtliche Regelungen
-Die Berufsordnung ist zu beziehen, beziehungsweise einzusehen bei der zuständigen Ärztekammer [www.aekwien.or.at](http://www.aekwien.at/)
+Die Berufsordnung ist zu beziehen, beziehungsweise einzusehen bei der zuständigen Ärztekammer {{ 'http://www.aekwien.or.at' | external_link: 'www.aekwien.or.at' }}
 
 ##### Redaktionell verantwortlich
 {{ site.data.global.contact.name }}
 
 ##### Konzept, ScreenDesign, Inhalte
-[Patrick Favre-Bulle](https://github.com/patrickfav)
+{{ 'https://github.com/patrickfav' | external_link: 'Patrick Favre-Bulle' }}
 
 <small>Die Website mit Version [{% project_version %}](https://github.com/patrickfav/website-dr-sel/releases/tag/{% project_version %}) 
-wurde am _{{ site.time | date_to_rfc822 }}_ mit [Jekyll](https://jekyllrb.com) kompiliert.</small>
+wurde am _{{ site.time | date_to_rfc822 }}_ mit {{ 'https://jekyllrb.com' | external_link: 'Jekyll' }} kompiliert.</small>
