@@ -13,7 +13,7 @@ $baseurl: '#{$site_baseurl}/images';
 @import 'libs/mixins';
 //noinspection CssUnknownTarget
 @import 'libs/fontawesome/fontawesome';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800');
 
 /*
 	Spectral by HTML5 UP
@@ -109,9 +109,11 @@ $baseurl: '#{$site_baseurl}/images';
 
 	p {
 		margin: 0 0 _size(element-margin) 0;
+		font-family: _font(family_p);
 	}
 
 	h1, h2, h3, h4, h5, h6 {
+		font-family: _font(family);
 		color: _palette(fg-bold);
 		font-weight: _font(weight-extrabold);
 		letter-spacing: _size(letter-spacing-alt);
@@ -214,7 +216,7 @@ $baseurl: '#{$site_baseurl}/images';
 	}
 
     small {
-		font-size: 0.75em;
+		font-size: 0.8em;
 	}
 	.align-left {
 		text-align: left;
@@ -579,6 +581,7 @@ $baseurl: '#{$site_baseurl}/images';
 /* List */
 
 	ol {
+		font-family: _font(family_p);
 		list-style: decimal;
 		margin: 0 0 _size(element-margin) 0;
 		padding-left: 1.25em;
@@ -589,6 +592,7 @@ $baseurl: '#{$site_baseurl}/images';
 	}
 
 	ul {
+		font-family: _font(family_p);
 		list-style: disc;
 		margin: 0 0 _size(element-margin) 0;
 		padding-left: 1em;
@@ -968,7 +972,7 @@ $baseurl: '#{$site_baseurl}/images';
 				left: 1.75em;
 				top: 2.75em;
 				font-size: 1.5em;
-				font-family: 'Font Awesome 5 Free';
+				font-family: _font(family-icon);
 				font-weight: 900;
 			}
 
@@ -1365,6 +1369,7 @@ $baseurl: '#{$site_baseurl}/images';
 			padding: 0;
 
 			> li {
+				font-family: _font(family);
 				border-top: solid 1px _palette(accent7, border);
 				margin: 0.5em 0 0 0;
 				padding: 0.5em 0 0 0;
@@ -1485,6 +1490,7 @@ $baseurl: '#{$site_baseurl}/images';
 					padding: 0;
 
 					> a {
+						font-family: _font(family);
 						border: 0;
 						color: _palette(fg-bold);
 						display: block;
@@ -1569,6 +1575,7 @@ $baseurl: '#{$site_baseurl}/images';
 		h2 {
 			@include vendor('transform', 'scale(1)');
 			@include vendor('transition', ('transform 0.5s ease', 'opacity 0.5s ease'));
+			font-family: _font(family-header);
 			display: inline-block;
 			font-size: 1.7em;
 			opacity: 1;
@@ -1599,6 +1606,7 @@ $baseurl: '#{$site_baseurl}/images';
 		}
 
 		p {
+			font-family: _font(family);
 			letter-spacing: _size(letter-spacing-alt);
 			text-transform: uppercase;
 
@@ -1770,7 +1778,6 @@ $baseurl: '#{$site_baseurl}/images';
 			&.alt {
 				@include padding(8em, 0);
 				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner2_blur.jpg")'));
-
 				@media print {
 					@include padding(2em, 0);
 					background: _palette(bg) none;
@@ -1783,6 +1790,7 @@ $baseurl: '#{$site_baseurl}/images';
 			}
 
 			p {
+				font-family: _font(family);
 				color: inherit;
 				letter-spacing: _size(letter-spacing-alt);
 				text-transform: uppercase;

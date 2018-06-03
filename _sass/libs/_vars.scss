@@ -29,7 +29,10 @@ $size: (
 // Font.
 $font: (
         family: ('Open Sans', Helvetica, sans-serif),
+        family-header: ('Open Sans', Helvetica, sans-serif),
+        family_p: ('Open Sans', serif),
         family-fixed: ('Courier New', monospace),
+        family-icon: ('Font Awesome 5 Free'),
         weight: 400,
         weight-bold: 600,
         weight-extrabold: 800
