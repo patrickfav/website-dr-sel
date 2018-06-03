@@ -15,12 +15,12 @@ location:
 ## Ordination
 
 {{ site.data.global.contact.address.line1 }}\\
-_{{ site.data.global.contact.address.line1a }}_\\
+{{ site.data.global.contact.address.line1a }}\\
 {{ site.data.global.contact.address.line2 }}, {{ site.data.global.contact.address.line3 }}
 
 Tel:  {{ site.data.global.contact.tel | tel_link }}\\
 Fax:  {{ site.data.global.contact.fax | tel_link }}\\
-E-Mail:	{{ site.email | mailObfuscate }}
+Mail: {{ site.email | mailObfuscate }}
 
 <small>**Bitte um telefonische Terminvereinbarung.**\\
 Aufgrund der Gegebenheiten im Haus, ist die Ordination leider nicht
