@@ -10,6 +10,12 @@ env:
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
 
+stages:
+  - name: buildAndDeploy
+    if: tag IS blank
+  - name: release
+    if: tag IS present
+
 jobs:
   include:
     - stage: buildAndDeploy
@@ -35,8 +41,7 @@ jobs:
            - develop
           tags: false
         skip_cleanup: true # otherwise Travis CI will delete all the files created during the build
-    - stage:
-      if: tag IS present
+    - stage: release
       script:
         - JEKYLL_ENV=production
           bundle exec jekyll build -t --config "_config.yml,_config.prod.yml"
@@ -53,7 +58,6 @@ jobs:
           tags: true
 
 cache: bundler
-
 
 notifications:
   slack:
