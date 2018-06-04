@@ -32,7 +32,6 @@ jobs:
         on:
           branch:
            - master
-           - develop
           tags: false
         skip_cleanup: true # otherwise Travis CI will delete all the files created during the build
     - stage: deploy
