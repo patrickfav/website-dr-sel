@@ -10,13 +10,10 @@ env:
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
 
-stages:
-  - name: deploy
-    if: branch = master
-
 jobs:
   include:
     - stage: deploy
+      if: (branch = master)
       script:
         - JEKYLL_ENV=production
           bundle exec jekyll build -t --config "_config.yml,_config.prod.yml"
