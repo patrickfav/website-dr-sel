@@ -12,7 +12,7 @@ env:
 
 stages:
   - name: buildAndDeploy
-    if: tag IS blank
+    if: branch = master
   - name: release
     if: tag IS present
 
