@@ -49,7 +49,7 @@ Erreichbar durch Öffentlichen Verkehr:
 * 40A (Döblinger Frhf./F.-Dahn-Str.)
 
 {% google_map zoom="16" width="100%" height="40vw" class="google-maps-style" %}
-<small>{{ 'https://goo.gl/32X5Le' | external_link: 'Navigation über Google Maps' }}</small>
+<small>{{ 'https://www.google.at/maps/dir/''/ordination+dr+beate+selwicka-wienerroither/data=!4m5!4m4!1m0!1m2!1m1!1s0x476d0888d5a05bcf:0xa2b1b4659139977a?sa=X&ved=0ahUKEwj54e6M8rrbAhVHecAKHcZjB-4Q9RcImQEwCw' | external_link: 'Navigation über Google Maps' }}</small>
 
 
 ## Hausbesuche
