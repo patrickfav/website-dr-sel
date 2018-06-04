@@ -10,12 +10,6 @@ env:
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
 
-stages:
-  - name: buildAndDeploy
-    if: branch = master
-  - name: release
-    if: tag IS present
-
 jobs:
   include:
     - stage: buildAndDeploy
