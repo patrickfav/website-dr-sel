@@ -23,7 +23,9 @@ jobs:
           --check-html
           --disable-external
     - stage: deploy
-      script: skip
+      script:
+        - JEKYLL_ENV=production
+          bundle exec jekyll build -t --config "_config.yml,_config.prod.yml"
       deploy: &firebase
         provider: firebase
         project: "staging"
@@ -37,7 +39,9 @@ jobs:
           tags: false
         skip_cleanup: true # otherwise Travis CI will delete all the files created during the build
     - stage: deploy
-      script: skip
+      script:
+        - JEKYLL_ENV=production
+          bundle exec jekyll build -t --config "_config.yml,_config.prod.yml"
       deploy:
         <<: *firebase
         project: "default"
