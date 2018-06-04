@@ -19,7 +19,6 @@ stages:
 jobs:
   include:
     - stage: buildAndDeploy
-      if: tag IS blank
       script:
         - JEKYLL_ENV=production
           bundle exec jekyll build -t --config "_config.yml,_config.prod.yml"
