@@ -52,3 +52,12 @@ theme_social:
 
 jekyll-minifier:
   exclude: '**.*'
+
+webp:
+  enabled: true
+  quality: 80
+  img_dir: ["/images"]
+  formats: [".jpeg", ".jpg"]
+  gifs: [".gif"]
+  regenerate: false
+  exclude: ['banner2.jpg', 'banner2_blur.jpg']
