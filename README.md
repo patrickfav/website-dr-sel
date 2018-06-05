@@ -4,8 +4,9 @@
 
 This is the source for the [Jekyll](https://jekyllrb.com) static website project for a very simple doctors landing page.
 
-A [preview build](https://beta-selwicka-wienerroither.netlify.com) can be found on [Netlify](https://app.netlify.com/sites/beta-selwicka-wienerroither/overview).
-The production site will be hosted on [Firbase Hosting](https://ordinations-website.firebaseapp.com).
+A preview of the most recent commit on master can be seen on the
+[staging firebase project](https://staging-ordination-selwicka.firebaseapp.com/).
+The production version can be found [here](https://ordination-selwicka.firebaseapp.com/).
 
 ## Build
 
