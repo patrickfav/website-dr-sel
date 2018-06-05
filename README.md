@@ -67,10 +67,10 @@ With the following command the website will be packaged and copied to `_site`
 
 ## Continuous Deployment
 
-Every commit to the `master` branch will be automatically build and deployed via [Netlify](https://app.netlify.com/sites/beta-selwicka-wienerroither/overview) 
-to this [site](https://beta-selwicka-wienerroither.netlify.com). Note: This will NOT be build with the production flag.
+Every commit to the `master` branch will be automatically build and deployed via to the [Firebase staging](https://staging-ordination-selwicka.firebaseapp.com/)
+environment. (_Note_: This will NOT be build with the production flag.)
 
-Every git tag triggers a deploy to the [Firbase Hosting](https://ordinations-website.firebaseapp.com) through [Travis CI](https://travis-ci.org/patrickfav/website-dr-sel).
+Every git tag triggers a deploy to the [Firbase Hosting](https://ordination-selwicka.firebaseapp.com/) through [Travis CI](https://travis-ci.org/patrickfav/website-dr-sel).
 
 # Frameworks and Libs
 
