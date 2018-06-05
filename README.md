@@ -72,6 +72,17 @@ to this [site](https://beta-selwicka-wienerroither.netlify.com). Note: This will
 
 Every git tag triggers a deploy to the [Firbase Hosting](https://ordinations-website.firebaseapp.com) through [Travis CI](https://travis-ci.org/patrickfav/website-dr-sel).
 
+# Frameworks and Libs
+
+* [Jekyll](https://jekyllrb.com/)
+  * Plugins: [Maps](https://github.com/ayastreb/jekyll-maps), [Seo](https://github.com/jekyll/jekyll-seo-tag), 
+  [Sitemap](https://github.com/jekyll/jekyll-sitemap), [Analytics](https://github.com/hendrikschneider/jekyll-analytics), 
+  [Version](https://github.com/rob-murray/jekyll-version-plugin), [Minifier](https://github.com/digitalsparky/jekyll-minifier), 
+  [Webp](https://github.com/sverrirs/jekyll-webp) 
+* [HTML5 UP's Spectral Theme](https://github.com/arkadianriver/spectral)
+  * [Skel 3](https://github.com/ajlkn/skel), [Jquery 2.2.4](https://jquery.com/), [Scrolly](https://github.com/Victa/scrolly), [Scrollex](https://github.com/ajlkn/jquery.scrollex)
+* [Font Awesome 5](https://fontawesome.com/)
+* [Firebase Hosting](https://firebase.google.com/docs/hosting/)
 
 # License
 
