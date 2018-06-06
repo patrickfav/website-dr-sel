@@ -27,7 +27,7 @@ sass:
 
 maps:
   google:
-    api_key: AIzaSyB8T90B3L1At6r1NMNy3tkOSgQGkxn52sc
+    api_key: AIzaSyDjbTGk9I7hpTx6ij1IGUlDopIwi22GS78
 
 jekyll_analytics:
   GoogleAnalytics:          # Add, if you want to track with Google Analytics
