@@ -29,5 +29,7 @@ hours:
 vacation:
   enabled: true
   vacation_title: Urlaubsvertretung 2018
-  content: Die Praxis ist zwischen 18.3 und 27.4 geschlossen. In dieser Zeit wenden Sie sich bitte an meine Urlaubsvertretung
-    [Dr. X Y in der Musterstrasse 23, 1190 Wien](http://www.google.at).
+  content: Die Praxis ist zwischen 1.8 und 15.8 geschlossen. In dieser Zeit wenden Sie sich bitte an meine Urlaubsvertretung
+    [Dr. Petra Wrabetz](http://www.wrabetz.at/) in der Grinzinger Allee 5-9 (Tel. +43 1 320 41 86) beziehungsweise
+    [Dr. Christina Niessner](http://www.praxisplan.at/6115143226/WRAEK) in der Schegargasse 1 (Tel. +43 1 369 55 77)
+

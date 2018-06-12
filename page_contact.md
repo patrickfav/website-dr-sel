@@ -19,8 +19,7 @@ location:
 {{ site.data.global.contact.address.line2 }}, {{ site.data.global.contact.address.line3 }}
 
 Tel:  {{ site.data.global.contact.tel | tel_link }}\\
-Fax:  {{ site.data.global.contact.fax | tel_link }}\\
-Mail: {{ site.email | mail_obfuscate }}
+Fax:  {{ site.data.global.contact.fax | tel_link }}
 
 <small>**Bitte um telefonische Terminvereinbarung.**\\
 Aufgrund der Gegebenheiten im Haus, ist die Ordination leider nicht
@@ -44,6 +43,9 @@ barrierefrei zugänglich.</small>
 
 ### Anfahrt
 
+Mit dem Auto erwarteten Sie ein vielzahl an öffentlichen Parkplätzen. In der
+Umgebung gibt es keine Kurzparkzone.
+
 Erreichbar durch Öffentlichen Verkehr:
 * 35A (Glanzing)
 * 40A (Döblinger Frhf./F.-Dahn-Str.)
@@ -54,13 +56,12 @@ Erreichbar durch Öffentlichen Verkehr:
 ## Hausbesuche
 
 Für ältere Menschen, deren Mobilität eingeschränkt ist, stellt der Arztbesuch oft eine große Herausforderung 
-dar, die nur mit Mühe zu bewältigen ist, deshalb führe ich auf Wunsch auch Hausbesuche durch.
-
-Besonders in der Betreuung von Menschen mit akuten und chronischen Erkrankungen ist dies ein wichtiger 
+dar, die nur mit Mühe zu bewältigen ist, deshalb führe ich auf Wunsch auch Hausbesuche durch. Besonders in der Betreuung von Menschen mit akuten und chronischen Erkrankungen ist dies ein wichtiger
 Service, den ich Ihnen deshalb gerne anbiete.
 
-Hausbesuche werden von Montag bis Freitags tagsüber durchgeführt. Wenn möglich melden Sie den Hausbesuch
- morgens zwischen 8 und 9 Uhr unter {{ site.data.global.contact.tel | tel_link }} an.
+Hausbesuche werden von Montag bis Freitags tagsüber nach telefonische Vereinbarung während der Ordinationszeit unter {{ site.data.global.contact.tel | tel_link }} durchgeführt. Nächtens, am Wochende sowie an
+Feiertagen steht Ihnen der {{ "http://www.aekwien.at/aerztefunkdienst-141" | external_link: 'Ärzte Notdienst'}} zur Verfügung.
+
 
 ## Weiterführende Links
 
