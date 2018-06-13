@@ -15,6 +15,8 @@ _{{ site.description }}_
 {{ site.data.global.contact.address.line2 }}\\
 {{ site.data.global.contact.address.line3 }}
 
+UID: ATU13183008
+
 Tel:	{{ site.data.global.contact.tel | tel_link}}\\
 Fax:	{{ site.data.global.contact.fax | tel_link }}\\
 E-Mail:	{{ site.email | mail_obfuscate }}\\
