@@ -3,7 +3,7 @@ title: Dr. Selwicka-Wienerroither
 description: Ärztin für Allgemeinmedizin
 email: ordination.selwicka@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.selwicka-wienerroither.com" # the base hostname & protocol for your site
+url: "https://selwicka-wienerroither.com" # the base hostname & protocol for your site
 timezone: Europe/Vienna
 lang: de_AT
 lang_only: de
