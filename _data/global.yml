@@ -27,7 +27,7 @@ hours:
    time: 13:00 bis 16:00
 
 vacation:
-  enabled: true
+  enabled: false
   vacation_title: Urlaubsvertretung 2018
   content: Die Praxis ist zwischen 1.8 und 15.8 geschlossen. In dieser Zeit wenden Sie sich bitte an meine Urlaubsvertretung
     [Dr. Petra Wrabetz](http://www.wrabetz.at/) in der Grinzinger Allee 5-9 (Tel. +43 1 320 41 86) beziehungsweise
