@@ -5,8 +5,12 @@
 This is the source for the [Jekyll](https://jekyllrb.com) static website project for a very simple doctors landing page.
 
 A preview of the most recent commit on master can be seen on the
-[staging firebase project](https://staging-ordination-selwicka.firebaseapp.com/).
-The production version can be found [here](https://ordination-selwicka.firebaseapp.com/).
+[staging firebase project](https://beta.selwicka-wienerroither.com/).
+The production version can be found [here](https://selwicka-wienerroither.com/).
+
+
+[![website screenshot](https://i.imgur.com/TH1qoPK.jpg)](https://selwicka-wienerroither.com/)
+
 
 ## Build
 
@@ -67,10 +71,10 @@ With the following command the website will be packaged and copied to `_site`
 
 ## Continuous Deployment
 
-Every commit to the `master` branch will be automatically build and deployed via to the [Firebase staging](https://staging-ordination-selwicka.firebaseapp.com/)
+Every commit to the `master` branch will be automatically build and deployed via to the [Firebase staging](https://beta.selwicka-wienerroither.com/)
 environment. (_Note_: This will NOT be build with the production flag.)
 
-Every git tag triggers a deploy to the [Firbase Hosting](https://ordination-selwicka.firebaseapp.com/) through [Travis CI](https://travis-ci.org/patrickfav/website-dr-sel).
+Every git tag triggers a deploy to the [Firbase Hosting](https://selwicka-wienerroither.com/) through [Travis CI](https://travis-ci.org/patrickfav/website-dr-sel).
 
 # Frameworks and Libs
 
