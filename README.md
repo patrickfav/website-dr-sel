@@ -9,7 +9,7 @@ A preview of the most recent commit on master can be seen on the
 The production version can be found [here](https://selwicka-wienerroither.com/).
 
 
-![website screenshot](https://i.imgur.com/TH1qoPK.jpg)
+[![website screenshot](https://i.imgur.com/TH1qoPK.jpg)](https://selwicka-wienerroither.com/)
 
 
 ## Build
