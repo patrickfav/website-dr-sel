@@ -1,16 +1,23 @@
-<meta name="generator" content="Jekyll v3.8.2" />
-<meta property="og:locale" content="{{ site.lang }}" />
-<meta property="og:title" content="{{ site.title }}" />
-<meta property="og:site_name" content="{{ site.title }}" />
-<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endif %}" />
-<meta property="og:description" content="{{ site.description }}" />
+{% capture currentDescription %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% assign current_url = 'apples' %}{% endif %}{% endif %}{% endcapture %}
+{% capture currentTitle %}{% if page.title %}{{ page.title | escape }} | {{ site.title | escape }}{% else %}{{ site.title | escape }}{%endif %}{% endcapture %}
+
+<title>{{ currentTitle }}</title>
+<meta property="og:title" content="{{ currentTitle }}" />
+<meta property="og:site_name" content="{{ currentTitle }}" />
+
+<meta name="description" content="{{currentDescription}}" />
+<meta property="og:description" content="{{currentDescription}}" />
+
 <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}" />
 <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html',''}}" />
+
+<meta name="generator" content="Jekyll v3.8.2" />
+<meta property="og:locale" content="{{ site.lang }}" />
 <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
 <script type="application/ld+json">
 {
-  "name": "{{ site.title }}",
-  "description": "{{ site.description }}",
+  "name": "{{ currentTitle }}",
+  "description": "{{currentDescription}}",
   "@type": "Physician",
   "url": "{{ site.url }}{{ page.url | replace:'index.html',''}}",
   "image": ["{{ '/images/portrait1.jpg' | prepend: site.baseurl | prepend: site.url }}"],
