@@ -43,7 +43,7 @@ barrierefrei zugänglich.</small>
 
 ### Anfahrt
 
-Mit dem Auto erwarteten Sie ein vielzahl an öffentlichen Parkplätzen. In der
+Mit dem Auto erwarteten Sie eine Vielzahl an öffentlichen Parkplätzen. In der
 Umgebung gibt es keine Kurzparkzone.
 
 Erreichbar durch Öffentlichen Verkehr:
