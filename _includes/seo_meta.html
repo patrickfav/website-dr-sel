@@ -12,7 +12,7 @@
   "name": "{{ site.title }}",
   "description": "{{ site.description }}",
   "@type": "Physician",
-  "url": "{{site.url}}",
+  "url": "{{ site.url }}{{ page.url | replace:'index.html',''}}",
   "image": ["{{ '/images/portrait1.jpg' | prepend: site.baseurl | prepend: site.url }}"],
   "sameAs": [
     "https://www.linkedin.com/in/beate-selwicka-wienerroither-b5083281/"
