@@ -48,3 +48,6 @@ gem 'jekyll-minifier'
 
 # see https://github.com/sverrirs/jekyll-webp
 gem 'jekyll-webp'
+
+# see https://github.com/gjtorikian/jekyll-last-modified-at
+gem 'jekyll-last-modified-at'

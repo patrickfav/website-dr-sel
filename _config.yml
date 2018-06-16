@@ -12,12 +12,13 @@ theme_color: "#18202a" #chrome for android will color the url bar with this
 plugins:
   - jekyll-maps
   - jekyll-seo-tag
-  - jekyll-sitemap
   - jekyll-analytics
   - jekyll-smartify #curly quotes
   - jekyll_version_plugin
   - jekyll-minifier
   - jekyll-webp
+  - jekyll-last-modified-at
+  - jekyll-sitemap
 
 # Build settings
 markdown: kramdown
