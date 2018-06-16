@@ -36,10 +36,8 @@ jobs:
     - stage: deploy
       if: (tag IS present)
       script:
-        - JEKYLL_ENV=production
-          bundle exec jekyll build -t --config "_config.yml,_config.prod.yml"
+        - JEKYLL_ENV=production bundle exec jekyll build -t --config "_config.yml,_config.prod.yml"
         - bundle exec htmlproofer ./_site
-          --allow-missing-href
           --allow-hash-href
           --check-favicon
           --check-html
