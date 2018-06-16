@@ -16,17 +16,13 @@
 <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
 <script type="application/ld+json">
 {
+  "@context": "http://schema.org",
   "name": "{{ currentTitle }}",
   "description": "{{currentDescription}}",
   "@type": "Physician",
   "url": "{{ site.url }}{{ page.url | replace:'index.html',''}}",
   "image": ["{{ '/images/portrait1.jpg' | prepend: site.baseurl | prepend: site.url }}"],
-  "sameAs": [
-    "https://www.linkedin.com/in/beate-selwicka-wienerroither-b5083281/"
-  ],
   "telephone": "{{site.data.global.contact.tel}}",
-  "faxNumber": "{{site.data.global.contact.fax}}",
-  "foundingDate": "{{site.data.global.organization.founded_iso8601}}",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "{{ site.data.global.contact.address.line1 }}",
@@ -34,7 +30,13 @@
     "addressRegion": "{{ site.data.global.contact.address.city_en }}",
     "postalCode": "{{ site.data.global.contact.address.postal_code }}",
     "addressCountry": "{{ site.data.global.contact.address.country_code }}"
-  },
+  }
+  {% if page.url == "/index.html" %}
+  ,"sameAs": [
+    "https://www.linkedin.com/in/beate-selwicka-wienerroither-b5083281/"
+  ],
+  "faxNumber": "{{site.data.global.contact.fax}}",
+  "foundingDate": "{{site.data.global.organization.founded_iso8601}}",
   "geo": {
     "@type": "GeoCoordinates",
     "latitude": "{{ site.data.global.contact.address.lat }}",
@@ -76,7 +78,7 @@
       "opens": "{{ site.data.global.hours.spec.friday.start }}",
       "closes": "{{ site.data.global.hours.spec.friday.end }}"
     }
-  ],
-  "@context": "http://schema.org"
+  ]
+  {% endif %}
 }
 </script>
