@@ -28,9 +28,6 @@ gem 'html-proofer'
 # See https://github.com/ayastreb/jekyll-maps
 gem 'jekyll-maps'
 
-# See https://github.com/jekyll/jekyll-seo-tag/
-gem 'jekyll-seo-tag'
-
 # see https://github.com/jekyll/jekyll-sitemap
 gem 'jekyll-sitemap'
 

@@ -1,5 +1,8 @@
 owner: Ordination Selwicka-Wienerroither # or company name
 first_published: 2011 # if migrating another site, the year of your first publish
+organization:
+  founded_iso8601: '1983-01-01'
+  acceptNewPatients: 'False'
 
 contact:
   name: Dr. med. Beate Selwicka-Wienerroither
@@ -8,6 +11,11 @@ contact:
     line1a: Eingang über Silvaraweg 2
     line2: 1190 Wien
     line3: Österreich
+    postal_code: 1190
+    country_code: AT
+    city_en: Vienna
+    lat: 48.243629
+    long: 16.324240
   tel: +43 1 320 1543
   fax: +43 1 328 1380
   mob: +43 676 6279 745
@@ -26,6 +34,22 @@ hours:
   day4:
    name: Freitag
    time: 13:00 bis 16:00
+  spec:
+    monday:
+      start: '13:00'
+      end: '18:00'
+    tuesday:
+      start: '08:00'
+      end: '11:00'
+    wednesday:
+      start: '15:00'
+      end: '19:00'
+    thursday:
+      start: '08:00'
+      end: '11:00'
+    friday:
+      start: '13:00'
+      end: '16:00'
 
 vacation:
   enabled: false

@@ -1,0 +1,75 @@
+<meta name="generator" content="Jekyll v3.8.2" />
+<meta property="og:locale" content="{{ site.lang }}" />
+<meta property="og:title" content="{{ site.title }}" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endif %}" />
+<meta property="og:description" content="{{ site.description }}" />
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}" />
+<meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html',''}}" />
+<meta name="google-site-verification" content="{{ site.google_site_verification }}" />
+<script type="application/ld+json">
+{
+  "name": "{{ site.title }}",
+  "description": "{{ site.description }}",
+  "@type": "Physician",
+  "url": "{{site.url}}",
+  "image": ["{{ '/images/portrait1.jpg' | prepend: site.baseurl | prepend: site.url }}"],
+  "sameAs": [
+    "https://www.linkedin.com/in/beate-selwicka-wienerroither-b5083281/"
+  ],
+  "telephone": "{{site.data.global.contact.tel}}",
+  "faxNumber": "{{site.data.global.contact.fax}}",
+  "foundingDate": "{{site.data.global.organization.founded_iso8601}}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ site.data.global.contact.address.line1 }}",
+    "addressLocality": "{{ site.data.global.contact.address.city_en }}",
+    "addressRegion": "{{ site.data.global.contact.address.city_en }}",
+    "postalCode": "{{ site.data.global.contact.address.postal_code }}",
+    "addressCountry": "{{ site.data.global.contact.address.country_code }}"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "{{ site.data.global.contact.address.lat }}",
+    "longitude": "{{ site.data.global.contact.address.long }}"
+  },
+  "founder":"{{ site.data.global.contact.name }}",
+  "isAcceptingNewPatients": "{{ site.data.global.organization.acceptNewPatients }}",
+  "vatID":"{{site.data.global.contact.uid}}",
+  "publicAccess":true,
+  "knowsLanguage": ["DE","EN"],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Monday",
+      "opens": "{{ site.data.global.hours.spec.monday.start }}",
+      "closes": "{{ site.data.global.hours.spec.monday.end }}"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "{{ site.data.global.hours.spec.tuesday.start }}",
+      "closes": "{{ site.data.global.hours.spec.tuesday.end }}"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "{{ site.data.global.hours.spec.wednesday.start }}",
+      "closes": "{{ site.data.global.hours.spec.wednesday.end }}"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "{{ site.data.global.hours.spec.thursday.start }}",
+      "closes": "{{ site.data.global.hours.spec.thursday.end }}"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "{{ site.data.global.hours.spec.friday.start }}",
+      "closes": "{{ site.data.global.hours.spec.friday.end }}"
+    }
+  ],
+  "@context": "http://schema.org"
+}
+</script>
