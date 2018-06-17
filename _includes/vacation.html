@@ -24,9 +24,8 @@
       {% assign nowTimestamp = 'now' | date: "%s" %}
 
       {% if currentTimestamp > nowTimestamp %}
-      <li><strong>{{ vacInfo.start_date | date: "%d.%m" }} - {{ vacInfo.end_date | date: "%d.%m.%Y" }}</strong> <br class="sm" />
-          <a href="{{ vacInfo.substitute.url }}">{{ vacInfo.substitute.name }}</a> <br class="sm" />
-           {{ vacInfo.substitute.address }}, {{ vacInfo.substitute.tel }}
+      <li>
+          <strong>{{ vacInfo.start_date | date: "%d.%m" }} - {{ vacInfo.end_date | date: "%d.%m.%Y" }}</strong><br class="sm" />&nbsp;<a href="{{ vacInfo.substitute.url }}">{{ vacInfo.substitute.name }}</a><br class="sm" />&nbsp;{{ vacInfo.substitute.address }}, {{ vacInfo.substitute.tel }}
       </li>
       {% endif %}
   {% endfor %}
