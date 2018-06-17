@@ -221,6 +221,12 @@ pre {
   }
 }
 
+br {
+  &.sm {
+    display: none;
+  }
+}
+
 small {
   font-size: 0.8em;
 }
@@ -290,12 +296,14 @@ header {
       margin: 0 0 _size(element-margin) 0;
     }
   }
-
   @include breakpoint(medium) {
     br {
       display: none;
       &.always {
         display: inline;
+      }
+      &.sm {
+       display: inline;
       }
     }
   }
@@ -602,10 +610,10 @@ ul {
   font-family: _font(family_p);
   list-style: disc;
   margin: 0 0 _size(element-margin) 0;
-  padding-left: 1em;
+  padding-left: 2em;
 
   li {
-    padding-left: 0.5em;
+    padding-left: 0.25em;
   }
 
   &.alt {
@@ -1138,6 +1146,11 @@ button,
 
       p {
         color: _palette($p, fg);
+      }
+
+      ul {
+        list-style:none;
+        padding-left:0;
       }
     }
   }

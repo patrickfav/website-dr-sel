@@ -78,6 +78,18 @@
       "opens": "{{ site.data.global.hours.spec.friday.start }}",
       "closes": "{{ site.data.global.hours.spec.friday.end }}"
     }
+  ],
+  "specialOpeningHoursSpecification": [
+  {% assign sorted_list = site.data.global.vacation.list | sort:"end_date" %}
+  {% for vacInfo in sorted_list %}
+    {
+      "@type": "OpeningHoursSpecification",
+      "opens": "00:00",
+      "closes": "00:00",
+      "validFrom": "{{ vacInfo.start_date | date: "%y-%m-%d" }}",
+      "validThrough": "{{ vacInfo.end_date | date: "%y-%m-%d" }}"
+    }{% if forloop.last == false %}, {% endif %}
+  {% endfor %}
   ]
   {% endif %}
 }

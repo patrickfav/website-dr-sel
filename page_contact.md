@@ -27,19 +27,15 @@ barrierefrei zugänglich.</small>
 
 ### Ordinationszeiten
 
-* **{{site.data.global.hours.day1.name}}** {{site.data.global.hours.day1.time}}
-* **{{site.data.global.hours.day2.name}}** {{site.data.global.hours.day2.time}}
-* **{{site.data.global.hours.day3.name}}** {{site.data.global.hours.day3.time}}
-* **{{site.data.global.hours.day4.name}}** {{site.data.global.hours.day4.time}}
+* **Montag** {{ site.data.global.hours.spec.monday.start }} - {{ site.data.global.hours.spec.monday.end }}
+* **Dienstag** {{ site.data.global.hours.spec.tuesday.start }} - {{ site.data.global.hours.spec.tuesday.end }}
+* **Mittwoch** {{ site.data.global.hours.spec.wednesday.start }} - {{ site.data.global.hours.spec.wednesday.end }}
+* **Donnerstag** {{ site.data.global.hours.spec.thursday.start }} - {{ site.data.global.hours.spec.thursday.end }}
+* **Freitag** {{ site.data.global.hours.spec.friday.start }} - {{ site.data.global.hours.spec.friday.end }}
 
 <small>Beachten Sie bitte den Annahmeschluss 30 Minuten vor Ende der Ordinationszeiten.</small>
 
-
-{% if site.data.global.vacation.enabled %}
-#### {{ site.data.global.vacation.vacation_title }}
-
-{{ site.data.global.vacation.content }}
-{% endif %}
+{% include vacation.html %}
 
 ### Anfahrt
 

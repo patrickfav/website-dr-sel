@@ -1,0 +1,38 @@
+{% assign hasUpcomingVacation = false %}
+{% if site.data.global.vacation.enabled %}
+
+{% for vacInfo in  site.data.global.vacation.list %}
+  {% assign currentTimestamp = vacInfo.end_date | date: "%s" %}
+  {% assign nowTimestamp = 'now' | date: "%s" %}
+
+  {% if currentTimestamp > nowTimestamp %}
+    {% assign hasUpcomingVacation = true %}
+  {% endif %}
+{% endfor %}
+
+{% if hasUpcomingVacation %}
+
+  <h3>{{ site.data.global.vacation.title }}</h3>
+
+  <p>{{ site.data.global.vacation.description }}</p>
+
+  <ul>
+  {% assign sorted_list = site.data.global.vacation.list | sort:"end_date" %}
+
+  {% for vacInfo in sorted_list %}
+      {% assign currentTimestamp = vacInfo.end_date | date: "%s" %}
+      {% assign nowTimestamp = 'now' | date: "%s" %}
+
+      {% if currentTimestamp > nowTimestamp %}
+      <li><strong>{{ vacInfo.start_date | date: "%d.%m" }} - {{ vacInfo.end_date | date: "%d.%m.%Y" }}</strong> <br class="sm" />
+          <a href="{{ vacInfo.substitute.url }}">{{ vacInfo.substitute.name }}</a> <br class="sm" />
+           {{ vacInfo.substitute.address }}, {{ vacInfo.substitute.tel }}
+      </li>
+      {% endif %}
+  {% endfor %}
+  </ul>
+
+{% else %}
+  <style>.vacation_wrapper { display: none; }</style>
+{% endif %}
+{% endif %}

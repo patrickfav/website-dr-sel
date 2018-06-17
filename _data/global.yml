@@ -53,9 +53,20 @@ hours:
 
 vacation:
   enabled: true
-  vacation_title: Urlaubsvertretung 2018
-  content: Die Praxis ist zwischen 6.8 und 19.8 geschlossen. In dieser Zeit wenden Sie sich bitte an meine Urlaubsvertretung
-    [Dr. Christina Niessner](http://www.praxisplan.at/6115143226/WRAEK) in der Schegargasse 1 (Tel. +43 1 369 55 77) in KW 32
-    und [Dr. Petra Wrabetz](http://www.wrabetz.at/) in der Grinzinger Allee 5-9 (Tel. +43 1 320 41 86) in KW 33.
-
-
+  title: Urlaubsvertretung
+  description: 'Bitte wenden Sie sich während meines Urlaubs an meine Vertretung:'
+  list:
+    - start_date: 2018-08-06
+      end_date: 2018-08-12
+      substitute:
+        name: Dr. Christina Niessner
+        url: http://www.praxisplan.at/6115143226/WRAEK
+        address: Schegargasse 1
+        tel: +43 1 369 55 77
+    - start_date: 2018-08-13
+      end_date: 2018-08-19
+      substitute:
+        name: Dr. Petra Wrabetz
+        url: http://www.wrabetz.at/
+        address: Grinzinger Allee 5-9
+        tel: +43 1 320 41 86
