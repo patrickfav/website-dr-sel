@@ -2,24 +2,21 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <!--[if lte IE 8]>
-    <script src="{{ '/js/ie/html5shiv.js' | prepend: site.baseurl }}"></script><![endif]-->
-    <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}" media="all"/>
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="{{ "/css/ie8.css" | prepend: site.baseurl }}" /><![endif]-->
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" href="{{ "/css/ie9.css" | prepend: site.baseurl }}" /><![endif]-->
+    <!--[if lte IE 8]><script src="{{ '/js/ie/html5shiv.js' | prepend: site.baseurl }}"></script><![endif]-->
 
-    <link rel="icon" type="image/png" sizes="192x192"
-          href="{{ '/images/android-icon-192x192.png' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}" media="all"/>
+    <!--[if lte IE 8]><link rel="stylesheet" href="{{ "/css/ie8.css" | prepend: site.baseurl }}" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="{{ "/css/ie9.css" | prepend: site.baseurl }}" /><![endif]-->
+
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ '/images/android-icon-192x192.png' | prepend: site.baseurl }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon-32x32.png' | prepend: site.baseurl }}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{ '/images/favicon-96x96.png' | prepend: site.baseurl }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/favicon-16x16.png' | prepend: site.baseurl }}">
+    <meta name="theme-color" content="{{ site.theme_color }}"/>
 
     {% include seo_meta.html %}
 
     {% if jekyll.environment == "development" %}
-    <meta name="theme-color" content="{{ site.theme_color }}"/>
     <meta name="robots" content="noindex">
     {% endif %}
 </head>
