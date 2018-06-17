@@ -98,7 +98,8 @@ a {
   }
 
   &.external {
-    background: url('images/external-link.svg') no-repeat 100% 50%;
+    {% capture external_link_svg %}{% include img/external-link.svg %}{% endcapture %}
+    background: url('data:image/svg+xml;utf8,{{ external_link_svg | strip_newlines }}') no-repeat 100% 50%;;
     background-size: 0.75em 0.75em;
     padding-right: 1em;
   }
@@ -1422,7 +1423,8 @@ button,
   }
 
   .close {
-    background-image: url('images/close.svg');
+    {% capture close_svg %}{% include img/close.svg %}{% endcapture %}
+    background-image: url('data:image/svg+xml;utf8,{{ close_svg | strip_newlines }}');
     background-position: 4.85em 1em;
     background-repeat: no-repeat;
     border: 0;
@@ -1524,7 +1526,8 @@ body.is-menu-visible {
             position: relative;
 
             &:after {
-              background-image: url('images/bars.svg');
+              {% capture bars_svg %}{% include img/bars.svg %}{% endcapture %}
+              background-image: url('data:image/svg+xml;utf8,{{ bars_svg | strip_newlines }}');
               background-position: right center;
               background-repeat: no-repeat;
               content: '';
@@ -1657,7 +1660,8 @@ body.is-menu-visible {
     z-index: 1;
 
     &:after {
-      background-image: url('images/arrow.svg');
+      {% capture arrow_svg %}{% include img/arrow.svg %}{% endcapture %}
+      background-image: url('data:image/svg+xml;utf8,{{ arrow_svg | strip_newlines }}');
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
