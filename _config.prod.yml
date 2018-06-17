@@ -1,10 +1,10 @@
 jekyll-minifier:
-  exclude: ""
+  exclude: "**.css"
   preserve_php: false                # Default: false
   remove_spaces_inside_tags: true   # Default: true
   remove_multi_spaces: true         # Default: true
   remove_comments: true             # Default: true
-  remove_intertag_spaces: true      # Default: false
+  remove_intertag_spaces: true      # Default: false - breaks inline svg
   remove_quotes: true              # Default: false
   compress_css: true                # Default: true
   compress_javascript: true         # Default: true
