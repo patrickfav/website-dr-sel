@@ -2,7 +2,7 @@ require "base64"
 
 module Base64Filter
   def base64_encode (input)
-    Base64.urlsafe_encode64(input, padding: false)
+    Base64.strict_encode64(input)
   end
 end
 
