@@ -77,6 +77,12 @@
       "dayOfWeek": "Friday",
       "opens": "{{ site.data.global.hours.spec.friday.start }}",
       "closes": "{{ site.data.global.hours.spec.friday.end }}"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday", "Sunday"],
+      "opens": "00:00",
+      "closes": "00:00",
     }
   ],
   "specialOpeningHoursSpecification": [
