@@ -3,6 +3,7 @@ layout: page
 title: Impressum
 description: Offenlegung gemäß § 25 Mediengesetz
 permalink: /impressum/
+internal_id: legal
 order: 99
 ---
 

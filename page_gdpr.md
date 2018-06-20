@@ -3,6 +3,7 @@ layout: page
 title: Datenschutzerklärung
 description: Informationen gemäß art. 13 und 14 DSGVO
 permalink: /datenschutz/
+internal_id: gdpr
 order: 98
 ---
 

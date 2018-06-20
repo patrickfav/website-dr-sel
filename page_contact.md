@@ -3,6 +3,7 @@ layout: page
 title: Kontakt
 description: So können Sie mich erreichen
 permalink: /kontakt/
+internal_id: contact
 order: 3
 
 location:

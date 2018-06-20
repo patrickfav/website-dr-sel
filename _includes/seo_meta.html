@@ -1,5 +1,8 @@
 {% capture currentDescription %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% assign current_url = 'apples' %}{% endif %}{% endif %}{% endcapture %}
-{% capture currentTitle %}{% if page.title %}{{ page.title | escape }} | {{ site.title | escape }}{% else %}{{ site.title | escape }}{%endif %}{% endcapture %}
+{% capture currentTitle %}{% if page.internal_id == "index" %}{{ site.landing_page_title }}{% elsif page.title %}{{ page.title | escape }} | {{ site.title | escape }}{% else %}{{ site.title | escape }}{%endif %}{% endcapture %}
+{% capture personId %}{{ '/#personSelwicka' | prepend: site.url }}{% endcapture %}
+{% capture physicianId %}{{ '/#pyhsicianSelwicka' | prepend: site.url }}{% endcapture %}
+{% capture currentUrl %}{{ site.url }}{{ page.url | replace:'index.html',''}}{% endcapture %}
 
 <title>{{ currentTitle }}</title>
 <meta property="og:title" content="{{ currentTitle }}" />
@@ -8,95 +11,141 @@
 <meta name="description" content="{{currentDescription}}" />
 <meta property="og:description" content="{{currentDescription}}" />
 
-<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}" />
-<meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html',''}}" />
+<link rel="canonical" href="{{ currentUrl }}" />
+<meta property="og:url" content="{{ currentUrl }}" />
 
 <meta name="generator" content="Jekyll v3.8.2" />
 <meta property="og:locale" content="{{ site.lang }}" />
-<meta name="google-site-verification" content="{{ site.google_site_verification }}" />
 <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "name": "{{ currentTitle }}",
-  "description": "{{currentDescription}}",
-  "@type": "Physician",
-  "url": "{{ site.url }}{{ page.url | replace:'index.html',''}}",
-  "image": ["{{ '/images/portrait1.jpg' | prepend: site.baseurl | prepend: site.url }}"],
-  "telephone": "{{site.data.global.contact.tel}}",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "{{ site.data.global.contact.address.line1 }}",
-    "addressLocality": "{{ site.data.global.contact.address.city_en }}",
-    "addressRegion": "{{ site.data.global.contact.address.city_en }}",
-    "postalCode": "{{ site.data.global.contact.address.postal_code }}",
-    "addressCountry": "{{ site.data.global.contact.address.country_code }}"
-  }
-  {% if page.url == "/index.html" %}
-  ,"sameAs": [
-    "https://www.linkedin.com/in/beate-selwicka-wienerroither-b5083281/"
-  ],
-  "faxNumber": "{{site.data.global.contact.fax}}",
-  "foundingDate": "{{site.data.global.organization.founded_iso8601}}",
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "{{ site.data.global.contact.address.lat }}",
-    "longitude": "{{ site.data.global.contact.address.long }}"
-  },
-  "founder":"{{ site.data.global.contact.name }}",
-  "isAcceptingNewPatients": "{{ site.data.global.organization.acceptNewPatients }}",
-  "vatID":"{{site.data.global.contact.uid}}",
-  "publicAccess":true,
-  "knowsLanguage": ["DE","EN"],
-  "openingHoursSpecification": [
+[
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Monday",
-      "opens": "{{ site.data.global.hours.spec.monday.start }}",
-      "closes": "{{ site.data.global.hours.spec.monday.end }}"
+      "@context": "http://schema.org",
+      "@id": "{{ physicianId }}",
+      "@type": "Physician",
+      "name": "{{ site.data.global.contact.name }}",
+      "url": "{{ currentUrl }}",
+      "image": ["{{ '/images/portrait1.jpg' | prepend: site.baseurl | prepend: site.url }}"],
+      "telephone": "{{site.data.global.contact.tel}}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{ site.data.global.contact.address.line1 }}",
+        "addressLocality": "{{ site.data.global.contact.address.city_en }}",
+        "addressRegion": "{{ site.data.global.contact.address.city_en }}",
+        "postalCode": "{{ site.data.global.contact.address.postal_code }}",
+        "addressCountry": "{{ site.data.global.contact.address.country_code }}"
+      },
+      "founder": { "@id": "{{ personId }}"},
+      "faxNumber": "{{site.data.global.contact.fax}}",
+      "foundingDate": "{{site.data.global.organization.founded_iso8601}}",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "{{ site.data.global.contact.address.lat }}",
+        "longitude": "{{ site.data.global.contact.address.long }}"
+      },
+      "isAcceptingNewPatients": "{{ site.data.global.organization.acceptNewPatients }}",
+      "vatID":"{{site.data.global.contact.uid}}",
+      "publicAccess":true,
+      "knowsLanguage": ["DE","EN"],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Monday",
+          "opens": "{{ site.data.global.hours.spec.monday.start }}",
+          "closes": "{{ site.data.global.hours.spec.monday.end }}"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Tuesday",
+          "opens": "{{ site.data.global.hours.spec.tuesday.start }}",
+          "closes": "{{ site.data.global.hours.spec.tuesday.end }}"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Wednesday",
+          "opens": "{{ site.data.global.hours.spec.wednesday.start }}",
+          "closes": "{{ site.data.global.hours.spec.wednesday.end }}"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Tuesday",
+          "opens": "{{ site.data.global.hours.spec.thursday.start }}",
+          "closes": "{{ site.data.global.hours.spec.thursday.end }}"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "{{ site.data.global.hours.spec.friday.start }}",
+          "closes": "{{ site.data.global.hours.spec.friday.end }}"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday", "Sunday"],
+          "opens": "00:00",
+          "closes": "00:00"
+        }
+      ],
+      "specialOpeningHoursSpecification": [
+      {% assign sorted_list = site.data.global.vacation.list | sort:"end_date" %}
+      {% for vacInfo in sorted_list %}
+        {
+          "@type": "OpeningHoursSpecification",
+          "opens": "00:00",
+          "closes": "00:00",
+          "validFrom": "{{ vacInfo.start_date | date: "%y-%m-%d" }}",
+          "validThrough": "{{ vacInfo.end_date | date: "%y-%m-%d" }}"
+        }{% if forloop.last == false %}, {% endif %}
+      {% endfor %}
+      ]
+    },{
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "@id": "{{ personId }}",
+      "name": "{{site.data.global.contact.name}}",
+      "sameAs": [
+        "https://www.linkedin.com/in/beate-selwicka-wienerroither-b5083281/"
+      ],
+      "jobTitle": "Medical Doctor",
+      "knowsLanguage": ["DE","EN"]
     },
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Tuesday",
-      "opens": "{{ site.data.global.hours.spec.tuesday.start }}",
-      "closes": "{{ site.data.global.hours.spec.tuesday.end }}"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Wednesday",
-      "opens": "{{ site.data.global.hours.spec.wednesday.start }}",
-      "closes": "{{ site.data.global.hours.spec.wednesday.end }}"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Tuesday",
-      "opens": "{{ site.data.global.hours.spec.thursday.start }}",
-      "closes": "{{ site.data.global.hours.spec.thursday.end }}"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Friday",
-      "opens": "{{ site.data.global.hours.spec.friday.start }}",
-      "closes": "{{ site.data.global.hours.spec.friday.end }}"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Saturday", "Sunday"],
-      "opens": "00:00",
-      "closes": "00:00",
+      "@context": "http://schema.org",
+      {% if page.internal_id == "index" %}
+      "@type": "Website",
+      {% elsif  page.internal_id == "contact" %}
+      "@type": "ContactPage",
+      {% elsif  page.internal_id == "team" %}
+      "@type": "AboutPage",
+      {% else %}
+      "@type": "WebPage",
+      {% endif %}
+      {% unless page.internal_id == "index" && !page.title %}
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "{{ site.url }}",
+              "name": "{{ site.landing_page_title }}",
+              "url": "{{ site.url }}"
+              }
+            }, {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@id": "{{ currentUrl }}",
+                "name": "{{ page.title }}",
+                "url": "{{ currentUrl }}"
+              }
+            }]
+	  },
+      {% endunless %}
+      "name": "{{ currentTitle }}",
+      "headline": "{{ page.title }}",
+      "description": "{{currentDescription}}",
+      "url": "{{ currentUrl }}",
+      "about": { "@id": "{{ physicianId }}"}
     }
-  ],
-  "specialOpeningHoursSpecification": [
-  {% assign sorted_list = site.data.global.vacation.list | sort:"end_date" %}
-  {% for vacInfo in sorted_list %}
-    {
-      "@type": "OpeningHoursSpecification",
-      "opens": "00:00",
-      "closes": "00:00",
-      "validFrom": "{{ vacInfo.start_date | date: "%y-%m-%d" }}",
-      "validThrough": "{{ vacInfo.end_date | date: "%y-%m-%d" }}"
-    }{% if forloop.last == false %}, {% endif %}
-  {% endfor %}
-  ]
-  {% endif %}
-}
+]
 </script>
+<meta name="google-site-verification" content="{{ site.google_site_verification }}" />

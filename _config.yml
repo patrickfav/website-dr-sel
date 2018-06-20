@@ -1,6 +1,7 @@
 # Site settings
 title: Dr. Selwicka-Wienerroither
 description: Ärztin für Allgemeinmedizin
+landing_page_title: Ordination Dr. Selwicka-Wienerroither
 email: ordination.selwicka@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://selwicka-wienerroither.com" # the base hostname & protocol for your site
