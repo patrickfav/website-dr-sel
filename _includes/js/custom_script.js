@@ -287,7 +287,7 @@
             $this.touchPosX = event.originalEvent.touches[0].pageX;
             $this.touchPosY = event.originalEvent.touches[0].pageY;
 
-        })
+        }, Modernizr.passiveeventlisteners ? {passive: true} : false)
 
         $this.on('touchmove', function(event) {
 
@@ -356,7 +356,7 @@
         // Event: Prevent certain events inside the panel from bubbling.
         $this.on('click touchend touchstart touchmove', function(event) {
             event.stopPropagation();
-        });
+        }, Modernizr.passiveeventlisteners ? {passive: true} : false);
 
         // Event: Hide panel if a child anchor tag pointing to its ID is clicked.
         $this.on('click', 'a[href="#' + id + '"]', function(event) {
