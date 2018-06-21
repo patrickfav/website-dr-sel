@@ -4,11 +4,9 @@
     {% for socloc in site.theme_social %}
     {% if socloc[1] %}
     {% if socloc[0] == 'email' %}
-    <li><a href="{{ socloc[1] }}" class="icon-footer iconfont-envelope"
-           ><span class="label">E-mail</span></a></li>
+    <li><a href="{{ socloc[1] }}" class="icon-footer iconfont-envelope"><span class="label">E-mail</span></a></li>
     {% else %}
-    <li><a target="_blank" rel="noopener" href="{{ socloc[1] }}" class="icon-footer iconfont-{{ socloc[0] }}"
-           ><span class="label">{{ socloc[0] }}</span></a></li>
+    <li><a target="_blank" rel="noopener" href="{{ socloc[1] }}" class="icon-footer iconfont-{{ socloc[0] }}"><span class="label">{{ socloc[0] }}</span></a></li>
     {% endif %}
     {% endif %}
     {% endfor %}
