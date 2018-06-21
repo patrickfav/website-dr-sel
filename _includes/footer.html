@@ -4,10 +4,10 @@
     {% for socloc in site.theme_social %}
     {% if socloc[1] %}
     {% if socloc[0] == 'email' %}
-    <li><a href="{{ socloc[1] }}" class="icon-footer fas fa-envelope"
+    <li><a href="{{ socloc[1] }}" class="icon-footer iconfont-envelope"
            ><span class="label">E-mail</span></a></li>
     {% else %}
-    <li><a target="_blank" rel="noopener" href="{{ socloc[1] }}" class="icon-footer fab fa-{{ socloc[0] }}"
+    <li><a target="_blank" rel="noopener" href="{{ socloc[1] }}" class="icon-footer iconfont-{{ socloc[0] }}"
            ><span class="label">{{ socloc[0] }}</span></a></li>
     {% endif %}
     {% endif %}
@@ -27,7 +27,7 @@
 
   <p>
     {% if jekyll.environment == "development" %}
-    <a href="https://github.com/patrickfav/website-dr-sel/commit/{% project_version commit %}" style="font-size: 0.8em">This a development preview ({% project_version commit %})</a>
+    <small><a href="https://github.com/patrickfav/website-dr-sel/commit/{% project_version commit %}" class="external">This a development preview ({% project_version commit %})</a></small>
     {% endif %}
   </p>
 

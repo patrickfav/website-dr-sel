@@ -12,7 +12,7 @@ $baseurl: '#{$site_baseurl}/images';
 //noinspection CssUnknownTarget
 @import 'libs/mixins';
 //noinspection CssUnknownTarget
-@import 'libs/fontawesome/fontawesome';
+@import 'libs/iconfont/style';
 {% download https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800 %}
 
 /*
@@ -97,11 +97,12 @@ a {
     }
   }
 
-  &.external {
-    {% capture external_link_svg %}{% include img/external-link.svg %}{% endcapture %}
-    background: url('data:image/svg+xml;base64,{{ external_link_svg | strip_newlines | base64_encode }}') no-repeat 100% 50%;;
-    background-size: 0.75em 0.75em;
-    padding-right: 1em;
+  &.external:after {
+    font-family: _font(family-icon);
+    content: $iconfont-external-link;
+    padding-left: 0.3em;
+    font-size: 0.75em;
+    color:inherit;
   }
 }
 
