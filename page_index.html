@@ -80,10 +80,10 @@ internal_id: index
 <section id="two" class="wrapper alt style2">
     <section class="spotlight">
         <div class="image">
-            <picture>
-                <source srcset="{{ '/images/pic01.webp' | prepend: site.baseurl }}" type="image/webp">
-                <source srcset="{{ '/images/pic01.jpg' | prepend: site.baseurl }}" type="image/jpeg">
-                <img src="{{ '/images/pic01.jpg' | prepend: site.baseurl }}" alt="Passendes Bild zum Text"/>
+            <picture class="lazy">
+                <data-src srcset="{{ '/images/pic01.webp' | prepend: site.baseurl }}" type="image/webp"></data-src>
+                <data-src srcset="{{ '/images/pic01.jpg' | prepend: site.baseurl }}" type="image/jpeg"></data-src>
+                <data-img src="{{ '/images/pic01.jpg' | prepend: site.baseurl }}" alt="Passendes Bild zum Text"></data-img>
             </picture>
         </div>
         <div class="content">
@@ -97,10 +97,10 @@ internal_id: index
     </section>
     <section class="spotlight">
         <div class="image">
-            <picture>
-                <source srcset="{{ '/images/pic03.webp' | prepend: site.baseurl }}" type="image/webp">
-                <source srcset="{{ '/images/pic03.jpg' | prepend: site.baseurl }}" type="image/jpeg">
-                <img src="{{ '/images/pic03.jpg' | prepend: site.baseurl }}" alt="Passendes Bild zum Text"/>
+            <picture class="lazy">
+                <data-src srcset="{{ '/images/pic03.webp' | prepend: site.baseurl }}" type="image/webp"></data-src>
+                <data-src srcset="{{ '/images/pic03.jpg' | prepend: site.baseurl }}" type="image/jpeg"></data-src>
+                <data-img  src="{{ '/images/pic03.jpg' | prepend: site.baseurl }}" alt="Passendes Bild zum Text"></data-img>
             </picture>
         </div>
         <div class="content">

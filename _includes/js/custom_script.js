@@ -27,6 +27,13 @@
 			$body.addClass('is-loading');
 
 			$window.on('load', function() {
+			    $('picture.lazy').Lazy({
+			        scrollDirection: 'vertical',
+                    threshold: 400
+//                    afterLoad: function(element) {
+//                      	element.getElementsByTagName("img").css('opacity', 1);
+//                      }
+                });
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
 				}, 100);
