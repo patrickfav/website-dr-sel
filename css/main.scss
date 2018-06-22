@@ -13,13 +13,7 @@ $baseurl: '#{$site_baseurl}/images';
 @import 'libs/mixins';
 //noinspection CssUnknownTarget
 @import 'libs/iconfont/style';
-{% download https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800 %}
-
-/*
-	Spectral by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+{% download https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,800 %}
 //noinspection CssUnknownTarget
 @import 'libs/skel';
 
