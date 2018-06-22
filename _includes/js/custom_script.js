@@ -268,19 +268,15 @@
                     event.preventDefault();
                     event.stopPropagation();
 
+                    // Redirect to href.
+                    if (target == '_blank'){
+                        window.open(href);
+                    } else {
+                        window.location.href = href;
+                    }
+
                     // Hide panel.
                     $this._hide();
-
-                    // Redirect to href.
-                    window.setTimeout(function() {
-
-                        if (target == '_blank')
-                            window.open(href);
-                        else
-                            window.location.href = href;
-
-                    }, config.delay + 10);
-
                 });
 
         }
