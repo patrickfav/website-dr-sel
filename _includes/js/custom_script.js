@@ -29,7 +29,7 @@
 			$window.on('load', function() {
 			    $('picture.lazy').Lazy({
 			        scrollDirection: 'vertical',
-                    delay: 1
+                    threshold: 750
                 });
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
