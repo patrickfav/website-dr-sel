@@ -30,6 +30,14 @@
       "source" : "/page81.html",
       "destination" : "/",
       "type" : 301
+    }, {
+      "source" : "/privatleistungen.html",
+      "destination" : "/",
+      "type" : 301
+    }, {
+      "source" : "/zertifikate.html",
+      "destination" : "/",
+      "type" : 301
     }],
     "headers": [
       {
