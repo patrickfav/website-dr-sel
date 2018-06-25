@@ -28,11 +28,13 @@ barrierefrei zugänglich.</small>
 
 ### Ordinationszeiten
 
-* **Montag** {{ site.data.global.hours.spec.monday.start }} - {{ site.data.global.hours.spec.monday.end }}
-* **Dienstag** {{ site.data.global.hours.spec.tuesday.start }} - {{ site.data.global.hours.spec.tuesday.end }}
-* **Mittwoch** {{ site.data.global.hours.spec.wednesday.start }} - {{ site.data.global.hours.spec.wednesday.end }}
-* **Donnerstag** {{ site.data.global.hours.spec.thursday.start }} - {{ site.data.global.hours.spec.thursday.end }}
-* **Freitag** {{ site.data.global.hours.spec.friday.start }} - {{ site.data.global.hours.spec.friday.end }}
+| Tag        | Öffungszeiten                                                                                      |
+|------------|----------------------------------------------------------------------------------------------------|
+| Montag     | {{ site.data.global.hours.spec.monday.start }} - {{ site.data.global.hours.spec.monday.end }}      |
+| Dienstag   | {{ site.data.global.hours.spec.tuesday.start }} - {{ site.data.global.hours.spec.tuesday.end }}    |
+| Mittwoch   | {{ site.data.global.hours.spec.wednesday.start }} - {{ site.data.global.hours.spec.wednesday.end }}|
+| Donnerstag | {{ site.data.global.hours.spec.thursday.start }} - {{ site.data.global.hours.spec.thursday.end }}  |
+| Freitag    | {{ site.data.global.hours.spec.friday.start }} - {{ site.data.global.hours.spec.friday.end }}      |
 
 <small>Beachten Sie bitte den Annahmeschluss 30 Minuten vor Ende der Ordinationszeiten.</small>
 
@@ -40,12 +42,15 @@ barrierefrei zugänglich.</small>
 
 ### Anfahrt
 
-Mit dem Auto erwarteten Sie eine Vielzahl an öffentlichen Parkplätzen. In der
-Umgebung gibt es keine Kurzparkzone.
+Mit dem Auto erwartetet Sie eine Vielzahl an öffentlichen Parkplätzen ohne
+die Einschränkung einer Kurzparkzone. Außerdem ist die Praxis erreichbar
+durch folgende öffentliches Verkehrsmittel:
 
-Erreichbar durch Öffentlichen Verkehr:
-* 35A (Glanzing)
-* 40A (Döblinger Frhf./F.-Dahn-Str.)
+
+| Linie | Haltestelle                  | Gehzeit |
+|-------|------------------------------|---------|
+| 35A   | Glanzig                      | 3 min   |
+| 40A   | Döblinger Frhf./F.-Dahn-Str. | 9 min   |
 
 {% google_map zoom="16" width="100%" height="40vw" class="google-maps-style" %}
 <small>{{ "https://goo.gl/maps/zQK5FWzYLCK2" | external_link: 'Navigation über Google Maps' }}</small>
