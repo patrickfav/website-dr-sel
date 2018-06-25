@@ -1642,7 +1642,7 @@ body.is-menu-visible {
 
   .more {
     @include vendor('transition', ('transform 0.75s ease', 'opacity 0.75s ease'));
-    @include vendor('transition-delay', '1.5s');
+    @include vendor('transition-delay', '#{_duration(banner_fadein)}');
     @include vendor('transform', 'translateY(0)');
     border: none;
     bottom: 0;
@@ -1685,7 +1685,7 @@ body.is-menu-visible {
   &:after {
     @include vendor('pointer-events', 'none');
     @include vendor('transition', 'opacity #{_duration(fadein)} ease-in-out');
-    @include vendor('transition-delay', '1.25s');
+    @include vendor('transition-delay', '#{_duration(banner_fadein)}');
     content: '';
     background: _palette(bg);
     display: block;

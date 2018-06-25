@@ -33,7 +33,7 @@
                 });
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
-				}, 100);
+				}, 50);
 			});
 
 		// Mobile?
@@ -62,7 +62,7 @@
 		// Scrolly.
 			$('.scrolly')
 				.scrolly({
-					speed: 1500,
+					speed: 1250,
 					offset: $header.outerHeight()
 				});
 
