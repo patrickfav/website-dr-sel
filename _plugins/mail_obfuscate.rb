@@ -17,7 +17,7 @@ module ObfuscateMailAddress
 
     # See http://techblog.tilllate.com/2008/07/20/ten-methods-to-obfuscate-e-mail-addresses-compared/
     output = "#{style}<a href=\"#\" "
-    output += "data-contact=\"#{base64Mail}\" target=\"_blank\" "
+    output += "data-contact=\"#{base64Mail}\" target=\"_blank\" rel=\"nofollow\" "
     output += "onfocus=\"this.href = 'mailto:' + atob(this.dataset.contact)\">"
     output += "<script type=\"text/javascript\">document.write(atob(\"#{outMail}\"));</script></a>"
     return output
