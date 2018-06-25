@@ -6,6 +6,31 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "redirects": [ {
+      "source" : "/kontakt.html",
+      "destination" : "/kontakt/",
+      "type" : 301
+    }, {
+      "source" : "/vorsorgeuntersuchung.html",
+      "destination" : "/",
+      "type" : 301
+    }, {
+      "source" : "/schwerpunkte.html",
+      "destination" : "/",
+      "type" : 301
+    }, {
+      "source" : "/lebenslauf.html",
+      "destination" : "/team/",
+      "type" : 301
+    }, {
+      "source" : "/hausbesuche.html",
+      "destination" : "/kontakt/",
+      "type" : 301
+    }, {
+      "source" : "/page81.html",
+      "destination" : "/",
+      "type" : 301
+    }],
     "headers": [
       {
         "source": "**/*.@(eot|otf|ttf|ttc|woff|woff2|font.css)",
