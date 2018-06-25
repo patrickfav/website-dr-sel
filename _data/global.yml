@@ -22,18 +22,6 @@ contact:
   uid: ATU13183008
 
 hours:
-  day1:
-   name: Montag
-   time: 13:00 bis 18:00
-  day2:
-   name: Di & Do
-   time: 08:00 bis 11:00
-  day3:
-   name: Mittwoch
-   time: 15:00 bis 19:00
-  day4:
-   name: Freitag
-   time: 13:00 bis 16:00
   spec:
     monday:
       start: '13:00'
