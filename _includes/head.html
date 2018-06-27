@@ -14,7 +14,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/favicon-16x16.png' | prepend: site.baseurl }}">
     <meta name="theme-color" content="{{ site.theme_color }}"/>
 
-    {% include seo_meta.html %}
+    {% capture seo_meta %}{% include seo_meta.html %}{% endcapture %}
+    {{ seo_meta | strip_newlines | replace: "     ", " " | replace: "  ", " "  | replace: "  ", " " }}
 
     {% if jekyll.environment == "development" %}
     <meta name="robots" content="noindex">
