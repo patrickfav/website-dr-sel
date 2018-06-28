@@ -5,18 +5,25 @@
 */
 
 (function($) {
-
-	skel
-		.breakpoints({
+	skel.breakpoints({
 			xlarge:	'(max-width: 1680px)',
 			large:	'(max-width: 1280px)',
 			medium:	'(max-width: 980px)',
 			small:	'(max-width: 736px)',
 			xsmall:	'(max-width: 480px)'
-		});
+	});
+
+    $(window).on('load', function() {
+	    $('picture.lazy').Lazy({
+		    scrollDirection: 'vertical',
+            threshold: 750
+        });
+		window.setTimeout(function() {
+		    $('body').removeClass('is-loading');
+		}, 50);
+	});
 
 	$(function() {
-
 		var	$window = $(window),
 			$body = $('body'),
 			$wrapper = $('#page-wrapper'),
@@ -24,17 +31,7 @@
 			$header = $('#header');
 
 		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
-
-			$window.on('load', function() {
-			    $('picture.lazy').Lazy({
-			        scrollDirection: 'vertical',
-                    threshold: 750
-                });
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 50);
-			});
+		$body.addClass('is-loading');
 
 		// Mobile?
 			if (skel.vars.mobile)
@@ -100,7 +97,6 @@
 			}
 
 	});
-
 })(jQuery);
 
 
