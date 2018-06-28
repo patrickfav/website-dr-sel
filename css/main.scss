@@ -51,21 +51,21 @@ body {
 body, input, select, textarea {
   color: _palette(fg);
   font-family: _font(family);
-  font-size: 16pt;
+  font-size: 18px;
   font-weight: _font(weight);
   letter-spacing: _size(letter-spacing);
   line-height: 1.60em;
 
   @include breakpoint(xlarge) {
-    font-size: 14pt;
+    font-size: 19px;
   }
 
   @include breakpoint(large) {
-    font-size: 13pt;
+    font-size: 18px;
   }
 
   @include breakpoint(small) {
-    font-size: 12pt;
+    font-size: 16px;
     letter-spacing: _size(letter-spacing) * 0.5;
   }
 }
