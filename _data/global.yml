@@ -58,3 +58,17 @@ vacation:
         url: http://www.wrabetz.at/
         address: Grinzinger Allee 5-9
         tel: +43 1 320 41 86
+    - start_date: 2019-08-29
+      end_date: 2019-08-11
+      substitute:
+        name: Dr. Tichy Johannes
+        url: https://www.praxisplan.at/6665917506/WRAEK
+        address: Weinberggasse 71
+        tel: +43 1 3205233
+    - start_date: 2019-08-12
+      end_date: 2019-08-18
+      substitute:
+        name: Dr. Terezija Aigner
+        url: https://gruppenpraxis1190.at/
+        address: Saileräckergasse 26/2
+        tel: +43 1 368 22 51
