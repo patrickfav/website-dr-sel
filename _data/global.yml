@@ -58,7 +58,7 @@ vacation:
         url: http://www.wrabetz.at/
         address: Grinzinger Allee 5-9
         tel: +43 1 320 41 86
-    - start_date: 2019-08-29
+    - start_date: 2019-07-29
       end_date: 2019-08-11
       substitute:
         name: Dr. Tichy Johannes
