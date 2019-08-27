@@ -18,7 +18,7 @@ The production version can be found [here](https://selwicka-wienerroither.com/).
 
 ### Ruby
 
-Jekyll requires Ruby 2.2+ so you might be required to install it.
+Jekyll requires Ruby 2.4+ so you might be required to install it.
 
 First install all prerequisite libraries ([see also this post](https://stackoverflow.com/a/26595869/774398)):
 
@@ -30,6 +30,10 @@ Then install Ruby itself:
     sudo apt-add-repository ppa:brightbox/ruby-ng
     sudo apt-get update
     sudo apt-get install ruby2.4 ruby2.4-dev build-essential dh-autoreconf
+
+If you want to switch versions you may do:
+
+    sudo update-alternatives --config ruby
 
 Then update the gems (Ruby package manager)
 
