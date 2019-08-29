@@ -17,8 +17,8 @@ plugins:
   - jekyll_version_plugin
   - jekyll-minifier
   - jekyll-webp
-#  - jekyll-last-modified-at
-#  - jekyll-sitemap
+  - jekyll-last-modified-at
+  - jekyll-sitemap
 
 # Build settings
 markdown: kramdown

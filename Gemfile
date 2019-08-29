@@ -29,7 +29,7 @@ gem 'html-proofer'
 # gem 'jekyll-maps'
 
 # see https://github.com/jekyll/jekyll-sitemap
-# gem 'jekyll-sitemap'
+gem 'jekyll-sitemap'
 
 # see https://github.com/hendrikschneider/jekyll-analytics
 gem 'jekyll-analytics'
@@ -47,4 +47,4 @@ gem 'jekyll-minifier'
 gem 'jekyll-webp'
 
 # see https://github.com/gjtorikian/jekyll-last-modified-at
-# gem 'jekyll-last-modified-at'
+gem 'jekyll-last-modified-at'
