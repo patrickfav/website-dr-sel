@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/patrickfav/jekyll-maps/
+  revision: 75d9e08a707ca48793f99cb700ee7bc5be7b8821
+  branch: feat-jekyll4
+  specs:
+    jekyll-maps (2.3.1)
+      jekyll (>= 3.0, < 5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -115,6 +123,7 @@ DEPENDENCIES
   jekyll (~> 4.0)
   jekyll-analytics
   jekyll-last-modified-at
+  jekyll-maps!
   jekyll-minifier
   jekyll-sitemap
   jekyll-smartify
@@ -123,4 +132,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   2.0.2
+   2.1.2

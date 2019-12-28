@@ -26,7 +26,7 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem 'html-proofer'
 
 # See https://github.com/ayastreb/jekyll-maps
-# gem 'jekyll-maps'
+gem 'jekyll-maps', git: 'https://github.com/patrickfav/jekyll-maps/', branch: 'feat-jekyll4'
 
 # see https://github.com/jekyll/jekyll-sitemap
 gem 'jekyll-sitemap'
