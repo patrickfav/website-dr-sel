@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.8.5"
+gem "jekyll", "~> 4.0"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem 'jekyll-swiss', '~> 0.4.0'
@@ -26,7 +26,7 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem 'html-proofer'
 
 # See https://github.com/ayastreb/jekyll-maps
-gem 'jekyll-maps'
+gem 'jekyll-maps', git: 'https://github.com/patrickfav/jekyll-maps/', branch: 'feat-jekyll4'
 
 # see https://github.com/jekyll/jekyll-sitemap
 gem 'jekyll-sitemap'

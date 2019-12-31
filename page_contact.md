@@ -53,6 +53,7 @@ durch folgende öffentliches Verkehrsmittel:
 | 40A   | Döblinger Frhf./F.-Dahn-Str. | 9 min   |
 
 {% google_map zoom="16" width="100%" height="40vw" class="google-maps-style" %}
+
 <small>{{ "https://goo.gl/maps/zQK5FWzYLCK2" | external_link: 'Navigation über Google Maps' }}</small>
 
 ## Hausbesuche
