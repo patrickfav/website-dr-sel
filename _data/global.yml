@@ -72,3 +72,6 @@ vacation:
         url: https://gruppenpraxis1190.at/
         address: Saileräckergasse 26/2
         tel: +43 1 368 22 51
+
+covid:
+  enabled: true

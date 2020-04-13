@@ -63,7 +63,6 @@ internal_id: index
             </p>
         </header>
     </div>
-
 </section>
 
 {% if site.data.global.vacation.enabled %}
@@ -71,6 +70,48 @@ internal_id: index
     <div class="inner">
         <header class="major">
             {% include vacation.html %}
+        </header>
+    </div>
+</section>
+{% endif %}
+
+{% if site.data.global.covid.enabled %}
+<section id="one_covid" class="wrapper style3 special">
+    <div class="inner">
+        <header class="major">
+            <h2>Hinweis zu COVID-19</h2>
+
+            <p>
+                <strong>Bei Verdacht auf COVID-19 kommen Sie bitte <em>keinesfalls</em> in die Praxis um
+                    eine Ansteckung anderer Patienten zu vermeiden - rufen Sie in dem Fall bei {{ '1450' | tel_link }} oder beim
+                    Ärztefunkdienst {{ '141' | tel_link }} an.</strong>
+            </p>
+
+            <h5>Aktuelle Einschränkungen</h5>
+            <p>
+                Die Ordination is aktuell für Sie geöffnet jedoch mit einigen Einschränkungen:
+            </p>
+            <ul>
+                <li>- Zugang nur mit <strong>Mund-Nasenschutz</strong> z.B. Schutzmaske oder Schal.</li>
+                <li>- Termine gibt es ausschließlich gegen <strong>telefonische Vereinbarung</strong>.</li>
+                <li>- Beschränkter Zugang mit <strong>Thermoscan</strong> an der Eingangstüre.</li>
+                <li>- Die max. Anzahl der Patienten im <strong>Warteraum ist stark eingeschränkt</strong>.</li>
+                <li>- Verwenden Sie bitte die aufgestellten <strong>Händedesinfektionsmittel</strong>.</li>
+            </ul>
+
+            <h5>
+                Zusätzliche Dienste
+            </h5>
+            <p>
+                Aktuell werden folgende zusätzliche Dienste angeboten:
+            </p>
+            <ul>
+                <li>- <strong>Rezepte</strong> auf elektronischem Wege wie z.B. eMail oder WhatsApp.</li>
+                <li>- Ordination <strong>telefonisch oder per Video-Konferenz</strong>.</li>
+            </ul>
+            <p>
+                Wir danken für Ihr Verständnis!
+            </p>
         </header>
     </div>
 </section>
