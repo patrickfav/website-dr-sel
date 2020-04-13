@@ -65,18 +65,8 @@ internal_id: index
     </div>
 </section>
 
-{% if site.data.global.vacation.enabled %}
-<section id="one_and_half" class="wrapper style3 special vacation_wrapper">
-    <div class="inner">
-        <header class="major">
-            {% include vacation.html %}
-        </header>
-    </div>
-</section>
-{% endif %}
-
 {% if site.data.global.covid.enabled %}
-<section id="one_covid" class="wrapper style3 special">
+<section id="covid19" class="wrapper style3 special">
     <div class="inner">
         <header class="major">
             <h2>Hinweis zu COVID-19</h2>
@@ -112,6 +102,16 @@ internal_id: index
             <p>
                 Wir danken für Ihr Verständnis!
             </p>
+        </header>
+    </div>
+</section>
+{% endif %}
+
+{% if site.data.global.vacation.enabled %}
+<section id="one_and_half" class="wrapper style3 special vacation_wrapper">
+    <div class="inner">
+        <header class="major">
+            {% include vacation.html %}
         </header>
     </div>
 </section>

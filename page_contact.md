@@ -13,6 +13,11 @@ location:
     longitude: 16.324444
 ---
 
+{% if site.data.global.covid.enabled %}
+## Hinweis zu COVID-19
+**Bitte beachten Sie die [aktuellen Einschränkungen in der Ordination](/#covid19).**
+{% endif %}
+
 ## Ordination
 
 {{ site.data.global.contact.address.line1 }}\\
