@@ -1333,6 +1333,10 @@ button,
     @include wrapper(accent5);
   }
 
+  &.style3a {
+    @include wrapper(accent5a);
+  }
+
   &.style4 {
     background-color: transparent;
   }

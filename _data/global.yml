@@ -72,6 +72,13 @@ vacation:
         url: https://gruppenpraxis1190.at/
         address: Saileräckergasse 26/2
         tel: +43 1 368 22 51
+    - start_date: 2020-07-15
+      end_date: 2020-08-04
+      substitute:
+        name: Praktische Ärzte 1190
+        url: https://www.google.com/search?q=praktische+%C3%A4rzte+1190
+        address:
+        tel:
 
 covid:
   enabled: true

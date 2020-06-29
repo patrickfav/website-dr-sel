@@ -99,6 +99,16 @@ $palette: (
                 border2: rgba(0, 0, 0, 0.25),
                 border2-bg: rgba(255, 255, 255, 0.2)
         ),
+        accent5a: (
+                bg: #6568c4,
+                fg-bold: #ffffff,
+                fg: mix(#6568c4, #ffffff, 25%),
+                fg-light: mix(#6568c4, #ffffff, 40%),
+                border: rgba(0, 0, 0, 0.125),
+                border-bg: rgba(255, 255, 255, 0.075),
+                border2: rgba(0, 0, 0, 0.25),
+                border2-bg: rgba(255, 255, 255, 0.2)
+        ),
         accent6: (
                 bg: #ed4933,
                 fg-bold: #ffffff,
