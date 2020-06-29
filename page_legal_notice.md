@@ -20,7 +20,6 @@ UID: {{ site.data.global.contact.uid }}
 
 Tel:	{{ site.data.global.contact.tel | tel_link}}\\
 Fax:	{{ site.data.global.contact.fax | tel_link }}\\
-E-Mail:	{{ site.email | mail_obfuscate }}\\
 Website:	[{{ site.url }}]({{ site.url }})
 
 
