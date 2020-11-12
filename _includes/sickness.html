@@ -1,0 +1,24 @@
+{% assign isSick = false %}
+{% if site.data.global.sickness.enabled %}
+
+{% assign currentTimestamp = site.data.global.sickness.until | date: "%s" %}
+{% assign nowTimestamp = 'now' | date: "%s" %}
+
+{% if currentTimestamp > nowTimestamp %}
+{% assign isSick = true %}
+{% endif %}
+
+{% if isSick %}
+
+<h3>Ordination wegen Krankheit geschlossen</h3>
+
+<p>
+    Die Ordination ist bis voraussichtlich {{ site.data.global.sickness.until | date: "%d.%m.%Y" }} wegen Krankheit geschlossen.
+    Vertretung durch alle <a href="https://www.google.com/search?q=praktische+%C3%A4rzte+1190" rel="external noopener">Kassenärzte</a>.
+</p>
+{% else %}
+<style>.sickness_wrapper {
+    display: none;
+}</style>
+{% endif %}
+{% endif %}

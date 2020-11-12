@@ -1,45 +1,46 @@
 {% assign hasUpcomingVacation = false %}
 {% if site.data.global.vacation.enabled %}
-
 {% for vacInfo in  site.data.global.vacation.list %}
-  {% assign currentTimestamp = vacInfo.end_date | date: "%s" %}
-  {% assign nowTimestamp = 'now' | date: "%s" %}
+{% assign currentTimestamp = vacInfo.end_date | date: "%s" %}
+{% assign nowTimestamp = 'now' | date: "%s" %}
 
-  {% if currentTimestamp > nowTimestamp %}
-    {% assign hasUpcomingVacation = true %}
-  {% endif %}
+{% if currentTimestamp > nowTimestamp %}
+{% assign hasUpcomingVacation = true %}
+{% endif %}
 {% endfor %}
 
 {% if hasUpcomingVacation %}
 
-  <h3>{{ site.data.global.vacation.title }}</h3>
+<h3>{{ site.data.global.vacation.title }}</h3>
 
-  <p>{{ site.data.global.vacation.description }}</p>
+<p>{{ site.data.global.vacation.description }}</p>
 
-  <ul>
-  {% assign sorted_list = site.data.global.vacation.list | sort:"end_date" %}
+<ul>
+    {% assign sorted_list = site.data.global.vacation.list | sort:"end_date" %}
 
-  {% for vacInfo in sorted_list %}
-      {% assign currentTimestamp = vacInfo.end_date | date: "%s" %}
-      {% assign nowTimestamp = 'now' | date: "%s" %}
+    {% for vacInfo in sorted_list %}
+    {% assign currentTimestamp = vacInfo.end_date | date: "%s" %}
+    {% assign nowTimestamp = 'now' | date: "%s" %}
 
-      {% if currentTimestamp > nowTimestamp %}
-      <li>
-          <strong>{{ vacInfo.start_date | date: "%d.%m" }} - {{ vacInfo.end_date | date: "%d.%m.%Y" }}</strong>
-          {% if vacInfo.substitute.name %}
-          <br class="sm"/>&nbsp;<a href="{{ vacInfo.substitute.url }}" class="external" rel="external noopener">{{ vacInfo.substitute.name
-          }}</a>
-          {% endif %}
+    {% if currentTimestamp > nowTimestamp %}
+    <li>
+        <strong>{{ vacInfo.start_date | date: "%d.%m" }} - {{ vacInfo.end_date | date: "%d.%m.%Y" }}</strong>
+        {% if vacInfo.substitute.name %}
+        <br class="sm"/>&nbsp;<a href="{{ vacInfo.substitute.url }}" class="external" rel="external noopener">{{ vacInfo.substitute.name
+        }}</a>
+        {% endif %}
 
-          {% if vacInfo.substitute.address %}
-          <br class="sm"/>&nbsp;<small>{{ vacInfo.substitute.address }}, {{ vacInfo.substitute.tel }}</small>
-          {% endif %}
-      </li>
-      {% endif %}
-  {% endfor %}
-  </ul>
+        {% if vacInfo.substitute.address %}
+        <br class="sm"/>&nbsp;<small>{{ vacInfo.substitute.address }}, {{ vacInfo.substitute.tel }}</small>
+        {% endif %}
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
 
 {% else %}
-  <style>.vacation_wrapper { display: none; }</style>
+<style>.vacation_wrapper {
+    display: none;
+}</style>
 {% endif %}
 {% endif %}

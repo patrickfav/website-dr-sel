@@ -75,6 +75,16 @@ internal_id: index
 </section>
 {% endif %}
 
+{% if site.data.global.sickness.enabled %}
+<section id="sickness" class="wrapper style2 special sickness_wrapper">
+    <div class="inner">
+        <header class="major">
+            {% include sickness.html %}
+        </header>
+    </div>
+</section>
+{% endif %}
+
 {% if site.data.global.covid.enabled %}
 <section id="covid19" class="wrapper style3 special">
     <div class="inner">
@@ -137,7 +147,8 @@ internal_id: index
             <p>Das medizinische Leistungsangebot wird im Rahmen der Leistungsvorgabe durch die jeweilige Krankenkasse
                 (<a href="https://www.gesundheitskasse.at/" rel="external noopener" class="simple">ÖGKK</a>,
                 <a href="https://www.sva.or.at" rel="external noopener" class="simple">SVA</a>,
-                <a href="https://www.bva.at" rel="external noopener" class="simple">BVA</a>, etc.) angeboten. Privatleistungen sind auf Anfrage möglich.</p>
+                <a href="https://www.bva.at" rel="external noopener" class="simple">BVA</a>, etc.) angeboten. Privatleistungen sind auf
+                Anfrage möglich.</p>
         </div>
     </section>
     <section class="spotlight">
@@ -190,7 +201,7 @@ internal_id: index
             <li class="icon iconfont-utensils">
                 <h3>Ernährungsmedizin</h3>
                 <p>Viele Erkrankungen können durch adäquate Ernährung positiv beeinflusst werden.
-                    Grundlage der ernährungsmedizinnischen Therapie ist die Ernährungsanamnese und die körperliche
+                    Grundlage der ernährungsmedizinischen Therapie ist die Ernährungsanamnese und die körperliche
                     Untersuchung.</p>
             </li>
             <li class="icon iconfont-capsules">
