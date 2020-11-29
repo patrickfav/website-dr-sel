@@ -1,6 +1,6 @@
 # Jekyll Static Website Source for Doctor's Landing Page
 
-[![Build Status](https://travis-ci.org/patrickfav/website-dr-sel.svg?branch=master)](https://travis-ci.org/patrickfav/website-dr-sel)
+[![Build Status](https://travis-ci.com/patrickfav/website-dr-sel.svg?branch=master)](https://travis-ci.com/patrickfav/website-dr-sel)
 
 This is the source for the [Jekyll](https://jekyllrb.com) static website project for a very simple doctors landing page.
 
@@ -78,7 +78,7 @@ With the following command the website will be packaged and copied to `_site`
 Every commit to the `master` branch will be automatically build and deployed via to the [Firebase staging](https://beta.selwicka-wienerroither.com/)
 environment. (_Note_: This will NOT be build with the production flag.)
 
-Every git tag triggers a deploy to the [Firbase Hosting](https://selwicka-wienerroither.com/) through [Travis CI](https://travis-ci.org/patrickfav/website-dr-sel).
+Every git tag triggers a deploy to the [Firbase Hosting](https://selwicka-wienerroither.com/) through [Travis CI](https://travis-ci.com/patrickfav/website-dr-sel).
 
 # Frameworks and Libs
 
