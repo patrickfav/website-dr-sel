@@ -31,6 +31,8 @@ Fax:  {{ site.data.global.contact.fax | tel_link }}
 Aufgrund der Gegebenheiten im Haus, ist die Ordination leider nicht
 barrierefrei zugänglich.</small>
 
+{% include sickness.html %}
+
 ### Ordinationszeiten
 
 | Tag        | Öffungszeiten                                                                                      |
@@ -42,8 +44,6 @@ barrierefrei zugänglich.</small>
 | Freitag    | {{ site.data.global.hours.spec.friday.start }} - {{ site.data.global.hours.spec.friday.end }}      |
 
 <small>Beachten Sie bitte den Annahmeschluss 30 Minuten vor Ende der Ordinationszeiten.</small>
-
-{% include sickness.html %}
 
 {% include vacation.html %}
 
