@@ -33,6 +33,7 @@ barrierefrei zugänglich.</small>
 
 {% include sickness.html %}
 
+{% unless site.data.global.sickness.enabled %}
 ### Ordinationszeiten
 
 | Tag        | Öffungszeiten                                                                                      |
@@ -44,6 +45,7 @@ barrierefrei zugänglich.</small>
 | Freitag    | {{ site.data.global.hours.spec.friday.start }} - {{ site.data.global.hours.spec.friday.end }}      |
 
 <small>Beachten Sie bitte den Annahmeschluss 30 Minuten vor Ende der Ordinationszeiten.</small>
+{% endunless %}
 
 {% include vacation.html %}
 
