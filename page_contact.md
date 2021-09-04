@@ -43,6 +43,8 @@ barrierefrei zugänglich.</small>
 
 <small>Beachten Sie bitte den Annahmeschluss 30 Minuten vor Ende der Ordinationszeiten.</small>
 
+{% include sickness.html %}
+
 {% include vacation.html %}
 
 ### Anfahrt
