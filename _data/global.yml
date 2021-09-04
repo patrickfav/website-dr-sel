@@ -84,5 +84,6 @@ covid:
   enabled: true
 
 sickness:
-  enabled: false
-  until: 2020-11-20
+  enabled: true
+  from: 2021-09-01
+  until: 2021-09-30

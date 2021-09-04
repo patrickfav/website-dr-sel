@@ -85,16 +85,26 @@
         }
       ],
       "specialOpeningHoursSpecification": [
-      {% assign sorted_list = site.data.global.vacation.list | sort:"end_date" %}
-      {% for vacInfo in sorted_list %}
-        {
-          "@type": "OpeningHoursSpecification",
-          "opens": "00:00",
-          "closes": "00:00",
-          "validFrom": "{{ vacInfo.start_date | date: "%y-%m-%d" }}",
-          "validThrough": "{{ vacInfo.end_date | date: "%y-%m-%d" }}"
-        }{% if forloop.last == false %}, {% endif %}
-      {% endfor %}
+      {% if site.data.global.sickness.enabled %}
+          {
+              "@type": "OpeningHoursSpecification",
+              "opens": "00:00",
+              "closes": "00:00",
+              "validFrom": "{{ site.data.global.sickness.from | date: "%y-%m-%d" }}",
+              "validThrough": "{{ site.data.global.sickness.until | date: "%y-%m-%d" }}"
+          }
+      {% else %}
+          {% assign sorted_list = site.data.global.vacation.list | sort:"end_date" %}
+          {% for vacInfo in sorted_list %}
+          {
+              "@type": "OpeningHoursSpecification",
+              "opens": "00:00",
+              "closes": "00:00",
+              "validFrom": "{{ vacInfo.start_date | date: "%y-%m-%d" }}",
+              "validThrough": "{{ vacInfo.end_date | date: "%y-%m-%d" }}"
+          }{% if forloop.last == false %}, {% endif %}
+          {% endfor %}
+      {% endif %}
       ]
     },{
       "@context": "http://schema.org",
