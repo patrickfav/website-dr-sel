@@ -51,9 +51,8 @@ barrierefrei zugänglich.</small>
 
 ### Anfahrt
 
-Mit dem Auto erwartetet Sie eine Vielzahl an öffentlichen Parkplätzen ohne
-die Einschränkung einer Kurzparkzone. Außerdem ist die Praxis erreichbar
-durch folgende öffentliches Verkehrsmittel:
+Mit dem Auto erwartetet Sie eine Vielzahl an öffentlichen Parkplätzen in Kurzparkzonen. 
+Außerdem ist die Praxis erreichbar durch folgende öffentliches Verkehrsmittel:
 
 
 | Linie | Haltestelle                  | Gehzeit |
