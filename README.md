@@ -1,6 +1,6 @@
 # Jekyll Static Website Source for Doctor's Landing Page
 
-[![Build Status](https://travis-ci.com/patrickfav/website-dr-sel.svg?branch=master)](https://travis-ci.com/patrickfav/website-dr-sel)
+[![Build Status](https://travis-ci.com/patrickfav/website-dr-sel.svg?branch=master)](https://app.travis-ci.com/github/patrickfav/website-dr-sel)
 
 This is the source for the [Jekyll](https://jekyllrb.com) static website project for a very simple doctors landing page.
 
