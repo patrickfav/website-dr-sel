@@ -18,22 +18,37 @@ The production version can be found [here](https://selwicka-wienerroither.com/).
 
 ### Ruby
 
-Jekyll requires Ruby 2.4+ so you might be required to install it.
+Jekyll requires Ruby 2.6+ so you might be required to install it.
 
-First install all prerequisite libraries ([see also this post](https://stackoverflow.com/a/26595869/774398)):
+Install Ruby itself:
 
-    apt-get update -y && sudo apt-get upgrade -y
-    apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
-
-Then install Ruby itself:
-
-    apt-add-repository ppa:brightbox/ruby-ng
     apt-get update
-    apt-get install ruby2.4 ruby2.4-dev build-essential dh-autoreconf
+    apt-get install ruby-full
+    apt-get install nodejs
 
-If you want to switch versions you may do:
+Install rbenv for easier switching of ruby versions
 
-    update-alternatives --config ruby
+```bash
+sudo apt install git curl libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev
+curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
+```
+
+and add this to `~/.zshrc` (or `~/.bashrc`)
+
+```
+echo 'export PATH="$HOMe/.rbenv/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+source ~/.zshrc
+
+curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-doctor | bash
+```
+
+then install the desired ruby version
+```bash
+rbenv install 2.6.10
+rbenv global 2.6.10
+ruby -v
+```
 
 Then update the gems (Ruby package manager)
 
