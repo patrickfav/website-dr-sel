@@ -76,6 +76,13 @@ vacation:
         url: https://www.google.com/search?q=praktische+%C3%A4rzte+1190
         address:
         tel:
+    - start_date: 2022-07-18
+      end_date: 2022-08-07
+      substitute:
+        name: Praktische Ärzte 1190
+        url: https://www.google.com/search?q=praktische+%C3%A4rzte+1190
+        address:
+        tel:
 
 covid:
   enabled: true
