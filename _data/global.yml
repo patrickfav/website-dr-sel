@@ -91,7 +91,7 @@ vacation:
         address:
         tel:
     - start_date: 2023-01-16
-      end_date: 2022-01-20
+      end_date: 2023-01-20
       substitute:
         name: Dr. Leisser,
         url: https://www.gesundheitszentrum-neustift.at/de/pages/kontakt-16.aspx
