@@ -90,6 +90,14 @@ vacation:
         url: https://www.google.com/search?q=praktische+%C3%A4rzte+1190
         address:
         tel:
+    - start_date: 2023-01-16
+      end_date: 2022-01-20
+      substitute:
+        name: Dr. Leisser,
+        url: https://www.gesundheitszentrum-neustift.at/de/pages/kontakt-16.aspx
+        address: Rathstraße 16, 1190
+        tel: +43 1 366 1190
+
 covid:
   enabled: true
 
