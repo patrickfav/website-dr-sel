@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "_site",
+    "site": "website-dr-sel",
     "ignore": [
       "firebase.json",
       "**/.*",
