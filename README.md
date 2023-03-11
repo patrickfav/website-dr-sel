@@ -1,11 +1,8 @@
 # Jekyll Static Website Source for Doctor's Landing Page
 
-[![Build Status](https://travis-ci.com/patrickfav/website-dr-sel.svg?branch=master)](https://app.travis-ci.com/github/patrickfav/website-dr-sel)
+[![Build Status](https://github.com/patrickfav/website-dr-sel/actions/workflows/build_deploy.yml/badge.svg)](https://github.com/patrickfav/website-dr-sel/actions)
 
 This is the source for the [Jekyll](https://jekyllrb.com) static website project for a very simple doctors landing page.
-
-A preview of the most recent commit on master can be seen on the
-[staging firebase project](https://beta.selwicka-wienerroither.com/).
 The production version can be found [here](https://selwicka-wienerroither.com/).
 
 
@@ -45,8 +42,8 @@ curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-doctor | 
 
 then install the desired ruby version
 ```bash
-rbenv install 2.6.10
-rbenv global 2.6.10
+rbenv install 3.2.1
+rbenv global 3.2.1
 ruby -v
 ```
 

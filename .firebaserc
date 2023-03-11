@@ -1,6 +1,5 @@
 {
   "projects": {
-    "default": "ordination-selwicka",
-    "staging": "staging-ordination-selwicka"
+    "default": "website-dr-sel",
   }
 }

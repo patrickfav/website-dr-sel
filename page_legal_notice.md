@@ -24,13 +24,13 @@ Website:	[{{ site.url }}]({{ site.url }})
 
 
 #### Zuständige Ärztekammer
-{{ 'http://www.aekwien.or.at' | external_link: 'Ärztekammer Wien' }}
+{{ 'https://www.aekwien.at/' | external_link: 'Ärztekammer Wien' }}
 
 #### Berufsbezeichnung
 Arzt (verliehen in Österreich)
 
 #### Berufsrechtliche Regelungen
-Die Berufsordnung ist zu beziehen, beziehungsweise einzusehen bei der zuständigen {{ 'http://www.aekwien.or.at' | external_link: 'Ärztekammer' }}
+Die Berufsordnung ist zu beziehen, beziehungsweise einzusehen bei der zuständigen {{ 'https://www.aekwien.at/' | external_link: 'Ärztekammer' }}
 
 #### Konzept, ScreenDesign, Inhalte
 {{ 'https://github.com/patrickfav' | external_link: 'Patrick Favre-Bulle' }}
@@ -56,5 +56,5 @@ Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS
 
 -----------
 
-<small>Die Website mit Version <a href="https://github.com/patrickfav/website-dr-sel/releases/tag/{% project_version %}" rel="noopener" class="external">{% project_version %}</a>
+<small>Die Website mit Version <a href="https://github.com/patrickfav/website-dr-sel/commit/{% project_version commit %}" rel="noopener" class="external">{% project_version commit %}</a>
 wurde am _{{ site.time | date_to_rfc822 }}_ mit {{ 'https://jekyllrb.com' | external_link: 'Jekyll' }} kompiliert.</small>

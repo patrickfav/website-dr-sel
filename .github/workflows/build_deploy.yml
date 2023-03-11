@@ -1,0 +1,54 @@
+name: Build Site and Deploy to Firebase Hosting
+
+on:
+  push:
+    branches:
+      - main
+  pull_request: {}
+  schedule:
+    - cron: '14 2 * * *' # run 2:14 am every day
+
+env:
+  FIREBASE_PROJECT_ID: favre-base-project
+  NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
+
+jobs:
+  build_and_deploy:
+    name: Build Site and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code und Submodules
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2' # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - name: Build Site with Jekyll (production)
+        if: github.ref == 'refs/heads/main'
+        run: JEKYLL_ENV=production bundle exec jekyll build -t --config "_config.yml,_config.prod.yml"
+      - name: Build Site with Jekyll (development)
+        if: github.event_name == 'pull_request'
+        run: bundle exec jekyll build -t --config "_config.yml,_config.prod.yml"
+      - name: Run htmlproofer
+        run: |
+          bundle exec htmlproofer ./_site --allow-missing-href --allow-hash-href --ignore-status-codes 999
+      - name: Deploy to Firebase Hosting
+        id: firebase-deploy-prod
+        if: github.ref == 'refs/heads/main'
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FAVRE_BASE_PROJECT }}'
+          channelId: live
+          projectId: ${{ env.FIREBASE_PROJECT_ID }}
+      - name: Deploy to Firebase Hosting (dev preview channel)
+        id: firebase-deploy-preview
+        if: github.event_name == 'pull_request'
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FAVRE_BASE_PROJECT }}'
+          projectId: ${{ env.FIREBASE_PROJECT_ID }}
+          expires: 7d

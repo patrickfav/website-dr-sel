@@ -13,7 +13,9 @@ $baseurl: '#{$site_baseurl}/images';
 @import 'libs/mixins';
 //noinspection CssUnknownTarget
 @import 'libs/iconfont/style';
-{% download https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,800 %}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap');
+
 //noinspection CssUnknownTarget
 @import 'libs/skel';
 

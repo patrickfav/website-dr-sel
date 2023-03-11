@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.2.2"
+gem "jekyll", "~> 4.3.2"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem 'jekyll-swiss', '~> 0.4.0'
@@ -48,3 +48,5 @@ gem 'jekyll-webp'
 
 # see https://github.com/gjtorikian/jekyll-last-modified-at
 gem 'jekyll-last-modified-at'
+
+gem "webrick", "~> 1.8"
