@@ -1,6 +1,9 @@
 # Jekyll Static Website Source for Doctor's Landing Page
 
 [![Build Status](https://github.com/patrickfav/website-dr-sel/actions/workflows/build_deploy.yml/badge.svg)](https://github.com/patrickfav/website-dr-sel/actions)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=patrickfav_website-dr-sel&metric=bugs)](https://sonarcloud.io/summary/new_code?id=patrickfav_website-dr-sel)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=patrickfav_website-dr-sel&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=patrickfav_website-dr-sel)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=patrickfav_website-dr-sel&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=patrickfav_website-dr-sel)
 
 This is the source for the [Jekyll](https://jekyllrb.com) static website project for a very simple doctors landing page.
 The production version can be found [here](https://selwicka-wienerroither.com/).
