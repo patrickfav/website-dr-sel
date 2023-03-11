@@ -15,7 +15,7 @@ module ObfuscateMailAddress
     outMail = Base64.strict_encode64(input[0, rndpos] + "<span id=\"mo_#{idrand}\">null</span>" + input[rndpos..-1])
     base64Mail = Base64.strict_encode64(URI::encode(input))
 
-    # See http://techblog.tilllate.com/2008/07/20/ten-methods-to-obfuscate-e-mail-addresses-compared/
+    # See https://techblog.tilllate.com/2008/07/20/ten-methods-to-obfuscate-e-mail-addresses-compared/
     output = "#{style}<a href=\"#\" "
     output += "data-contact=\"#{base64Mail}\" target=\"_blank\" rel=\"nofollow\" "
     output += "onfocus=\"this.href = 'mailto:' + atob(this.dataset.contact)\">"

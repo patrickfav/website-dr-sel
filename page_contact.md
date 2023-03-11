@@ -71,10 +71,10 @@ dar, die nur mit Mühe zu bewältigen ist, deshalb führe ich auf Wunsch auch Ha
 Service, den ich Ihnen deshalb gerne anbiete.
 
 Hausbesuche werden von Montag bis Freitags tagsüber nach telefonische Vereinbarung während der Ordinationszeit unter {{ site.data.global.contact.tel | tel_link }} durchgeführt. Nächtens, am Wochende sowie an
-Feiertagen steht Ihnen der {{ "http://www.aekwien.at/aerztefunkdienst-141" | external_link: 'Ärzte Notdienst'}} zur Verfügung.
+Feiertagen steht Ihnen der {{ "https://www.aekwien.at/aerztefunkdienst-141" | external_link: 'Ärzte Notdienst'}} zur Verfügung.
 
 
 ## Weiterführende Links
 
-* {{ 'http://www.praxisplan.at/5546917116/Selwicka-Wienerroither-Beate/1' | external_link: 'Eintrag auf praxisplan.at der Wiener Ärztekammer' }}
+* {{ 'https://www.praxisplan.at/5546917116/Selwicka-Wienerroither-Beate/1' | external_link: 'Eintrag auf praxisplan.at der Wiener Ärztekammer' }}
 * {{ 'https://www.docfinder.at/arzt/allgemeinmedizin/1190-wien/dr-beate-selwicka-wienerroither-13942_1' | external_link: 'Eintrag auf docfinder.at' }}
