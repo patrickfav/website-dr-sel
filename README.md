@@ -9,7 +9,7 @@ This is the source for the [Jekyll](https://jekyllrb.com) static website project
 The production version can be found [here](https://selwicka-wienerroither.com/).
 
 
-[![website screenshot](https://i.imgur.com/TH1qoPK.jpg)](https://selwicka-wienerroither.com/)
+[![website screenshot](https://repository-images.githubusercontent.com/135200872/2f76b1c1-d1e5-4cd8-8b69-0948bbdecbed)](https://selwicka-wienerroither.com/)
 
 
 ## Build
