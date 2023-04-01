@@ -90,12 +90,12 @@ With the following command the website will be packaged and copied to `_site`
 
 ## Continuous Deployment
 
-Every commit to the `master` branch will be automatically build and deployed via to the [Firebase staging](https://beta.selwicka-wienerroither.com/)
-environment. (_Note_: This will NOT be build with the production flag.)
+Every Pull-Request will automatically deploys to a temporary Firebase Staging environment (link posted as comment in the PR by Github Actions)
+(_Note_: This will NOT be build with the production flag.)
 
-Every git tag triggers a deploy to the [Firbase Hosting](https://selwicka-wienerroither.com/) through [Travis CI](https://travis-ci.com/patrickfav/website-dr-sel).
+Every main commit triggers a deploy to the [Firbase Hosting](https://selwicka-wienerroither.com/) through [Github Actions](https://github.com/patrickfav/website-dr-sel/actions).
 
-# Frameworks and Libs
+# Frameworks and Libraries
 
 * [Jekyll](https://jekyllrb.com/)
   * Plugins: [Maps](https://github.com/ayastreb/jekyll-maps), [Last-Modified](https://github.com/gjtorikian/jekyll-last-modified-at),
