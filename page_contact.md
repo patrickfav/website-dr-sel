@@ -80,4 +80,4 @@ Feiertagen steht Ihnen der {{ "https://www.aekwien.at/aerztefunkdienst-141" | ex
 ## Weiterführende Links
 
 * {{ 'https://www.praxisplan.at/5546917116/Selwicka-Wienerroither-Beate/1' | external_link: 'Eintrag auf praxisplan.at der Wiener Ärztekammer' }}
-* {{ 'https://www.docfinder.at/arzt/allgemeinmedizin/1190-wien/dr-beate-selwicka-wienerroither-13942_1' | external_link: 'Eintrag auf docfinder.at' }}
+* {{ 'https://www.docfinder.at/praktischer-arzt/1190-wien/dr-beate-selwicka-wienerroither' | external_link: 'Eintrag auf docfinder.at' }}
