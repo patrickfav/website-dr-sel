@@ -1,5 +1,6 @@
 owner: Ordination Selwicka-Wienerroither # or company name
 first_published: 2011 # if migrating another site, the year of your first publish
+has_kassenvertrag: false
 organization:
   founded_iso8601: '1983-01-01'
   acceptNewPatients: 'False'
@@ -22,6 +23,7 @@ contact:
   uid: ATU13183008
 
 hours:
+  enabled_by_appointment_only: true
   spec:
     monday:
       start: '13:00'
@@ -37,7 +39,7 @@ hours:
       end: '12:00'
 
 vacation:
-  enabled: true
+  enabled: false
   title: Urlaubsvertretung
   description: 'Bitte wenden Sie sich während meines Urlaubs an meine Vertretung:'
   list:
@@ -120,6 +122,9 @@ vacation:
         tel:
 
 covid:
+  enabled: false
+
+banner:
   enabled: true
 
 sickness:

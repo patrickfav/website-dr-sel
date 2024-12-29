@@ -47,36 +47,46 @@
       "publicAccess":true,
       "knowsLanguage": ["DE","EN"],
       "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Monday",
-          "opens": "{{ site.data.global.hours.spec.monday.start }}",
-          "closes": "{{ site.data.global.hours.spec.monday.end }}"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Tuesday",
-          "opens": "{{ site.data.global.hours.spec.tuesday.start }}",
-          "closes": "{{ site.data.global.hours.spec.tuesday.end }}"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Wednesday",
-          "opens": "{{ site.data.global.hours.spec.wednesday.start }}",
-          "closes": "{{ site.data.global.hours.spec.wednesday.end }}"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Tuesday",
-          "opens": "{{ site.data.global.hours.spec.thursday.start }}",
-          "closes": "{{ site.data.global.hours.spec.thursday.end }}"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Friday", "Saturday", "Sunday"],
-          "opens": "00:00",
-          "closes": "00:00"
-        }
+          {% if site.data.global.hours.enabled_by_appointment_only %}
+          {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "00:00",
+              "closes": "00:00",
+              "description": "Nur nach terminlicher Absprache geöffnet."
+          }
+          {% else %}
+          {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Monday",
+              "opens": "{{ site.data.global.hours.spec.monday.start }}",
+              "closes": "{{ site.data.global.hours.spec.monday.end }}"
+          },
+          {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Tuesday",
+              "opens": "{{ site.data.global.hours.spec.tuesday.start }}",
+              "closes": "{{ site.data.global.hours.spec.tuesday.end }}"
+          },
+          {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Wednesday",
+              "opens": "{{ site.data.global.hours.spec.wednesday.start }}",
+              "closes": "{{ site.data.global.hours.spec.wednesday.end }}"
+          },
+          {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Tuesday",
+              "opens": "{{ site.data.global.hours.spec.thursday.start }}",
+              "closes": "{{ site.data.global.hours.spec.thursday.end }}"
+          },
+          {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Friday", "Saturday", "Sunday"],
+              "opens": "00:00",
+              "closes": "00:00"
+          }
+          {% endif %}
       ],
       "specialOpeningHoursSpecification": [
       {% if site.data.global.sickness.enabled %}

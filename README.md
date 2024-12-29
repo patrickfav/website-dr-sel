@@ -45,8 +45,8 @@ curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-doctor | 
 
 then install the desired ruby version
 ```bash
-rbenv install 3.2.1
-rbenv global 3.2.1
+# will read .ruby-version file and install the required version if in the root of the repo
+rbenv install
 ruby -v
 ```
 

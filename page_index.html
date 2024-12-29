@@ -38,8 +38,15 @@ internal_id: index
             {% include sickness.html %}
 
             {% unless site.data.global.sickness.enabled %}
-            <h4>Ordinationszeiten</h4>
 
+
+            <h4>Ordinationszeiten</h4>
+            {% if site.data.global.hours.enabled_by_appointment_only %}
+            <p>
+                Nur nach vorheriger Terminvereinbarung.<br class="always"/>
+                <small><a href='{{ "/kontakt" | prepend: site.baseurl }}'>Weitere Kontaktinformationen &raquo;</a></small>
+            </p>
+            {% else %}
             <div class="row">
                 <div class="6u 12u$(small)">
                     <ul class="none align-right" style="margin-bottom: 0">
@@ -65,6 +72,8 @@ internal_id: index
                 <em>Bitte um telefonische Terminvereinbarung</em><br class="always"/>
                 <small><a href='{{ "/kontakt" | prepend: site.baseurl }}'>Weitere Kontaktinformationen &raquo;</a></small>
             </p>
+            {% endif %}
+
             {% endunless %}
 
         </header>
@@ -116,9 +125,36 @@ internal_id: index
 </section>
 {% endif %}
 
+{% if site.data.global.banner.enabled %}
+<section id="important_banner" class="wrapper style3 special">
+    <div class="inner">
+        <header class="major">
+
+            <small>01.12.2024</small><br>
+
+
+            <h2>Beendigung des Kassenvertrages</h2>
+
+            <p>
+                Mit <strong>31.12.2024 endet mein Kassenvertrag</strong>. Das bedeutet, dass ich ab diesem Zeitpunkt keine Leistungen mehr direkt über die Krankenkasse abrechnen kann. Dies ist ein Schritt, zu dem ich aufgrund <strong>gesetzlicher Vorgaben</strong> verpflichtet bin, da bestimmte Altersgrenzen hierfür festgelegt sind.
+            </p>
+            <p>
+                Die gute Nachricht ist, dass ich meine Ordination ab <strong>Februar 2025</strong> in geänderter Form als Wahlarztordination weiterführen werde. Mein Ziel bleibt es, Ihnen auch weiterhin die bestmögliche medizinische Betreuung in einem vertrauten und persönlichen Rahmen anzubieten.
+            </p>
+            <p>
+                Die Ordination bleibt im <strong>Jänner 2025 geschlossen</strong>, damit ich die notwendigen Vorbereitungen für diese Umstellung treffen kann.
+            <p>
+                Alle weiteren Details zu den Änderungen und zur weiteren Organisation der Ordination finden Sie in den kommenden Wochen hier auf der Website. Ich danke Ihnen für Ihr Verständnis und Ihre Treue und freue mich darauf, Sie auch in Zukunft begleiten zu dürfen.
+            </p>
+        </header>
+    </div>
+</section>
+{% endif %}
+
 
 <!-- Two -->
 <section id="two" class="wrapper alt style2">
+    {% if site.data.global.has_kassenvertrag %}
     <section class="spotlight">
         <div class="image">
             <picture class="lazy">
@@ -136,6 +172,7 @@ internal_id: index
                 Anfrage möglich.</p>
         </div>
     </section>
+    {% endif %}
     <section class="spotlight">
         <div class="image" >
             <picture class="lazy">
