@@ -36,6 +36,10 @@ barrierefrei zugänglich.</small>
 {% unless site.data.global.sickness.enabled %}
 ### Ordinationszeiten
 
+{% if site.data.global.hours.enabled_by_appointment_only %}
+Nur nach vorheriger Terminvereinbarung.
+{% else %}
+
 | Tag        | Öffungszeiten                                                                                      |
 |------------|----------------------------------------------------------------------------------------------------|
 | Montag     | {{ site.data.global.hours.spec.monday.start }} - {{ site.data.global.hours.spec.monday.end }}      |
@@ -43,8 +47,9 @@ barrierefrei zugänglich.</small>
 | Mittwoch   | {{ site.data.global.hours.spec.wednesday.start }} - {{ site.data.global.hours.spec.wednesday.end }}|
 | Donnerstag | {{ site.data.global.hours.spec.thursday.start }} - {{ site.data.global.hours.spec.thursday.end }}  |
 | Freitag    | {{ site.data.global.hours.spec.friday.start }} - {{ site.data.global.hours.spec.friday.end }}      |
-
 <small>Beachten Sie bitte den Annahmeschluss 30 Minuten vor Ende der Ordinationszeiten.</small>
+{% endif %}
+
 {% endunless %}
 
 {% include vacation.html %}

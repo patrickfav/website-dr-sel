@@ -33,7 +33,7 @@ Arzt (verliehen in Österreich)
 Die Berufsordnung ist zu beziehen, beziehungsweise einzusehen bei der zuständigen {{ 'https://www.aekwien.at/' | external_link: 'Ärztekammer' }}
 
 #### Konzept, ScreenDesign, Inhalte
-{{ 'https://github.com/patrickfav' | external_link: 'Patrick Favre-Bulle' }}
+{{ 'https://favr.dev' | external_link: 'Patrick Favre' }}
 
 
 ### Haftungsausschluss
