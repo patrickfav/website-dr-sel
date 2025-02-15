@@ -24,11 +24,9 @@ location:
 {{ site.data.global.contact.address.line1a }}\\
 {{ site.data.global.contact.address.line2 }}, {{ site.data.global.contact.address.line3 }}
 
-Tel:  {{ site.data.global.contact.tel | tel_link }}\\
-Fax:  {{ site.data.global.contact.fax | tel_link }}
+Tel:  {{ site.data.global.contact.tel | tel_link }}
 
-<small>**Bitte um telefonische Terminvereinbarung.**\\
-Aufgrund der Gegebenheiten im Haus, ist die Ordination leider nicht
+<small>Aufgrund der Gegebenheiten im Haus, ist die Ordination leider nicht
 barrierefrei zugänglich.</small>
 
 {% include sickness.html %}
@@ -69,13 +67,12 @@ Außerdem ist die Praxis erreichbar durch folgende öffentliches Verkehrsmittel:
 
 ## Hausbesuche
 
-Für ältere Menschen, deren Mobilität eingeschränkt ist, stellt der Arztbesuch oft eine große Herausforderung 
-dar, die nur mit Mühe zu bewältigen ist, deshalb führe ich auf Wunsch auch Hausbesuche durch. Besonders in der Betreuung von Menschen mit akuten und chronischen Erkrankungen ist dies ein wichtiger
-Service, den ich Ihnen deshalb gerne anbiete.
-
 Hausbesuche werden von Montag bis Freitags tagsüber nach telefonische Vereinbarung während der Ordinationszeit unter {{ site.data.global.contact.tel | tel_link }} durchgeführt. Nächtens, am Wochende sowie an
 Feiertagen steht Ihnen der {{ "https://www.aekwien.at/aerztefunkdienst-141" | external_link: 'Ärzte Notdienst'}} zur Verfügung.
 
+## Leistungen und Preise
+
+Finden Sie eine Übersicht meiner Leistungen auf der <a href="{{ '/preisliste' | prepend: site.baseurl }}">Preisliste</a>.
 
 ## Weiterführende Links
 
