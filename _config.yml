@@ -1,7 +1,7 @@
 # Site settings
 title: Dr. med. Selwicka-Wienerroither
 description: Ärztin für Allgemeinmedizin
-landing_page_title: Ordination Dr. Selwicka-Wienerroither
+landing_page_title: Wahlarztordination Dr. med. Selwicka-Wienerroither
 email: ordination.selwicka@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://selwicka-wienerroither.com" # the base hostname & protocol for your site
@@ -24,10 +24,6 @@ markdown: kramdown
 
 sass:
   style: compressed
-
-maps:
-  google:
-    api_key: AIzaSyDjbTGk9I7hpTx6ij1IGUlDopIwi22GS78
 
 jekyll_analytics:
   GoogleAnalytics:          # Add, if you want to track with Google Analytics

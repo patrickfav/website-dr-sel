@@ -3,7 +3,7 @@ first_published: 2011 # if migrating another site, the year of your first publis
 has_kassenvertrag: false
 organization:
   founded_iso8601: '1983-01-01'
-  acceptNewPatients: 'False'
+  acceptNewPatients: 'true'
 
 contact:
   name: Dr. med. Beate Selwicka-Wienerroither
@@ -18,7 +18,6 @@ contact:
     lat: 48.243629
     long: 16.324240
   tel: +43 1 320 1543
-  fax: +43 1 328 1380
   mob: +43 670 188 3414
   uid: ATU13183008
 

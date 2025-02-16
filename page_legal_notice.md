@@ -19,9 +19,7 @@ _{{ site.description }}_
 UID: {{ site.data.global.contact.uid }}
 
 Tel:	{{ site.data.global.contact.tel | tel_link}}\\
-Fax:	{{ site.data.global.contact.fax | tel_link }}\\
 Website:	[{{ site.url }}]({{ site.url }})
-
 
 #### Zuständige Ärztekammer
 {{ 'https://www.aekwien.at/' | external_link: 'Ärztekammer Wien' }}
