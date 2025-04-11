@@ -70,10 +70,6 @@ Außerdem ist die Praxis erreichbar durch folgende öffentliches Verkehrsmittel:
 Hausbesuche werden von Montag bis Freitags tagsüber nach telefonische Vereinbarung während der Ordinationszeit unter {{ site.data.global.contact.tel | tel_link }} durchgeführt. Nächtens, am Wochende sowie an
 Feiertagen steht Ihnen der {{ "https://www.aekwien.at/aerztefunkdienst-141" | external_link: 'Ärzte Notdienst'}} zur Verfügung.
 
-## Leistungen und Preise
-
-Finden Sie eine Übersicht meiner Leistungen auf der <a href="{{ '/preisliste' | prepend: site.baseurl }}">Preisliste</a>.
-
 ## Weiterführende Links
 
 * {{ 'https://www.praxisplan.at/5546917116/Selwicka-Wienerroither-Beate/1' | external_link: 'Eintrag auf praxisplan.at der Wiener Ärztekammer' }}
