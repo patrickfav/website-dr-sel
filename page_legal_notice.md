@@ -49,7 +49,7 @@ Der Autor ist bestrebt, in allen Publikationen die Urheberrechte der verwendeten
 Dieser Haftungsausschluss ist als Teil des Internetangebotes zu betrachten, von dem aus auf diese Seite verwiesen wurde. Sofern Teile oder einzelne Formulierungen dieses Textes der geltenden Rechtslage nicht, nicht mehr oder nicht vollständig entsprechen sollten, bleiben die übrigen Teile des Dokumentes in ihrem Inhalt und ihrer Gültigkeit davon unberührt.
 
 #### Online-Streitbeilegung
-Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter {{ 'https://ec.europa.eu/odr/' | external_link: 'ec.europa.eu/odr/' }} finden.
+Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter {{ 'https://ec.europa.eu/consumers/odr' | external_link: 'ec.europa.eu/consumers/odr' }} finden.
 
 
 -----------
