@@ -26,30 +26,15 @@ Install Ruby itself:
     apt-get install ruby-full
     apt-get install nodejs
 
-Install rbenv for easier switching of ruby versions
+Install rbenv for easier switching of ruby versions [by following this guide](https://github.com/rbenv/rbenv) then 
+install the desired ruby version:
 
-```bash
-sudo apt install git curl libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev
-curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
-```
-
-and add this to `~/.zshrc` (or `~/.bashrc`)
-
-```
-echo 'export PATH="$HOMe/.rbenv/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(rbenv init -)"' >> ~/.zshrc
-```
-then reload the shell
-```
-source ~/.zshrc
-
-curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-doctor | bash
-```
-
-then install the desired ruby version
 ```bash
 # will read .ruby-version file and install the required version if in the root of the repo
 rbenv install
+# set global version to the one in .ruby-version
+rbenv global $(cat .ruby-version)
+
 ruby -v
 ```
 
@@ -67,7 +52,7 @@ Install the `bundler`:
 
 you may want to set the default gem path, so you don't need `sudo`
 
-    bundle config path vendor/bundle
+    bundle config set path vendor/bundle
     
 then, in the project root folder, install all the dependencies with
 
