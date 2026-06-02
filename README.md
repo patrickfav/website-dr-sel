@@ -38,6 +38,9 @@ and add this to `~/.zshrc` (or `~/.bashrc`)
 ```
 echo 'export PATH="$HOMe/.rbenv/bin:$PATH"' >> ~/.zshrc
 echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+```
+then reload the shell
+```
 source ~/.zshrc
 
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-doctor | bash
