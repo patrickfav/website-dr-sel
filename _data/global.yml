@@ -120,12 +120,19 @@ vacation:
         address:
         tel:
     - start_date: 2025-05-26
-      end_date: 2024-05-30
+      end_date: 2025-05-30
       substitute:
         name:
         url:
         address: In dringenden Fällen bitte telefonisch melden.
         tel: +43 676 6279745
+    - start_date: 2026-06-03
+      end_date: 2026-06-14
+      substitute:
+        name: Praktische Ärzte 1190
+        url: https://www.google.com/search?q=praktische+%C3%A4rzte+1190
+        address:
+        tel:
 covid:
   enabled: false
 
