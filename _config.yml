@@ -11,7 +11,6 @@ lang_only: de
 theme_color: "#18202a" #chrome for android will color the url bar with this
 
 plugins:
-  - jekyll-analytics
   - jekyll-smartify #curly quotes
   - jekyll_version_plugin
   - jekyll-minifier
@@ -24,11 +23,6 @@ markdown: kramdown
 
 sass:
   style: compressed
-
-jekyll_analytics:
-  GoogleAnalytics:          # Add, if you want to track with Google Analytics
-    id: UA-120166913-1      # Required - replace with your tracking id
-    anonymizeIp: true       # Optional - Default: false - set to true for anonymized tracking
 
 google_site_verification: ZT_IXc8gKvrNUoOkEXboZPweKbJzrFpzg5nCl4FMAiQ
 

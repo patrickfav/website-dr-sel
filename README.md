@@ -107,7 +107,7 @@ uploads `_site/`; no separate dashboard build command is required.
 
 * [Jekyll](https://jekyllrb.com/)
   * Plugins: [Maps](https://github.com/ayastreb/jekyll-maps), [Last-Modified](https://github.com/gjtorikian/jekyll-last-modified-at),
-  [Sitemap](https://github.com/jekyll/jekyll-sitemap), [Analytics](https://github.com/hendrikschneider/jekyll-analytics), 
+  [Sitemap](https://github.com/jekyll/jekyll-sitemap),
   [Version](https://github.com/rob-murray/jekyll-version-plugin), [Minifier](https://github.com/digitalsparky/jekyll-minifier), 
   [Webp](https://github.com/sverrirs/jekyll-webp)
 * [HTML5 UP's Spectral Theme](https://github.com/arkadianriver/spectral)

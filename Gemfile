@@ -28,9 +28,6 @@ gem 'html-proofer'
 # see https://github.com/jekyll/jekyll-sitemap
 gem 'jekyll-sitemap'
 
-# see https://github.com/hendrikschneider/jekyll-analytics
-gem 'jekyll-analytics'
-
 # see https://github.com/pathawks/jekyll-smartify
 gem 'jekyll-smartify'
 
