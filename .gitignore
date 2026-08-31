@@ -7,4 +7,3 @@ vendor
 *.gem
 .bundle
 _compress_images_cache.yml
-firebase-debug.log

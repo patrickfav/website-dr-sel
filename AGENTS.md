@@ -7,7 +7,7 @@ Ordination Selwicka-Wienerroither in Vienna. It is a Jekyll site, not a
 JavaScript application: there is no `package.json`, Node build, or application
 test suite.
 
-The public site is built into `_site/` and hosted with Firebase Hosting. The
+The public site is built into `_site/` and hosted with a Cloudflare Worker. The
 deployed site is `https://selwicka-wienerroither.com/`.
 
 These instructions apply to the whole repository. There are no nested
@@ -53,10 +53,10 @@ These instructions apply to the whole repository. There are no nested
 - `_config.yml`: normal site configuration and plugin registration.
 - `_config.prod.yml`: production-only minification and WebP settings; pass it
   together with `_config.yml` rather than using it alone.
-- `firebase.json`: Firebase Hosting redirects, cache headers, and `_site/` as
-  the hosting directory.
-- `.github/workflows/build_deploy.yml`: CI build, HTML validation, preview
-  deployment for pull requests, and live deployment from `main`.
+- `_redirects` and `_headers`: Cloudflare Worker redirects and cache headers.
+- `wrangler.jsonc`: Cloudflare Worker static-assets configuration for `_site/`.
+- `.github/workflows/build_deploy.yml`: CI build, HTML validation, and live
+  deployment from `main` to the Cloudflare Worker.
 - `backup/`: archived legacy files; do not use these as active site sources.
 
 ## Common commands
@@ -170,16 +170,15 @@ explicit task.
 
 ## Deployment and GitHub Actions
 
-- Pull requests build the site, run HTMLProofer, and deploy a temporary
-  Firebase preview channel that expires after seven days.
+- Pull requests build the site and run HTMLProofer; they do not deploy.
 - Pushes to `main` build with `JEKYLL_ENV=production` and deploy the live
-  Firebase Hosting channel.
-- `firebase.json` owns redirects and cache headers. Changes to old URL
+  Cloudflare Worker.
+- `_redirects` and `_headers` own redirects and cache headers. Changes to old URL
   redirects or caching are production-impacting and should be reviewed as
   deployment changes, not treated as ordinary copy edits.
-- Do not commit Firebase credentials, service-account JSON, local logs, bundle
-  contents, Jekyll caches, or `_site/`; the existing ignore rules cover these
-  generated/local files.
+- Do not commit Cloudflare API tokens, local logs, bundle contents, Jekyll
+  caches, or `_site/`; the existing ignore rules cover these generated/local
+  files.
 - Keep `Gemfile` and `Gemfile.lock` consistent. When changing dependencies,
   regenerate the lockfile with Bundler and run a clean production build.
 - Keep commits focused. In a pull request, summarize the visible/content

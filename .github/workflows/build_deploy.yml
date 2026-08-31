@@ -1,4 +1,4 @@
-name: Build Site and Deploy to Firebase Hosting
+name: Build Site and Deploy Cloudflare Worker
 
 on:
   push:
@@ -10,7 +10,6 @@ on:
     - cron: '28 4 * * SUN,TUE,THU' # run 2:14 am every day
 
 env:
-  FIREBASE_PROJECT_ID: favre-base-project
   NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
 
 jobs:
@@ -34,21 +33,11 @@ jobs:
       - name: Run htmlproofer
         run: |
           bundle exec htmlproofer ./_site --allow-missing-href --allow-hash-href --ignore-status-codes 301,302,999 --ignore_urls "https://www.linkedin.com/in/beate-selwicka-wienerroither-b5083281/"
-      - name: Deploy to Firebase Hosting
-        id: firebase-deploy-prod
+      - name: Deploy Cloudflare Worker
+        id: cloudflare-deploy-prod
         if: github.ref == 'refs/heads/main'
-        uses: FirebaseExtended/action-hosting-deploy@v0
+        uses: cloudflare/wrangler-action@v3
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FAVRE_BASE_PROJECT }}'
-          channelId: live
-          projectId: ${{ env.FIREBASE_PROJECT_ID }}
-      - name: Deploy to Firebase Hosting (dev preview channel)
-        id: firebase-deploy-preview
-        if: github.event_name == 'pull_request'
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FAVRE_BASE_PROJECT }}'
-          projectId: ${{ env.FIREBASE_PROJECT_ID }}
-          expires: 7d
+          apiToken: '${{ secrets.CLOUDFLARE_API_TOKEN }}'
+          accountId: '${{ secrets.CLOUDFLARE_ACCOUNT_ID }}'
+          command: deploy

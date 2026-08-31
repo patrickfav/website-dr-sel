@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "website-dr-sel",
+  "compatibility_date": "2026-08-31",
+  "workers_dev": true,
+  "preview_urls": true,
+  "assets": {
+    "directory": "./_site",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  }
+}

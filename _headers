@@ -1,0 +1,18 @@
+/fonts/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=2629743
+
+/images/*
+  Cache-Control: public, max-age=604800
+
+/*.html
+  Cache-Control: public, max-age=120
+
+/*/
+  Cache-Control: public, max-age=120
+
+/*.css
+  Cache-Control: public, max-age=1209600
+
+/*.js
+  Cache-Control: public, max-age=1209600

@@ -14,7 +14,7 @@ The production version can be found [here](https://selwicka-wienerroither.com/).
 
 ## Build
 
-[Jekyll](https://jekyllrb.com) is a Ruby CLI and used as engine for Github Pages.
+[Jekyll](https://jekyllrb.com) is a Ruby CLI used to build the static site.
 
 ### Ruby
 
@@ -78,10 +78,30 @@ With the following command the website will be packaged and copied to `_site`
 
 ## Continuous Deployment
 
-Every Pull-Request will automatically deploys to a temporary Firebase Staging environment (link posted as comment in the PR by Github Actions)
-(_Note_: This will NOT be build with the production flag.)
+Every pull request is built and checked with HTMLProofer. Pull requests do not
+deploy the Worker.
 
-Every main commit triggers a deploy to the [Firbase Hosting](https://selwicka-wienerroither.com/) through [Github Actions](https://github.com/patrickfav/website-dr-sel/actions).
+Every commit on `main` is built with the production configuration and deployed
+to a [Cloudflare Worker](https://workers.cloudflare.com/) through [GitHub Actions](https://github.com/patrickfav/website-dr-sel/actions).
+
+### First-time Cloudflare setup
+
+The repository uses Wrangler static-asset deployments, so create the Worker
+before the first deployment:
+
+1. In Cloudflare, open **Workers & Pages**, choose **Create application** →
+   **Workers**, and create a Worker named `website-dr-sel`. Enable its
+   `workers.dev` and preview URLs if prompted.
+2. Create a scoped Cloudflare API token using the **Edit Cloudflare Workers**
+   permission.
+3. In the GitHub repository, add these Actions secrets under **Settings →
+   Secrets and variables → Actions**:
+   `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN`.
+4. Add `selwicka-wienerroither.com` as a custom domain for the Worker. The
+   domain's nameservers must be managed by Cloudflare.
+
+The build runs in GitHub Actions and `wrangler.jsonc` uploads `_site/`; no
+separate dashboard build command is required.
 
 # Frameworks and Libraries
 
@@ -93,7 +113,7 @@ Every main commit triggers a deploy to the [Firbase Hosting](https://selwicka-wi
 * [HTML5 UP's Spectral Theme](https://github.com/arkadianriver/spectral)
   * [Skel 3](https://github.com/ajlkn/skel), [Jquery 3.3.1](https://jquery.com/), [Scrolly](https://github.com/Victa/scrolly), [Scrollex](https://github.com/ajlkn/jquery.scrollex)
 * [Font Awesome 5](https://fontawesome.com/)
-* [Firebase Hosting](https://firebase.google.com/docs/hosting/)
+* [Cloudflare Workers](https://workers.cloudflare.com/)
 
 # License
 

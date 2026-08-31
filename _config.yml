@@ -33,7 +33,8 @@ jekyll_analytics:
 google_site_verification: ZT_IXc8gKvrNUoOkEXboZPweKbJzrFpzg5nCl4FMAiQ
 
 # Exclude files when building the site
-exclude: ["backup", "vendor", "Gemfile", "README.md", "AGENTS.md", "firebase.json", ".idea"]
+exclude: ["backup", "vendor", "Gemfile", "README.md", "AGENTS.md", "wrangler.jsonc", ".idea"]
+include: ["_headers", "_redirects"]
 
 social:
   name: Beate Selwicka-Wienerroither
