@@ -100,8 +100,8 @@ before the first deployment:
 4. Add `selwicka-wienerroither.com` as a custom domain for the Worker. The
    domain's nameservers must be managed by Cloudflare.
 
-The build runs in GitHub Actions and `wrangler.jsonc` uploads `_site/`; no
-separate dashboard build command is required.
+The build runs in GitHub Actions and `wrangler.jsonc` deploys the Worker and
+uploads `_site/`; no separate dashboard build command is required.
 
 # Frameworks and Libraries
 
